@@ -2,10 +2,13 @@
 	"name" : "The Great Expansion",
 	"description" : "This mod adds: \n\n• 112 new artifacts\n\n• 19 new heroes\n\n• 43 new secondary skills\n\n• 7 new map objects\n\n• 10 new spells\n\n\n\nThe mod also changes some of the game configs:\n\n• Creatures can equip creature artifacts\n\nFor more info, check the THE GREAT EXPANSION.pdf.",
 	"modType" : "Expansion",
-	"author" : "Nathill; Assets are from: Heroes of Might and Magic II, Heroes of Might and Magic IV, Heroes of Might and Magic V, Epic War IV, Towers Tactics: Aphelion, Warcraft III, League of Legends, Tibia",
+	"author" : "Nathill, megan1999 (Russian translation); Assets are from: Heroes of Might and Magic II, Heroes of Might and Magic IV, Heroes of Might and Magic V, Epic War IV, Towers Tactics: Aphelion, Warcraft III, League of Legends, Tibia",
 	"contact" : "",
-	"version" : "0.3.1",
+	"version" : "0.3.2",
 	"changelog" : {
+		"0.3.2" : [
+			"Added Russian translation"
+		],
 		"0.3.1" : [
 			"Fixed Expert Corpse Lord using icon of Advanced Corpse Lord."
 		],
@@ -47,6 +50,17 @@
 			"translation/polish/mapObjects.json",
 			"translation/polish/secondarySkills.json",
 			"translation/polish/spells.json"
+		]
+	},
+	"russian" : {
+		"name" : "Великое Дополнение",
+		"description" : "Этот мод добавляет:\n\n112 новых артефактов\n\n19 новых героев\n\n43 новых вторичных навыков\n\n7 новых объектов карты\n\n10 новых заклинаний\n\n\n\nМод также изменяет некоторые игровые механики:\n\nСущества могут использовать артефакты\n\nДля получения дополнительной информации прочитайте файл THE GREAT EXPANSION.pdf.",
+		"translations" : [
+			"translation/russian/artifacts.json",
+			"translation/russian/heroes.json",
+			"translation/russian/mapObjects.json",
+			"translation/russian/secondarySkills.json",
+			"translation/russian/spells.json"
 		]
 	},
 	"artifacts" : [
