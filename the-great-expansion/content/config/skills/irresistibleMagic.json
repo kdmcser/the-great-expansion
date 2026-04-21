@@ -31,7 +31,6 @@
 				},
 				"magicImmunity" : {
 					"type" : "LEVEL_SPELL_IMMUNITY",
-					"subtype" : "spellSchool.any",
 					"val" : -1,
 					"valueType" : "BASE_NUMBER",
 					"propagator" : "BATTLE_WIDE",

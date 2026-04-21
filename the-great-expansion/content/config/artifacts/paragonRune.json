@@ -1,0 +1,50 @@
+{
+	"paragonRune" : {
+		"bonuses" : {
+			"speed" : {
+				"type" : "STACKS_SPEED",
+				"val" : 2,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"morale" : {
+				"type" : "MORALE",
+				"val" : 2,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defense" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER"
+			},
+			"dmg" : {
+				"type" : "CREATURE_DAMAGE",
+				"subtype" : "creatureDamageBoth",
+				"val" : 2,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "RELIC",
+		"slot" : "MISC",
+		"value" : 13000,
+		"graphics" : {
+			"image" : "artifacts/paragonRune/icon",
+			"scenarioBonus" : "artifacts/paragonRune/bonus",
+			"map" : "artifacts/paragonRune/adventure.def"
+		},
+		"text" : {
+			"description" : "{Paragon Rune}\r\n\r\nStack equipped with this artifact gains 2 Attack, Defense, Damage, Speed and Morale.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Paragon Rune"
+		}
+	}
+}

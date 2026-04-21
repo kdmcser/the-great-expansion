@@ -1,0 +1,92 @@
+{
+	"venom" : {
+		"type" : "combat",
+		"name" : "Venom",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 2,
+		"defaultGainChance" : 9,
+		"gainChance" : {
+			"castle" : 7,
+			"rampart" : 8,
+			"necropolis" : 12,
+			"dungeon" : 11,
+			"stronghold" : 7,
+			"fortress" : 8,
+			"conflux" : 10
+		},
+		"power" : 6,
+		"flags" : {
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/venom/book",
+			"iconScroll" : "spells/venom/scroll",
+			"iconScenarioBonus" : "spells/venom/scenario",
+			"iconEffect" : "spells/venom/effect"
+		},
+		"animation" : {
+			"affect" : [
+				"spells/venom/spell.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "spells/venom/sfx.wav"
+		},
+		"levels" : {
+			"base" : {
+				"cost" : 8,
+				"range" : "0",
+				"power" : 10,
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"health" : {
+						"type" : "STACK_HEALTH",
+						"val" : -10,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					},
+					"healthFlat" : {
+						"type" : "STACK_HEALTH",
+						"val" : -1,
+						"valueType" : "BASE_NUMBER",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Venom}\n\nEnvenoms the target, reducing its Max Health."
+			},
+			"basic" : {
+				"cost" : 6,
+				"description" : "{Basic Venom}\n\nEnvenoms the target, reducing its Max Health."
+			},
+			"advanced" : {
+				"description" : "{Advanced Venom}\n\nEnvenoms the target, reducing its Max Health.\n\nHealth reduction is twice as effective as from Basic Venom.",
+				"cost" : 6,
+				"effects" : {
+					"health" : {
+						"val" : -20
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Venom}\n\nEnvenoms all enemy units, reducing their Max Health.\n\nHealth reduction is twice as effective as from Basic Venom.",
+				"cost" : 6,
+				"range" : "X",
+				"effects" : {
+					"health" : {
+						"val" : -20
+					}
+				}
+			}
+		}
+	}
+}

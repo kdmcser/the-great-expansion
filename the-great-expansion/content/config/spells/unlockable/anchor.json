@@ -80,17 +80,17 @@
 			"none" : {
 				"description" : "{Anchor}\n\nReduces the target's Defense and renders it unable to move. The effect is removed when the unit receives damage.",
 
-				"cost" : 6
+				"cost" : 9
 			},
 			"basic" : {
 				"description" : "{Basic Anchor}\n\nReduces the target's Defense and renders it unable to move. The effect is removed when the unit receives damage.",
 
-				"cost" : 5
+				"cost" : 8
 			},
 			"advanced" : {
 				"description" : "{Advanced Anchor}\n\nReduces the target's Defense and renders it unable to move. The effect is removed when the unit receives damage.\n\nThe reduction to Defense is twice as effective as from Basic Anchor.",
 
-				"cost" : 5,
+				"cost" : 8,
 				"effects" : {
 					"primarySkill" : {
 						"val" : -6
@@ -99,7 +99,7 @@
 			},
 			"expert" : {
 				"description" : "{Expert Anchor}\n\nReduces the target's Defense and renders it unable to move. The effect is removed when the unit receives damage.\n\nThe reduction to Defense is thrice as effective as from Basic Anchor.",
-				"cost" : 5,
+				"cost" : 8,
 				"effects" : {
 					"primarySkill" : {
 						"val" : -9

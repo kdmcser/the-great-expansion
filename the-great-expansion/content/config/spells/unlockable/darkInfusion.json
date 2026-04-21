@@ -1,0 +1,175 @@
+{
+	"darkInfusion" : {
+		"type" : "combat",
+		"name" : "Dark Infusion",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 2,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 0,
+			"rampart" : 0,
+			"tower" : 0,
+			"inferno" : 14,
+			"necropolis" : 14,
+			"dungeon" : 14,
+			"stronghold" : 7,
+			"fortress" : 7,
+			"conflux" : 7
+		},
+		"power" : 35,
+		"flags" : {
+			"damage" : true,
+			"indifferent" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/darkInfusion/book",
+			"iconScroll" : "spells/darkInfusion/scroll",
+			"iconScenarioBonus" : "spells/darkInfusion/scenario",
+			"iconEffect" : "spells/darkInfusion/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/darkInfusion/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/darkInfusion/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 15,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"attackBonus" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"attack" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.attack",
+								"val" : 5,
+								"valueType" : "ADDITIVE_VALUE",
+								"duration" : "N_TURNS"
+							}
+						}
+					}
+				},
+				"targetModifier" : {
+					"smart" : false
+				},
+				"cost" : 10
+			},
+			"none" : {
+				"description" : "{Dark Infusion}\n\nDeals fire damage to the target, but also increases its Attack. Can be used on both own and enemy units.",
+				"power" : 15,
+				"cost" : 10
+			},
+			"basic" : {
+				"description" : "{Basic Dark Infusion}\n\nDeals fire damage to the target, but also increases its Attack greatly. Can be used on both own and enemy units.",
+				"power" : 15,
+				"cost" : 8
+			},
+			"advanced" : {
+				"description" : "{Advanced Dark Infusion}\n\nDeals fire damage to the target, but also increases its Attack greatly. Can be used on both own and enemy units.\n\nDamage dealt is 20 more than Basic Dark Infustion, and also grants a chance to apply Advanced Curse on attack.",
+				"power" : 35,
+				"cost" : 8,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"attackBonus" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"attack" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.attack",
+								"val" : 5,
+								"valueType" : "ADDITIVE_VALUE",
+								"duration" : "N_TURNS"
+							}
+						}
+					},
+					"curseAttack" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"curses" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.curse",
+								"val" : 20,
+								"addInfo" : [
+									2,
+									0
+								],
+								"duration" : "N_TURNS"
+							}
+						}
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Dark Infusion}\n\nDeals fire damage to the target, but also increases its Attack greatly. Can be used on both own and enemy units.\n\nDamage dealt is 55 more than Basic Dark Infustion, and also grants a chance to apply Advanced Curse on attack and a chance to deal double damage on attack.",
+				"power" : 70,
+				"cost" : 8,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"attackBonus" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"attack" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.attack",
+								"val" : 5,
+								"valueType" : "ADDITIVE_VALUE",
+								"duration" : "N_TURNS"
+							}
+						}
+					},
+					"curseAttack" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"curses" : {
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "spell.curse",
+								"val" : 20,
+								"addInfo" : [
+									2,
+									0
+								],
+								"duration" : "N_TURNS"
+							}
+						}
+					},
+					"doubleDamage" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"deathStrike" : {
+								"type" : "DOUBLE_DAMAGE_CHANCE",
+								"val" : 20,
+								"duration" : "N_TURNS"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

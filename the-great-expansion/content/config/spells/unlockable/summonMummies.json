@@ -1,0 +1,73 @@
+{
+	"summonMummies" : {
+		"type" : "combat",
+		"name" : "Summon Mummies",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 4,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"necropolis" : 15
+		},
+		"power" : 54,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonMummies/book",
+			"iconScroll" : "spells/summonMummies/scroll",
+			"iconScenarioBonus" : "spells/summonMummies/scenario",
+			"iconEffect" : "spells/summonMummies/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 23,
+				"power" : 54,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "mummy",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Mummies}\r\n\r\nSummons Mummies to fight on your side during the battle.",
+				"cost" : 23,
+				"power" : 54
+			},
+			"basic" : {
+				"description" : "{Basic Summon Mummies}\r\n\r\nSummons Mummies to fight on your side during the battle.",
+				"cost" : 19,
+				"power" : 54
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Mummies}\r\n\r\nSummons Mummies to fight on your side during the battle.\n\nAmount of Mummies summoned is 50% greater than Basic Summon Mummies.",
+				"cost" : 19,
+				"power" : 81
+			},
+			"expert" : {
+				"description" : "{Expert Summon Mummies}\r\n\r\nSummons Mummies to fight on your side during the battle.\n\nAmount of Mummies summoned is 100% greater than Basic Summon Mummies.",
+				"cost" : 19,
+				"power" : 108
+			}
+		}
+	}
+}

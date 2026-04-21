@@ -1,0 +1,32 @@
+{
+	"ringOfTheGog" : {
+		"bonuses" : {
+			"spellFireball" : {
+				"type" : "SPELL",
+				"val" : 3,
+				"subtype" : "spell.fireball"
+			},
+			"fireballBonus" : {
+				"type" : "SPECIFIC_SPELL_DAMAGE",
+				"subtype" : "spell.fireball",
+				"val" : 25
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "RING",
+		"value" : 5500,
+		"graphics" : {
+			"image" : "artifacts/ringOfTheGog/icon",
+			"scenarioBonus" : "artifacts/ringOfTheGog/bonus",
+			"map" : "artifacts/ringOfTheGog/adventure.def"
+		},
+		"text" : {
+			"description" : "{Ring of the Gog}\r\n\r\nIncreases damage dealt by the Fireball spell by 25%. Also allows you to cast Expert Fireball.",
+			"event" : "A gog challenges you to a fireball-throwing contest. Since you have won, he hesitantly passes you a magic ring.",
+			"name" : "Ring of the Gog"
+		}
+	}
+}

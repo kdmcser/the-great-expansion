@@ -1,0 +1,73 @@
+{
+	"summonBoars" : {
+		"type" : "combat",
+		"name" : "Summon Boars",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 3,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"stronghold" : 15
+		},
+		"power" : 30,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonBoars/book",
+			"iconScroll" : "spells/summonBoars/scroll",
+			"iconScenarioBonus" : "spells/summonBoars/scenario",
+			"iconEffect" : "spells/summonBoars/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 16,
+				"power" : 4,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "boar",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Boars}\r\n\r\nSummons Boars to fight on your side during the battle.",
+				"cost" : 16,
+				"power" : 30
+			},
+			"basic" : {
+				"description" : "{Basic Summon Boars}\r\n\r\nSummons Boars to fight on your side during the battle.",
+				"cost" : 13,
+				"power" : 30
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Boars}\r\n\r\nSummons Boars to fight on your side during the battle.\n\nAmount of Boars summoned is 50% greater than Basic Summon Boars.",
+				"cost" : 13,
+				"power" : 45
+			},
+			"expert" : {
+				"description" : "{Expert Summon Boars}\r\n\r\nSummons Boars to fight on your side during the battle.\n\nAmount of Boars summoned is 100% greater than Basic Summon Boars.",
+				"cost" : 13,
+				"power" : 60
+			}
+		}
+	}
+}

@@ -57,21 +57,21 @@
 			},
 			"none" : {
 				"description" : "{Combustion}\n\nDeals fire damage to the target.",
-				"power" : 25,
+				"power" : 35,
 				"cost" : 5
 			},
 			"basic" : {
 				"description" : "{Basic Combustion}\n\nDeals fire damage to the target.",
-				"power" : 25,
+				"power" : 35,
 				"cost" : 4
 			},
 			"advanced" : {
-				"description" : "{Advanced Combustion}\n\nDeals fire damage to the target.\n\nDamage inflicted is 25 more than Basic Combustion.",
-				"power" : 50,
+				"description" : "{Advanced Combustion}\n\nDeals fire damage to the target.\n\nDamage inflicted is 35 more than Basic Combustion.",
+				"power" : 70,
 				"cost" : 4
 			},
 			"expert" : {
-				"description" : "{Expert Combustion}\n\nDeals fire damage to the target.\n\nDamage inflicted is 105 more than Basic Combustion.",
+				"description" : "{Expert Combustion}\n\nDeals fire damage to the target.\n\nDamage inflicted is 95 more than Basic Combustion.",
 				"power" : 130,
 				"cost" : 4
 			}

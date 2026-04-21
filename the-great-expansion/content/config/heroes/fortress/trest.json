@@ -1,0 +1,91 @@
+{
+	"trest" : {
+		"class" : "beastmaster",
+		"female" : false,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Trest",
+			"biography" : "Trest, a lumbering giant that somehow can still be considered human, never charges into his enemies. He waits patiently and strikes enemies who tire by getting close themselves, deflecting their assault.",
+			"specialty" : {
+				"description" : "Whenever a creature takes the Defend action, it gains First Strike and Additional Retaliation abilities.",
+				"tooltip" : "Unique Bonus: Ultimate Defense",
+				"name" : "Ultimate Defense"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/fortress/trest/specSmall.png",
+			"specialtyLarge" : "heroes/fortress/trest/specLarge.png",
+			"large" : "heroes/fortress/trest/large.png",
+			"small" : "heroes/fortress/trest/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "basilisk",
+				"max" : 2,
+				"min" : 2
+			},
+			{
+				"creature" : "gorgon",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "gorgon",
+				"max" : 1,
+				"min" : 1
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "absoluteDefense"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"defendRetals" : {
+					"type" : "ON_COMBAT_EVENT",
+					"subtype" : "combatEventDefend",
+					"addInfo" : {
+						"effect" : [
+							{
+								"action" : "bonus",
+								"targetEnemy" : false,
+								"bonus" : {
+									"type" : "ADDITIONAL_RETALIATION",
+									"val" : 1,
+									"duration" : "STACK_GETS_TURN"
+								}
+							}
+						]
+					}
+				},
+				"defendFirstStrike" : {
+					"type" : "ON_COMBAT_EVENT",
+					"subtype" : "combatEventDefend",
+					"addInfo" : {
+						"effect" : [
+							{
+								"action" : "bonus",
+								"targetEnemy" : false,
+								"bonus" : {
+									"type" : "FIRST_STRIKE",
+									"val" : 1,
+									"duration" : "STACK_GETS_TURN"
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

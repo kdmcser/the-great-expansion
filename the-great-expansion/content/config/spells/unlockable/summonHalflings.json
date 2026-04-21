@@ -1,0 +1,70 @@
+{
+	"summonHalflings" : {
+		"type" : "combat",
+		"name" : "Summon Halflings",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 2,
+		"defaultGainChance" : 11,
+		"power" : 8,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonHalflings/book",
+			"iconScroll" : "spells/summonHalflings/scroll",
+			"iconScenarioBonus" : "spells/summonHalflings/scenario",
+			"iconEffect" : "spells/summonHalflings/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 10,
+				"power" : 8,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "halfling",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Halflings}\r\n\r\nSummons Halflings to fight on your side during the battle.",
+				"cost" : 10,
+				"power" : 8
+			},
+			"basic" : {
+				"description" : "{Basic Summon Halflings}\r\n\r\nSummons Halflings to fight on your side during the battle.",
+				"cost" : 8,
+				"power" : 8
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Halflings}\r\n\r\nSummons Halflings to fight on your side during the battle.\n\nAmount of Halflings summoned is 50% greater than Basic Summon Halflings.",
+				"cost" : 8,
+				"power" : 12
+			},
+			"expert" : {
+				"description" : "{Expert Summon Halflings}\r\n\r\nSummons Halflings to fight on your side during the battle.\n\nAmount of Halflings summoned is 100% greater than Basic Summon Halflings.",
+				"cost" : 8,
+				"power" : 16
+			}
+		}
+	}
+}

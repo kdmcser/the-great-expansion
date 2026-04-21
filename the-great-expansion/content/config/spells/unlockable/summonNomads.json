@@ -1,0 +1,70 @@
+{
+	"summonNomads" : {
+		"type" : "combat",
+		"name" : "Summon Nomads",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"power" : 54,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonNomads/book",
+			"iconScroll" : "spells/summonNomads/scroll",
+			"iconScenarioBonus" : "spells/summonNomads/scenario",
+			"iconEffect" : "spells/summonNomads/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 26,
+				"power" : 54,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "nomad",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Nomads}\r\n\r\nSummons Nomads to fight on your side during the battle.",
+				"cost" : 26,
+				"power" : 54
+			},
+			"basic" : {
+				"description" : "{Basic Summon Nomads}\r\n\r\nSummons Nomads to fight on your side during the battle.",
+				"cost" : 21,
+				"power" : 54
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Nomads}\r\n\r\nSummons Nomads to fight on your side during the battle.\n\nAmount of Nomads summoned is 50% greater than Basic Summon Nomads.",
+				"cost" : 21,
+				"power" : 81
+			},
+			"expert" : {
+				"description" : "{Expert Summon Nomads}\r\n\r\nSummons Nomads to fight on your side during the battle.\n\nAmount of Nomads summoned is 100% greater than Basic Summon Nomads.",
+				"cost" : 21,
+				"power" : 108
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"runeOfTheEarthlord" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"evasion" : {
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",
+				"valueType" : "BASE_NUMBER",
+				"val" : 30
+			},
+			"spellImmunity" : {
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "RELIC",
+		"slot" : "MISC",
+		"value" : 14000,
+		"graphics" : {
+			"image" : "artifacts/runeOfTheEarthlord/icon",
+			"scenarioBonus" : "artifacts/runeOfTheEarthlord/bonus",
+			"map" : "artifacts/runeOfTheEarthlord/adventure.def"
+		},
+		"text" : {
+			"description" : "{Rune of the Earthlord}\r\n\r\nStack equipped with this artifact gains 3 Defense, Immunity to level 1-3 spells and receives 30% less damage from melee attacks.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Rune of the Earthlord"
+		}
+	}
+}

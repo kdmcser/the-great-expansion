@@ -1,0 +1,73 @@
+{
+	"summonPeasants" : {
+		"type" : "combat",
+		"name" : "Summon Peasants",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 1,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 15
+		},
+		"power" : 4,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonPeasants/book",
+			"iconScroll" : "spells/summonPeasants/scroll",
+			"iconScenarioBonus" : "spells/summonPeasants/scenario",
+			"iconEffect" : "spells/summonPeasants/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 5,
+				"power" : 4,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "peasant",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Peasants}\r\n\r\nSummons Peasants to fight on your side during the battle.",
+				"cost" : 5,
+				"power" : 4
+			},
+			"basic" : {
+				"description" : "{Basic Summon Peasants}\r\n\r\nSummons Peasants to fight on your side during the battle.",
+				"cost" : 4,
+				"power" : 4
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Peasants}\r\n\r\nSummons Peasants to fight on your side during the battle.\n\nAmount of Peasants summoned is 50% greater than Basic Summon Peasants.",
+				"cost" : 4,
+				"power" : 6
+			},
+			"expert" : {
+				"description" : "{Expert Summon Peasants}\r\n\r\nSummons Peasants to fight on your side during the battle.\n\nAmount of Peasants summoned is 100% greater than Basic Summon Peasants.",
+				"cost" : 4,
+				"power" : 8
+			}
+		}
+	}
+}

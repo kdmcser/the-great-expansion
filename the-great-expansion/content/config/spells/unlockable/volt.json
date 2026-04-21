@@ -1,0 +1,86 @@
+{
+	"volt" : {
+		"type" : "combat",
+		"name" : "Volt",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 4,
+		"defaultGainChance" : 8,
+		"gainChance" : {
+			"castle" : 5,
+			"rampart" : 5,
+			"tower" : 5,
+			"inferno" : 7,
+			"necropolis" : 9,
+			"dungeon" : 8,
+			"conflux" : 10
+		},
+		"power" : 45,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/volt/book",
+			"iconScroll" : "spells/volt/scroll",
+			"iconScenarioBonus" : "spells/volt/scenario",
+			"iconEffect" : "spells/volt/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/volt/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/volt/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 65,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"dispel" : {
+						"type" : "core:dispel",
+						"optional" : true,
+						"dispelPositive" : true
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"cost" : 24
+			},
+			"none" : {
+				"description" : "{Volt}\n\nDeals air damage to the target and removes all positive buffs from it.",
+				"power" : 65,
+				"cost" : 24
+			},
+			"basic" : {
+				"description" : "{Basic Volt}\n\nDeals air damage to the target and removes all positive buffs from it.",
+				"power" : 65,
+				"cost" : 20
+			},
+			"advanced" : {
+				"description" : "{Advanced Volt}\n\nDeals air damage to the target and removes all positive buffs from it.\n\nDamage inflicted is 45 more than Basic Volt.",
+				"power" : 110,
+				"cost" : 20
+			},
+			"expert" : {
+				"description" : "{Expert Volt}\n\nDeals air damage to the target and removes all positive buffs from it.\n\nDamage inflicted is 140 more than Basic Volt.",
+				"power" : 205,
+				"cost" : 20
+			}
+		}
+	}
+}

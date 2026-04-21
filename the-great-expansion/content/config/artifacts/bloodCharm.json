@@ -1,0 +1,34 @@
+{
+	"bloodCharm" : {
+		"bonuses" : {
+			"dmgmin" : {
+				"type" : "CREATURE_DAMAGE",
+				"subtype" : "creatureDamageMin",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"dmgmax" : {
+				"type" : "CREATURE_DAMAGE",
+				"subtype" : "creatureDamageMax",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "MISC",
+		"value" : 10750,
+		"graphics" : {
+			"image" : "artifacts/bloodCharm/icon",
+			"scenarioBonus" : "artifacts/bloodCharm/bonus",
+			"map" : "artifacts/bloodCharm/adventure.def"
+		},
+		"text" : {
+			"description" : "{Wolf Charm}\r\n\r\nIncreases the army's Damage by 1.",
+			"event" : "During your travels, you find a battlefield, where multiple soldiers have died. Noticing a single magic charm among the corpses, you take it along.",
+			"name" : "Blood Charm"
+		}
+	}
+}

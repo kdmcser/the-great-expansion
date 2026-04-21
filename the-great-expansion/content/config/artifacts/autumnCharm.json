@@ -1,0 +1,28 @@
+{
+	"autumnCharm" : {
+		"bonuses" : {
+			"openingSpell" : {
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "spell.wither",
+				"val" : 11,
+				"addInfo" : 3
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "MISC",
+		"value" : 12000,
+		"graphics" : {
+			"image" : "artifacts/autumnCharm/icon",
+			"scenarioBonus" : "artifacts/autumnCharm/bonus",
+			"map" : "artifacts/autumnCharm/adventure.def"
+		},
+		"text" : {
+			"description" : "{Autumn Charm}\r\n\r\nAt the start of each combat, casts Expert Wither for 10 turns.",
+			"event" : "You meet a venerated witch who, upon hearing your quest, grants you a mysterious charm.",
+			"name" : "Autumn Charm"
+		}
+	}
+}

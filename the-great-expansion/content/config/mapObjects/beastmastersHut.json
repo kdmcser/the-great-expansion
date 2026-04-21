@@ -1,0 +1,53 @@
+{
+	"beastmastersHut" : {
+		"name" : "Beastmaster's Hut",
+		"handler" : "configurable",
+		"types" : {
+			"beastmastersHut" : {
+				"name" : "Beastmaster's Hut",
+				"description" : "(Reduces damage received by units in the visiting hero's army permanently)",
+				"rmg" : {
+					"value" : 5000,
+					"rarity" : 50
+				},
+				"sounds" : {
+					"visit" : [
+						"NOMAD"
+					]
+				},
+				"rewards" : [
+					{
+						"message" : "{Beastmaster's Hut}\r\n\r\nAn old beastmaster hands you a container with bugs:\n\"By eating these bugs, your solders will be better!\" - he says with lots of enthusiasm. You hesitantly take the container.\n\n(Units in the hero's army permanently receive 2% less damage from attacks)",
+
+						"bonuses" : [
+							{
+								"type" : "GENERAL_DAMAGE_REDUCTION",
+								"subtype" : "damageTypeAll",
+								"valueType" : "BASE_NUMBER",
+								"val" : 2,
+								"duration" : "PERMANENT",
+								"description" : "Beastmaster's Hut Armor Bonus"
+							}
+						]
+					}
+				],
+				"onVisitedMessage" : "{Beastmaster's Hut}\r\n\r\nThe old beastmaster is boasting \"They are now better, huh?\"",
+				"visitMode" : "hero",
+				"templates" : {
+					"beastmastersHut" : {
+						"animation" : "mapObjects/beastmastersHut.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"BAB"
+						]
+					}
+				}
+			}
+		}
+	}
+}

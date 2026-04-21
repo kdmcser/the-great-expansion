@@ -24,7 +24,7 @@
 				"range" : "X",
 				"power" : 4,
 				"cost" : 0,
-				"description" : "Increases Attack and Speed of the stack by 2.",
+				"description" : "Increases Attack and Speed of the stack by 3.",
 				"effects" : {
 					"attack" : {
 						"type" : "PRIMARY_SKILL",

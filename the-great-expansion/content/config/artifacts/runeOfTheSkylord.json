@@ -1,0 +1,51 @@
+{
+	"runeOfTheSkylord" : {
+		"bonuses" : {
+			"luck" : {
+				"type" : "LUCK",
+				"val" : 1
+			},
+			"speed" : {
+				"type" : "STACKS_SPEED",
+				"val" : 3,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			"evasion" : {
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged",
+				"valueType" : "BASE_NUMBER",
+				"val" : 30
+			},
+			"extraRetaliation" : {
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 1
+			},
+			"magicMirror" : {
+				"type" : "MAGIC_MIRROR",
+				"val" : 20
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "RELIC",
+		"slot" : "MISC",
+		"value" : 15500,
+		"graphics" : {
+			"image" : "artifacts/runeOfTheSkylord/icon",
+			"scenarioBonus" : "artifacts/runeOfTheSkylord/bonus",
+			"map" : "artifacts/runeOfTheSkylord/adventure.def"
+		},
+		"text" : {
+			"description" : "{Rune of the Skylord}\r\n\r\nStack equipped with this artifact gains 1 Luck, 3 Speed, 3 Attack, receives 30% less damage from ranged attacks, can retaliate an additional 1 time per round and has 20% chance to deflect hostile spell at a random enemy stack.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Rune of the Skylord"
+		}
+	}
+}

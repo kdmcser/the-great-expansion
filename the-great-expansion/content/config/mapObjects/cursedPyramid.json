@@ -1,0 +1,202 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"cursedPyramid" : {
+				"name" : "Cursed Pyramid",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/cursedPyramid.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"VBV",
+							"VBA"
+						],
+						"allowedTerrains" : [
+							"dirt",
+							"sand"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 2800,
+					"rarity" : 100
+				},
+
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "It seems like this place is guarded. Do you want to fight the guards?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you uncover the hidden secrets!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 7,
+								"type" : "mummy"
+							},
+							{
+								"amount" : 7,
+								"type" : "mummy"
+							},
+							{
+								"amount" : 7,
+								"type" : "mummy"
+							},
+							{
+								"amount" : 7,
+								"type" : "mummy"
+							},
+							{
+								"amount" : 7,
+								"type" : "mummy"
+							}
+						],
+
+						"artifacts" : [
+							{
+								"class" : "TREASURE"
+							}
+						],
+						"resources" : {
+							"gold" : 2000
+						}
+					},
+					{
+						"message" : "After defeating the guards you free the imprisoned enchanters!",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 2,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "blackKnight"
+							}
+						],
+
+						"artifacts" : [
+							{
+								"class" : "MINOR"
+							}
+						],
+						"resources" : {
+							"gold" : 4750
+						}
+					},
+					{
+						"message" : "After defeating the guards you free the imprisoned enchanters!",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 2,
+								"type" : "dreadKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "dreadKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "dreadKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "dreadKnight"
+							},
+							{
+								"amount" : 2,
+								"type" : "dreadKnight"
+							}
+						],
+
+						"artifacts" : [
+							{
+								"class" : "MAJOR"
+							}
+						],
+						"resources" : {
+							"gold" : 3000
+						}
+					},
+					{
+						"message" : "After defeating the guards you free the imprisoned enchanters!",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 5,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 5,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 5,
+								"type" : "dreadKnight"
+							},
+							{
+								"amount" : 5,
+								"type" : "dreadKnight"
+							},
+							{
+								"amount" : 35,
+								"type" : "mummy"
+							}
+						],
+
+						"artifacts" : [
+							{
+								"class" : "RELIC"
+							}
+						],
+						"resources" : {
+							"gold" : 6500
+						}
+					}
+				]
+			}
+		}
+	}
+}

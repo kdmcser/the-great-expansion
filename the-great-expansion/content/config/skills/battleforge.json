@@ -71,6 +71,9 @@
 		"basic" : {
 			"description" : "{Basic Battleforge}\n\nGrants Gremlins the ability to revive an amount of Health equal to twice the number of Gremlins to a stack of Gargoyles, Golems or War Machines, once per combat.",
 			"effects" : {
+				"repairPower" : {
+					"val" : 2
+				},
 				"gargoyleDamage" : {
 					"val" : 0
 				},
@@ -86,8 +89,11 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Battleforge}\n\nGrants Gremlins the ability to revive an amount of Health equal to twice the number of Gremlins to a stack of Gargoyles, Golems or War Machines, once per combat, and increases Max Damage of Gargoyles in the hero's army by 1.",
+			"description" : "{Advanced Battleforge}\n\nGrants Gremlins the ability to revive an amount of Health equal to thrice the number of Gremlins to a stack of Gargoyles, Golems or War Machines, once per combat, and increases Max Damage of Gargoyles in the hero's army by 1.",
 			"effects" : {
+				"repairPower" : {
+					"val" : 3
+				},
 				"gargoyleDamage" : {
 					"val" : 1
 				},
@@ -103,10 +109,13 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Battleforge}\n\nGrants Gremlins the ability to revive an amount of Health equal to twice the number of Gremlins to a stack of Gargoyles, Golems or War Machines, once per combat, increases Max Damage of Gargoyles in the hero's army by 1 and increases Speed of all Golems in the hero's army by 1.",
+			"description" : "{Expert Battleforge}\n\nGrants Gremlins the ability to revive an amount of Health equal to thrice the number of Gremlins to a stack of Gargoyles, Golems or War Machines, once per combat, increases Max Damage of Gargoyles in the hero's army by 2 and increases Speed of all Golems in the hero's army by 1.",
 			"effects" : {
+				"repairPower" : {
+					"val" : 3
+				},
 				"gargoyleDamage" : {
-					"val" : 1
+					"val" : 2
 				},
 				"golemSpeed" : {
 					"val" : 1

@@ -1,0 +1,73 @@
+{
+	"summonSharpshooters" : {
+		"type" : "combat",
+		"name" : "Summon Sharpshooters",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"gainChance" : {
+			"rampart" : 22
+		},
+		"power" : 18,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonSharpshooters/book",
+			"iconScroll" : "spells/summonSharpshooters/scroll",
+			"iconScenarioBonus" : "spells/summonSharpshooters/scenario",
+			"iconEffect" : "spells/summonSharpshooters/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 30,
+				"power" : 15,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "sharpshooter",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Sharpshooters}\r\n\r\nSummons Sharpshooters to fight on your side during the battle.",
+				"cost" : 30,
+				"power" : 18
+			},
+			"basic" : {
+				"description" : "{Basic Summon Sharpshooters}\r\n\r\nSummons Sharpshooters to fight on your side during the battle.",
+				"cost" : 25,
+				"power" : 18
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Sharpshooters}\r\n\r\nSummons Sharpshooters to fight on your side during the battle.\n\nAmount of Sharpshooters summoned is 50% greater than Basic Summon Sharpshooters.",
+				"cost" : 25,
+				"power" : 27
+			},
+			"expert" : {
+				"description" : "{Expert Summon Sharpshooters}\r\n\r\nSummons Sharpshooters to fight on your side during the battle.\n\nAmount of Sharpshooters summoned is 100% greater than Basic Summon Sharpshooters.",
+				"cost" : 25,
+				"power" : 36
+			}
+		}
+	}
+}

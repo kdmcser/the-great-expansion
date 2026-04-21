@@ -1,0 +1,37 @@
+{
+	"beholderShield" : {
+		"bonuses" : {
+			"spellpower" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defense" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"extraRetaliation" : {
+				"type" : "RANGED_RETALIATION"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "RELIC",
+		"slot" : "LEFT_HAND",
+		"value" : 20000,
+		"graphics" : {
+			"image" : "artifacts/beholderShield/icon",
+			"scenarioBonus" : "artifacts/beholderShield/bonus",
+			"map" : "artifacts/beholderShield/adventure.def"
+		},
+		"text" : {
+			"description" : "{Beholder Shield}\r\n\r\nIncreases Defense and Spellpower of the hero by 4 and grants your units the Ranged Retaliation ability.",
+			"event" : "After a drunked dwarf accidentally pushes you in a tavern, causing you to spill your beer, you are awarded with Beholder Shield to even the loss.",
+			"name" : "Beholder Shield"
+		}
+	}
+}

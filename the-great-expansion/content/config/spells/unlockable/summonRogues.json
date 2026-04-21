@@ -1,0 +1,74 @@
+{
+	"summonRogues" : {
+		"type" : "combat",
+		"name" : "Summon Rogues",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 3,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"dungeon" : 11,
+			"fortress" : 11
+		},
+		"power" : 20,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonRogues/book",
+			"iconScroll" : "spells/summonRogues/scroll",
+			"iconScenarioBonus" : "spells/summonRogues/scenario",
+			"iconEffect" : "spells/summonRogues/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 16,
+				"power" : 4,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "rogue",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Rogues}\r\n\r\nSummons Rogues to fight on your side during the battle.",
+				"cost" : 15,
+				"power" : 20
+			},
+			"basic" : {
+				"description" : "{Basic Summon Rogues}\r\n\r\nSummons Rogues to fight on your side during the battle.",
+				"cost" : 12,
+				"power" : 20
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Rogues}\r\n\r\nSummons Rogues to fight on your side during the battle.\n\nAmount of Rogues summoned is 50% greater than Basic Summon Rogues.",
+				"cost" : 12,
+				"power" : 30
+			},
+			"expert" : {
+				"description" : "{Expert Summon Rogues}\r\n\r\nSummons Rogues to fight on your side during the battle.\n\nAmount of Rogues summoned is 100% greater than Basic Summon Rogues.",
+				"cost" : 12,
+				"power" : 40
+			}
+		}
+	}
+}

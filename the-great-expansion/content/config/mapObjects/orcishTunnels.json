@@ -1,0 +1,220 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"orcishTunnels" : {
+				"name" : "Orcish Tunnels",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/orcishTunnels.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"BBB",
+							"BBA"
+						],
+						"allowedTerrains" : [
+							"rough"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 1594,
+					"rarity" : 50
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the orcish tunnels. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful! (+2% melee damage permanently)",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 8,
+								"type" : "orc"
+							},
+							{
+								"amount" : 8,
+								"type" : "orc"
+							},
+							{
+								"amount" : 8,
+								"type" : "orc"
+							},
+							{
+								"amount" : 8,
+								"type" : "orc"
+							},
+							{
+								"amount" : 8,
+								"type" : "orc"
+							}
+						],
+						"resources" : {
+							"crystal" : 2,
+							"gold" : 1000
+						},
+						"bonuses" : [
+							{
+								"type" : "PERCENTAGE_DAMAGE_BOOST",
+								"subtype" : "damageTypeMelee",
+								"valueType" : "BASE_NUMBER",
+								"val" : 2,
+								"duration" : "PERMANENT",
+								"description" : "Orcish Tunnels +2%"
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful! (+3% melee damage permanently)",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 12,
+								"type" : "orc"
+							},
+							{
+								"amount" : 12,
+								"type" : "orc"
+							},
+							{
+								"amount" : 12,
+								"type" : "orc"
+							},
+							{
+								"amount" : 12,
+								"type" : "orc"
+							},
+							{
+								"amount" : 12,
+								"type" : "orc"
+							}
+						],
+						"resources" : {
+							"crystal" : 3,
+							"gold" : 1500
+						},
+						"bonuses" : [
+							{
+								"type" : "PERCENTAGE_DAMAGE_BOOST",
+								"subtype" : "damageTypeMelee",
+								"valueType" : "BASE_NUMBER",
+								"val" : 3,
+								"duration" : "PERMANENT",
+								"description" : "Orcish Tunnels +3%"
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful! (+4% melee damage permanently)",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 16,
+								"type" : "orc"
+							},
+							{
+								"amount" : 16,
+								"type" : "orc"
+							},
+							{
+								"amount" : 16,
+								"type" : "orc"
+							},
+							{
+								"amount" : 16,
+								"type" : "orc"
+							},
+							{
+								"amount" : 16,
+								"type" : "orc"
+							}
+						],
+						"resources" : {
+							"crystal" : 4,
+							"gold" : 2000
+						},
+						"bonuses" : [
+							{
+								"type" : "PERCENTAGE_DAMAGE_BOOST",
+								"subtype" : "damageTypeMelee",
+								"valueType" : "BASE_NUMBER",
+								"val" : 4,
+								"duration" : "PERMANENT",
+								"description" : "Orcish Tunnels +4%"
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful! (+5% melee damage permanently)",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 20,
+								"type" : "orc"
+							},
+							{
+								"amount" : 20,
+								"type" : "orc"
+							},
+							{
+								"amount" : 20,
+								"type" : "orc"
+							},
+							{
+								"amount" : 20,
+								"type" : "orc"
+							},
+							{
+								"amount" : 20,
+								"type" : "orc"
+							}
+						],
+						"resources" : {
+							"crystal" : 5,
+							"gold" : 2500
+						},
+						"bonuses" : [
+							{
+								"type" : "PERCENTAGE_DAMAGE_BOOST",
+								"subtype" : "damageTypeMelee",
+								"valueType" : "BASE_NUMBER",
+								"val" : 5,
+								"duration" : "PERMANENT",
+								"description" : "Orcish Tunnels +5%"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

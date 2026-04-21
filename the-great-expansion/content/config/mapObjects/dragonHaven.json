@@ -1,0 +1,182 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"dragonHaven" : {
+				"name" : "Dragon Haven",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/dragonHaven.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVBV",
+							"VBBB",
+							"VBAB"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 13500,
+					"rarity" : 100
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "It seems like this place is guarded. Do you want to fight the guards?",
+				"onVisited" : [
+					{
+						"message" : "It seems like this place is empty."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you tame the dragon!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 25
+						},
+						"guards" : [
+							{
+								"amount" : 4,
+								"type" : "angel"
+							},
+							{
+								"amount" : 2,
+								"type" : "archangel"
+							},
+							{
+								"amount" : 5,
+								"type" : "giant"
+							},
+							{
+								"amount" : 2,
+								"type" : "titan"
+							}
+						],
+
+						"heroExperience" : 500,
+						"creatures" : [
+							{
+								"type" : "fairieDragon",
+								"upgradeChance" : 0,
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you tame the dragon!",
+						"appearChance" : {
+							"min" : 25,
+							"max" : 50
+						},
+						"guards" : [
+							{
+								"amount" : 3,
+								"type" : "redDragon"
+							},
+							{
+								"amount" : 2,
+								"type" : "blackDragon"
+							},
+							{
+								"amount" : 4,
+								"type" : "hydra"
+							},
+							{
+								"amount" : 3,
+								"type" : "chaosHydra"
+							}
+						],
+
+						"heroExperience" : 500,
+						"creatures" : [
+							{
+								"type" : "rustDragon",
+								"upgradeChance" : 0,
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you tame the dragon!",
+						"appearChance" : {
+							"min" : 50,
+							"max" : 75
+						},
+						"guards" : [
+							{
+								"amount" : 5,
+								"type" : "greenDragon"
+							},
+							{
+								"amount" : 3,
+								"type" : "goldDragon"
+							},
+							{
+								"amount" : 7,
+								"type" : "behemoth"
+							},
+							{
+								"amount" : 4,
+								"type" : "ancientBehemoth"
+							}
+						],
+
+						"heroExperience" : 500,
+						"creatures" : [
+							{
+								"type" : "crystalDragon",
+								"upgradeChance" : 0,
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you tame the dragon!",
+						"appearChance" : {
+							"min" : 75,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 9,
+								"type" : "devil"
+							},
+							{
+								"amount" : 6,
+								"type" : "archDevil"
+							},
+							{
+								"amount" : 13,
+								"type" : "boneDragon"
+							},
+							{
+								"amount" : 9,
+								"type" : "ghostDragon"
+							}
+						],
+
+						"heroExperience" : 500,
+						"creatures" : [
+							{
+								"type" : "azureDragon",
+								"upgradeChance" : 0,
+								"amount" : 1
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

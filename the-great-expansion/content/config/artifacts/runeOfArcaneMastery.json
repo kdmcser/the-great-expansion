@@ -1,0 +1,41 @@
+{
+	"runeOfArcaneMastery" : {
+		"bonuses" : {
+			"castsMassBless" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.bless",
+				"val" : 3
+			},
+			"castsMassSlow" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.slow",
+				"val" : 3
+			},
+			"castsBlind" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.blind",
+				"val" : 3
+			},
+			"castsCount" : {
+				"type" : "CASTS",
+				"val" : 2
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "RELIC",
+		"slot" : "MISC",
+		"value" : 13500,
+		"graphics" : {
+			"image" : "artifacts/runeOfArcaneMastery/icon",
+			"scenarioBonus" : "artifacts/runeOfArcaneMastery/bonus",
+			"map" : "artifacts/runeOfArcaneMastery/adventure.def"
+		},
+		"text" : {
+			"description" : "{Rune of Arcane Mastery}\r\n\r\nStack equipped with this artifact has a bonus of +2 to casts and can cast the following spells: Expert Bless, Expert Blind, Expert Slow.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Rune of Arcane Mastery"
+		}
+	}
+}

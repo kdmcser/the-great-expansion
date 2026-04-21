@@ -1,0 +1,76 @@
+{
+	"runeOfCloseCombat" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER",
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				]
+			},
+			"defense" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER",
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				]
+			},
+			"healthpercent" : {
+				"type" : "STACK_HEALTH",
+				"val" : 50,
+				"valueType" : "PERCENT_TO_ALL",
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				]
+			},
+			"forgetful" : {
+				"type" : "FORGETFULL",
+				"val" : 2,
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				]
+			},
+			"noMeleePenalty" : {
+				"type" : "NO_MELEE_PENALTY",
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "SHOOTER"
+					}
+				]
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "TREASURE",
+		"slot" : "MISC",
+		"value" : 2000,
+		"graphics" : {
+			"image" : "artifacts/runeOfCloseCombat/icon",
+			"scenarioBonus" : "artifacts/runeOfCloseCombat/bonus",
+			"map" : "artifacts/runeOfCloseCombat/adventure.def"
+		},
+		"text" : {
+			"description" : "{Rune of Close Combat}\r\n\r\nStack equipped with this artifact has a bonus of +4 Attack, +4 Defense, +50% Max Health and No Melee Penalty, but cannot shoot. Has effects on ranged units only.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Rune of Close Combat"
+		}
+	}
+}

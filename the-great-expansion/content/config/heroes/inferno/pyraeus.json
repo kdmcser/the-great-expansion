@@ -1,0 +1,62 @@
+{
+	"pyraeus" : {
+		"class" : "demoniac",
+		"female" : false,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Pyraeus",
+			"biography" : "An efreet who surprisingly keeps away from the usual, lava-filled places and prefers colder places. Some say it's out of jealousy, because he cannot feel the heat on his body. While useful in battle, this specific quirk surely makes his life hard to live.",
+			"specialty" : {
+				"description" : "Increases the effectiveness of Fire Resistance skill by 5% per hero level.",
+				"tooltip" : "Skill Bonus: Fire Resistance",
+				"name" : "Fire Resistance"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/inferno/pyraeus/specSmall.png",
+			"specialtyLarge" : "heroes/inferno/pyraeus/specLarge.png",
+			"large" : "heroes/inferno/pyraeus/large.png",
+			"small" : "heroes/inferno/pyraeus/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "imp",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "gog",
+				"max" : 7,
+				"min" : 5
+			},
+			{
+				"creature" : "hellHound",
+				"max" : 5,
+				"min" : 4
+			}
+		],
+		"skills" : [
+			{
+				"level" : "advanced",
+				"skill" : "fireResistance"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"main" : {
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "spellSchool.fire",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 48,
+						"stepSize" : 1
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"pirateVest" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defense" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "TORSO",
+		"value" : 2000,
+		"graphics" : {
+			"image" : "artifacts/pirateVest/icon",
+			"scenarioBonus" : "artifacts/pirateVest/bonus",
+			"map" : "artifacts/pirateVest/adventure.def"
+		},
+		"text" : {
+			"description" : "{Pirate Vest}\r\n\r\nIncreases the hero's Attack and Defense by 1.",
+			"event" : "You decide to go fishing, but the best you can get is a vest.",
+			"name" : "Pirate Vest"
+		}
+	}
+}

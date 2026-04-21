@@ -1,0 +1,88 @@
+{
+	"exorcism" : {
+		"type" : "combat",
+		"name" : "Exorcism",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 1,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 12,
+			"rampart" : 8,
+			"tower" : 8,
+			"inferno" : 2,
+			"necropolis" : 0,
+			"dungeon" : 4,
+			"stronghold" : 2,
+			"fortress" : 2,
+			"conflux" : 4
+		},
+		"power" : 30,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/exorcism/book",
+			"iconScroll" : "spells/exorcism/scroll",
+			"iconScenarioBonus" : "spells/exorcism/scenario",
+			"iconEffect" : "spells/exorcism/effect"
+		},
+		"animation" : {
+			"affect" : [
+				{
+					"defName" : "C14SPA0",
+					"transparency" : 0.5
+				}
+			]
+		},
+		"sounds" : {
+			"cast" : "SACBRETH"
+		},
+		"targetCondition" : {
+			"allOf" : {
+				"bonus.UNDEAD" : "absolute"
+			}
+		},
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 0,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"cost" : 5
+			},
+			"none" : {
+				"description" : "{Exorcism}\n\nDeals air damage to an undead target.",
+				"power" : 30,
+				"cost" : 5
+			},
+			"basic" : {
+				"description" : "{Basic Exorcism}\n\nDeals air damage to an undead target.",
+				"power" : 30,
+				"cost" : 4
+			},
+			"advanced" : {
+				"description" : "{Advanced Exorcism}\n\nDeals air damage to an undead target.\n\nDamage inflicted is 30 more than Basic Exorcism.",
+				"power" : 60,
+				"cost" : 4
+			},
+			"expert" : {
+				"description" : "{Expert Exorcism}\n\nDeals air damage to an undead target.\n\nDamage inflicted is 60 more than Basic Exorcism.",
+				"power" : 90,
+				"cost" : 4
+			}
+		}
+	}
+}

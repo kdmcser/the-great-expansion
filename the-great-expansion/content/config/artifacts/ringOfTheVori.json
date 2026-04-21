@@ -1,0 +1,32 @@
+{
+	"ringOfTheVori" : {
+		"bonuses" : {
+			"spellfrostRing" : {
+				"type" : "SPELL",
+				"val" : 3,
+				"subtype" : "spell.frostRing"
+			},
+			"frostRingBonus" : {
+				"type" : "SPECIFIC_SPELL_DAMAGE",
+				"subtype" : "spell.frostRing",
+				"val" : 25
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "RING",
+		"value" : 5500,
+		"graphics" : {
+			"image" : "artifacts/ringOfTheVori/icon",
+			"scenarioBonus" : "artifacts/ringOfTheVori/bonus",
+			"map" : "artifacts/ringOfTheVori/adventure.def"
+		},
+		"text" : {
+			"description" : "{Ring of the Vori}\r\n\r\nIncreases damage dealt by the Frost Ring spell by 25%. Also allows you to cast Expert Frost Ring.",
+			"event" : "A powerful blizzard hinders your travel, but after a while you found the source of that awful weather in this magic ring.",
+			"name" : "Ring of the Vori"
+		}
+	}
+}

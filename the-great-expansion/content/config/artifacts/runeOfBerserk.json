@@ -1,0 +1,29 @@
+{
+	"runeOfBerserk" : {
+		"bonuses" : {
+			"extraAttack" : {
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"immuneToMind" : {
+				"type" : "MIND_IMMUNITY"
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "MAJOR",
+		"slot" : "MISC",
+		"value" : 8000,
+		"graphics" : {
+			"image" : "artifacts/runeOfBerserk/icon",
+			"scenarioBonus" : "artifacts/runeOfBerserk/bonus",
+			"map" : "artifacts/runeOfBerserk/adventure.def"
+		},
+		"text" : {
+			"description" : "{Rune of Berserk}\r\n\r\nStack equipped with this artifact gains Double Attack and Mind Immunity abilities.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Rune of Berserk"
+		}
+	}
+}

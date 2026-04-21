@@ -1,0 +1,208 @@
+{
+	"karl" : {
+		"class" : "elementalist",
+		"spellbook" : [
+			"haste"
+		],
+		"female" : false,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Karl",
+			"biography" : "Karl is a master of elements, bending them to his will as he wishes. He uses them and discard them as his mood dictates. At it often changes.",
+			"specialty" : {
+				"description" : "Air Elementals, Water Elementals, Fire Elementals and Earth Elementals can be freely swapped. Also increases their Speed by 1.",
+				"tooltip" : "Unique Bonus: Four Elementals",
+				"name" : "Four Elementals"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/conflux/karl/specSmall.png",
+			"specialtyLarge" : "heroes/conflux/karl/specLarge.png",
+			"large" : "heroes/conflux/karl/large.png",
+			"small" : "heroes/conflux/karl/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "earthElemental",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "earthElemental",
+				"max" : 4,
+				"min" : 3
+			},
+			{
+				"creature" : "earthElemental",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "elementalAffinity"
+			},
+			{
+				"level" : "basic",
+				"skill" : "elementalSummoning"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"upgradeAir1" : {
+					"addInfo" : "creature.waterElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.airElemental"
+				},
+				"upgradeAir2" : {
+					"addInfo" : "creature.fireElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.airElemental"
+				},
+				"upgradeAir3" : {
+					"addInfo" : "creature.earthElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.airElemental"
+				},
+				"upgradeWater1" : {
+					"addInfo" : "creature.airElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.waterElemental"
+				},
+				"upgradeWater2" : {
+					"addInfo" : "creature.fireElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.waterElemental"
+				},
+				"upgradeWater3" : {
+					"addInfo" : "creature.earthElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.waterElemental"
+				},
+				"upgradeFire1" : {
+					"addInfo" : "creature.airElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.fireElemental"
+				},
+				"upgradeFire2" : {
+					"addInfo" : "creature.waterElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.fireElemental"
+				},
+				"upgradeFire3" : {
+					"addInfo" : "creature.earthElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.fireElemental"
+				},
+				"upgradeEarth1" : {
+					"addInfo" : "creature.airElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.earthElemental"
+				},
+				"upgradeEarth2" : {
+					"addInfo" : "creature.waterElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.earthElemental"
+				},
+				"upgradeEarth3" : {
+					"addInfo" : "creature.fireElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.earthElemental"
+				},
+				"upgradeStorm1" : {
+					"addInfo" : "creature.iceElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.stormElemental"
+				},
+				"upgradeStorm2" : {
+					"addInfo" : "creature.energyElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.stormElemental"
+				},
+				"upgradeStorm3" : {
+					"addInfo" : "creature.magmaElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.stormElemental"
+				},
+				"upgradeIce1" : {
+					"addInfo" : "creature.stormElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.iceElemental"
+				},
+				"upgradeIce2" : {
+					"addInfo" : "creature.energyElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.iceElemental"
+				},
+				"upgradeIce3" : {
+					"addInfo" : "creature.magmaElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.iceElemental"
+				},
+				"upgradeEnergy1" : {
+					"addInfo" : "creature.stormElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.energyElemental"
+				},
+				"upgradeEnergy2" : {
+					"addInfo" : "creature.iceElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.energyElemental"
+				},
+				"upgradeEnergy3" : {
+					"addInfo" : "creature.magmaElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.energyElemental"
+				},
+				"upgradeMagma1" : {
+					"addInfo" : "creature.stormElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.magmaElemental"
+				},
+				"upgradeMagma2" : {
+					"addInfo" : "creature.iceElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.magmaElemental"
+				},
+				"upgradeMagma3" : {
+					"addInfo" : "creature.energyElemental",
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.magmaElemental"
+				},
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER",
+					"limiters" : [
+						"anyOf",
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "airElemental",
+							"includeUpgrades" : true
+						},
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "waterElemental",
+							"includeUpgrades" : true
+						},
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "fireElemental",
+							"includeUpgrades" : true
+						},
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "earthElemental",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"viviann" : {
+		"class" : "ranger",
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Viviann",
+			"biography" : "Viviann's parents died due to a forest fire. When she had learned the demons were behind the fire, she sworn to kill every one of them until her last breath. Her units share the same fanaticism and strike hard and true, no matter the foe.",
+			"specialty" : {
+				"description" : "Increases Max Damage of all tier 3+ units under the hero's control by 1 per 7 hero levels.",
+				"tooltip" : "Skill Bonus: Nature's Fury",
+				"name" : "Nature's Furyr"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/rampart/viviann/specSmall.png",
+			"specialtyLarge" : "heroes/rampart/viviann/specLarge.png",
+			"large" : "heroes/rampart/viviann/large.png",
+			"small" : "heroes/rampart/viviann/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "woodElf",
+				"max" : 4,
+				"min" : 2
+			},
+			{
+				"creature" : "pegasus",
+				"max" : 4,
+				"min" : 3
+			},
+			{
+				"creature" : "dendroidGuard",
+				"max" : 2,
+				"min" : 1
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "naturesFury"
+			},
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"max" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax",
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : [
+						{
+							"type" : "CREATURE_LEVEL_LIMITER",
+							"minLevel" : 3,
+							"maxlevel" : 63
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 3,
+						"stepSize" : 1
+					}
+				}
+			}
+		}
+	}
+}

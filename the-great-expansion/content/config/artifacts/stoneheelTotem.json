@@ -1,0 +1,28 @@
+{
+	"stoneheelTotem" : {
+		"bonuses" : {
+			"openingSpell" : {
+				"type" : "OPENING_BATTLE_SPELL",
+				"subtype" : "spell.slow",
+				"val" : 4,
+				"addInfo" : 3
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 5250,
+		"graphics" : {
+			"image" : "artifacts/stoneheelTotem/icon",
+			"scenarioBonus" : "artifacts/stoneheelTotem/bonus",
+			"map" : "artifacts/stoneheelTotem/adventure.def"
+		},
+		"text" : {
+			"description" : "{Stoneheel Totem}\r\n\r\nAt the start of each combat, casts Expert Slow for 3 turns.",
+			"event" : "You find an ogrish shaman trying to learn new spells. Unsuccessful, he throws a magic totem away, in your direction. You pick it up.",
+			"name" : "Stoneheel Totem"
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"summonDiamondGolems" : {
+		"type" : "combat",
+		"name" : "Summon Diamond Golems",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"gainChance" : {
+			"tower" : 22
+		},
+		"power" : 56,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonDiamondGolems/book",
+			"iconScroll" : "spells/summonDiamondGolems/scroll",
+			"iconScenarioBonus" : "spells/summonDiamondGolems/scenario",
+			"iconEffect" : "spells/summonDiamondGolems/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 30,
+				"power" : 56,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "diamondGolem",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Diamond Golems}\r\n\r\nSummons Diamond Golems to fight on your side during the battle.",
+				"cost" : 30,
+				"power" : 56
+			},
+			"basic" : {
+				"description" : "{Basic Summon Diamond Golems}\r\n\r\nSummons Diamond Golems to fight on your side during the battle.",
+				"cost" : 25,
+				"power" : 56
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Diamond Golems}\r\n\r\nSummons Diamond Golems to fight on your side during the battle.\n\nAmount of Diamond Golems summoned is 50% greater than Basic Summon Diamond Golems.",
+				"cost" : 25,
+				"power" : 84
+			},
+			"expert" : {
+				"description" : "{Expert Summon Diamond Golems}\r\n\r\nSummons Diamond Golems to fight on your side during the battle.\n\nAmount of Diamond Golems summoned is 100% greater than Basic Summon Diamond Golems.",
+				"cost" : 25,
+				"power" : 111
+			}
+		}
+	}
+}

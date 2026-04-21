@@ -1,0 +1,88 @@
+{
+	"biri" : {
+		"class" : "witch",
+		"spellbook" : [
+			"weakness"
+		],
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Biri",
+			"biography" : "Biri curses her enemies in a way that her army can operate around her foes easily. Slow like a slug, they are easy pickings for the swamp-dwellers of Tatalia.",
+			"specialty" : {
+				"description" : "Enemies affected by Weakness and Poison have their Speed reduced by 2.",
+				"tooltip" : "Unique Bonus: Impairment",
+				"name" : "Impairment"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/fortress/biri/specSmall.png",
+			"specialtyLarge" : "heroes/fortress/biri/specLarge.png",
+			"large" : "heroes/fortress/biri/large.png",
+			"small" : "heroes/fortress/biri/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "lizardman",
+				"max" : 6,
+				"min" : 4
+			},
+			{
+				"creature" : "serpentFly",
+				"max" : 4,
+				"min" : 2
+			},
+			{
+				"creature" : "wyvern",
+				"max" : 1,
+				"min" : 1
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "tatalianTactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"weaknessSlow" : {
+					"type" : "STACKS_SPEED",
+					"val" : -2,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.weakness"
+						}
+					]
+				},
+				"poisonSlow" : {
+					"type" : "STACKS_SPEED",
+					"val" : -2,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.poison"
+						}
+					]
+				}
+			}
+		}
+	}
+}

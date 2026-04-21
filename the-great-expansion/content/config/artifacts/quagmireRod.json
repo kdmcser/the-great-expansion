@@ -1,0 +1,39 @@
+{
+	"quagmireRod" : {
+		"bonuses" : {
+			"spellQuicksand" : {
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 15,
+				"subtype" : "spell.quicksand"
+			},
+			"spellpower" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"knowledge" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "RIGHT_HAND",
+		"value" : 10750,
+		"graphics" : {
+			"image" : "artifacts/quagmireRod/icon",
+			"scenarioBonus" : "artifacts/quagmireRod/bonus",
+			"map" : "artifacts/quagmireRod/adventure.def"
+		},
+		"text" : {
+			"description" : "{Quagmire Rod}\r\n\r\nIncreases Spellpower and Knowledge of the hero by 4 and causes the hero to cast Quicksand at the start of each combat.",
+			"event" : "You venture through the swamps to find dead witch. Though her belongings are mostly looted, you manage to find a magic staff.",
+			"name" : "Quagmire Rod"
+		}
+	}
+}

@@ -12,7 +12,6 @@
 		"level" : 5,
 		"defaultGainChance" : 18,
 		"gainChance" : {
-			"castle" : 16,
 			"tower" : 22,
 			"inferno" : 16,
 			"necropolis" : 20
@@ -49,27 +48,27 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"cost" : 30
+				"cost" : 45
 			},
 			"none" : {
 				"description" : "{Cold Death}\n\nDeals enough water damage to kill a number of units equal to 1+Spellpower.",
 				"power" : 1,
-				"cost" : 25
+				"cost" : 40
 			},
 			"basic" : {
 				"description" : "{Basic Cold Death}\n\nDeals enough water damage to kill a number of units equal to 1+Spellpower.",
 				"power" : 1,
-				"cost" : 25
+				"cost" : 40
 			},
 			"advanced" : {
 				"description" : "{Advanced Cold Death}\n\nDeals enough water damage to kill a number of units equal to 2+Spellpower.",
 				"power" : 2,
-				"cost" : 25
+				"cost" : 40
 			},
 			"expert" : {
 				"description" : "{Expert Cold Death}\n\nDeals enough water damage to kill a number of units equal to 3+Spellpower.",
 				"power" : 3,
-				"cost" : 25
+				"cost" : 40
 			}
 		}
 	}
