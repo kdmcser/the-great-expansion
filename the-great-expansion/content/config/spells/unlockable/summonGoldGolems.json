@@ -1,0 +1,73 @@
+{
+	"summonGoldGolems" : {
+		"type" : "combat",
+		"name" : "Summon Gold Golems",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"gainChance" : {
+			"tower" : 22
+		},
+		"power" : 60,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonGoldGolems/book",
+			"iconScroll" : "spells/summonGoldGolems/scroll",
+			"iconScenarioBonus" : "spells/summonGoldGolems/scenario",
+			"iconEffect" : "spells/summonGoldGolems/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 30,
+				"power" : 60,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "goldGolem",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Gold Golems}\r\n\r\nSummons Gold Golems to fight on your side during the battle.",
+				"cost" : 30,
+				"power" : 60
+			},
+			"basic" : {
+				"description" : "{Basic Summon Gold Golems}\r\n\r\nSummons Gold Golems to fight on your side during the battle.",
+				"cost" : 25,
+				"power" : 60
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Gold Golems}\r\n\r\nSummons Gold Golems to fight on your side during the battle.\n\nAmount of GoldGolems summoned is 50% greater than Basic Summon Gold Golems.",
+				"cost" : 25,
+				"power" : 90
+			},
+			"expert" : {
+				"description" : "{Expert Summon Gold Golems}\r\n\r\nSummons Gold Golems to fight on your side during the battle.\n\nAmount of GoldGolems summoned is 100% greater than Basic Summon Gold Golems.",
+				"cost" : 25,
+				"power" : 120
+			}
+		}
+	}
+}

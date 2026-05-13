@@ -1,0 +1,42 @@
+{
+	"blacksteelRing" : {
+		"bonuses" : {
+			"morale" : {
+				"type" : "MORALE",
+				"val" : -1,
+				"valueType" : "BASE_NUMBER",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			},
+			"luck" : {
+				"type" : "LUCK",
+				"val" : -1,
+				"valueType" : "BASE_NUMBER",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "RING",
+		"value" : 4500,
+		"graphics" : {
+			"image" : "artifacts/blacksteelRing/icon",
+			"scenarioBonus" : "artifacts/blacksteelRing/bonus",
+			"map" : "artifacts/blacksteelRing/adventure.def"
+		},
+		"text" : {
+			"description" : "{Blacksteel Ring}\r\n\r\nEnemy units have -1 Morale and Luck.",
+			"event" : "You find a dead knight with dark veins visible on his body. He probably died from a curse emanating from the ring on his finger. You take it away to prevent further tragedy.",
+			"name" : "Blacksteel Ring"
+		}
+	}
+}

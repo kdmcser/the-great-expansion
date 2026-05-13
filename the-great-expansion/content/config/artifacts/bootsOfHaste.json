@@ -1,9 +1,9 @@
 {
-	"bootsOfHaste" : {
+	"ntgeBootsOfHaste" : {
 		"bonuses" : {
 			"speed" : {
 				"type" : "STACKS_SPEED",
-				"val" : 1,
+				"val" : 1
 			}
 		},
 		"type" : [

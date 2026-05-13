@@ -1,0 +1,180 @@
+{
+	"lilian" : {
+		"class" : "deathknight",
+		"spellbook" : [
+			"magicArrow"
+		],
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Lilian",
+			"biography" : "Lilian died in a duel, and promised herself she will never lose again. She started dabbling with curses and learned quite unique ability: her enemies are easier to kill with every curse she inflicts upon them.",
+			"specialty" : {
+				"description" : "Enemies receive 10% more damage from attacks for each of the following curses that afflict them: Curse, Weakness, Disrupting Ray, Slow, Venom, Rend, Misfortune, Sorrow.",
+				"tooltip" : "Unique Bonus: Cursemaster",
+				"name" : "Cursemaster"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/necropolis/lilian/specSmall.png",
+			"specialtyLarge" : "heroes/necropolis/lilian/specLarge.png",
+			"large" : "heroes/necropolis/lilian/large.png",
+			"small" : "heroes/necropolis/lilian/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "skeleton",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "walkingDead",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "wight",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "necromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "infliction"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"curseDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.curse"
+						}
+					]
+				},
+				"weaknessDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.weakness"
+						}
+					]
+				},
+				"slowDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.slow"
+						}
+					]
+				},
+				"disruptDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.disruptingRay"
+						}
+					]
+				},
+				"venomDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.venom"
+						}
+					]
+				},
+				"rendDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.rend"
+						}
+					]
+				},
+				"misfortuneDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.misfortune"
+						}
+					]
+				},
+				"sorrowDamage" : {
+					"subtype" : "damageTypeAll",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : -10,
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE",
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType" : "SPELL_EFFECT",
+							"bonusSourceID" : "spell.sorrow"
+						}
+					]
+				}
+			}
+		}
+	}
+}

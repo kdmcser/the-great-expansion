@@ -1,0 +1,38 @@
+{
+	"runeOfFlamefury" : {
+		"bonuses" : {
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 16,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defense" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : -11,
+				"valueType" : "BASE_NUMBER"
+			},
+			"fireShield" : {
+				"type" : "FIRE_SHIELD",
+				"val" : 20
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "MAJOR",
+		"slot" : "MISC",
+		"value" : 7250,
+		"graphics" : {
+			"image" : "artifacts/runeOfFlamefury/icon",
+			"scenarioBonus" : "artifacts/runeOfFlamefury/bonus",
+			"map" : "artifacts/runeOfFlamefury/adventure.def"
+		},
+		"text" : {
+			"description" : "{Rune of Flamefury}\r\n\r\nStack equipped with this artifact gains 16 Attack and reflects 20% of incoming melee damage as Fire Damage, but also has its Defense reduced by 11.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Rune of Flamefury"
+		}
+	}
+}

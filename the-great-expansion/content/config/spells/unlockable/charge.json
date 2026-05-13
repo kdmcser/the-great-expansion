@@ -1,0 +1,115 @@
+{
+	"charge" : {
+		"type" : "combat",
+		"targetType" : "CREATURE",
+		"name" : "Charge",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 3,
+		"power" : 10,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 6,
+			"rampart" : 6,
+			"tower" : 2,
+			"inferno" : 11,
+			"necropolis" : 3,
+			"dungeon" : 7,
+			"stronghold" : 2,
+			"fortress" : 2,
+			"conflux" : 19
+		},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+
+		"flags" : {
+			"positive" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/charge/book",
+			"iconScroll" : "spells/charge/scroll",
+			"iconScenarioBonus" : "spells/charge/scenario",
+			"iconEffect" : "spells/charge/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/charge/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/charge/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"main" : {
+						"type" : "JOUSTING",
+						"val" : 5,
+						"duration" : "UNTIL_ATTACK"
+					},
+					"stacksSpeed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 5,
+						"valueType" : "ADDITIVE_VALUE",
+						"duration" : "UNTIL_ATTACK"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Charge}\n\nCauses the target to gain Speed and the Jousting ability. Lasts until an attack is made by the unit.",
+				"power" : 10,
+				"cost" : 12
+			},
+			"basic" : {
+				"description" : "{Basic Charge}\n\nCauses the target to gain Speed and the Jousting ability. Lasts until an attack is made by the unit.",
+				"power" : 10,
+
+				"cost" : 9
+			},
+			"advanced" : {
+				"description" : "{Advanced Charge}\n\nCauses the target to gain Speed and the Jousting ability. Lasts until an attack is made by the unit.\n\nBonus is 20% greater than from Basic Charge.",
+				"power" : 10,
+
+				"cost" : 9,
+				"effects" : {
+					"main" : {
+						"val" : 6
+					},
+					"stacksSpeed" : {
+						"val" : 6
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Charge}\n\nCauses the target to gain Speed and the Jousting ability. Lasts until an attack is made by the unit.\n\nBonus is 40% greater than from Basic Charge.",
+				"power" : 10,
+
+				"cost" : 9,
+				"effects" : {
+					"main" : {
+						"val" : 7
+					},
+					"stacksSpeed" : {
+						"val" : 7
+					}
+				}
+			}
+		}
+	}
+}

@@ -19,7 +19,7 @@
 		],
 		"class" : "RELIC",
 		"slot" : "FEET",
-		"value" : 14500,
+		"value" : 20000,
 		"graphics" : {
 			"image" : "artifacts/wandererBoots/icon",
 			"scenarioBonus" : "artifacts/wandererBoots/bonus",

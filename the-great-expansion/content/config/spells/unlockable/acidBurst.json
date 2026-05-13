@@ -1,0 +1,83 @@
+{
+	"acidBurst" : {
+		"type" : "combat",
+		"name" : "Acid Burst",
+		"targetType" : "LOCATION",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 1,
+		"defaultGainChance" : 15,
+		"gainChance" : {
+			"castle" : 13,
+			"rampart" : 14,
+			"tower" : 14,
+			"inferno" : 14,
+			"necropolis" : 28,
+			"dungeon" : 13,
+			"stronghold" : 12,
+			"fortress" : 12,
+			"conflux" : 13
+		},
+		"power" : 7,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/acidBurst/book",
+			"iconScroll" : "spells/acidBurst/scroll",
+			"iconScenarioBonus" : "spells/acidBurst/scenario",
+			"iconEffect" : "spells/acidBurst/effect"
+		},
+
+		"animation" : {
+			"hit" : [
+				"spells/acidBurst/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/acidBurst/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0-1",
+				"power" : 0,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					}
+				},
+				"targetModifier" : {
+					"smart" : false
+				},
+				"cost" : 7
+			},
+			"none" : {
+				"description" : "{Acid Burst}\n\nDeals earth damage to enemies in the chosen area.",
+				"power" : 7,
+				"cost" : 7
+			},
+			"basic" : {
+				"description" : "{Basic Acid Burst}\n\nDeals earth damage to enemies in the chosen area.",
+				"power" : 7,
+				"cost" : 6
+			},
+			"advanced" : {
+				"description" : "{Advanced Acid Burst}\n\nDeals earth damage to enemies in the chosen area.\n\nDamage inflicted is 7 more than Basic Acid Burst.",
+				"power" : 14,
+				"cost" : 6
+			},
+			"expert" : {
+				"description" : "{Expert Acid Burst}\n\nDeals earth damage to enemies in the chosen area.\n\nDamage inflicted is 14 more than Basic Acid Burst.",
+				"power" : 21,
+				"cost" : 6
+			}
+		}
+	}
+}

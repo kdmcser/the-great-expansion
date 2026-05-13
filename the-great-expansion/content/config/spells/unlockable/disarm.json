@@ -1,0 +1,102 @@
+{
+	"disarm" : {
+		"type" : "combat",
+		"targetType" : "CREATURE",
+		"name" : "Disarm",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 3,
+		"power" : 10,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 2,
+			"rampart" : 1,
+			"tower" : 3,
+			"inferno" : 12,
+			"necropolis" : 7,
+			"dungeon" : 8,
+			"stronghold" : 4,
+			"fortress" : 1,
+			"conflux" : 3
+		},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		"flags" : {
+			"negative" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/disarm/book",
+			"iconScroll" : "spells/disarm/scroll",
+			"iconScenarioBonus" : "spells/disarm/scenario",
+			"iconEffect" : "spells/disarm/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/disarm/spell.json"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/disarm/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10, //power value was missing in original files, it's placeholder
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"meleeDmg" : {
+						"val" : -15,
+						"subtype" : "damageTypeMelee",
+						"type" : "PERCENTAGE_DAMAGE_BOOST",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Disarm}\n\nReduces hand-to-hand damage dealt by the target.",
+
+				"cost" : 12
+			},
+			"basic" : {
+				"description" : "{Basic Disarm}\n\nReduces hand-to-hand damage dealt by the target.",
+
+				"cost" : 9
+			},
+			"advanced" : {
+				"description" : "{Advanced Disarm}\n\nReduces hand-to-hand damage dealt by the target.\n\nThe reduction is greater than from Basic Disarm.",
+
+				"cost" : 9,
+				"effects" : {
+					"meleeDmg" : {
+						"val" : -25
+					}
+				}
+			},
+			"expert" : {
+				"range" : "X",
+
+				"description" : "{Expert Disarm}\n\nReduces hand-to-hand damage dealt by all enemy units.\n\nThe reduction is greater than from Basic Disarm.",
+				"cost" : 9,
+				"effects" : {
+					"meleeDmg" : {
+						"val" : -25
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+{
+	"innerFire" : {
+		"type" : "combat",
+		"targetType" : "CREATURE",
+		"name" : "Inner Fire",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 5,
+		"power" : 10,
+		"defaultGainChance" : 10,
+		"gainChance" : {
+			"castle" : 9,
+			"rampart" : 14,
+			"tower" : 14,
+			"inferno" : 14,
+			"necropolis" : 18,
+			"dungeon" : 9,
+			"conflux" : 14
+		},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		"flags" : {
+			"positive" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/innerFire/book",
+			"iconScroll" : "spells/innerFire/scroll",
+			"iconScenarioBonus" : "spells/innerFire/scenario",
+			"iconEffect" : "spells/innerFire/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/innerFire/spell.json"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/innerFire/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10, //power value was missing in original files, it's placeholder
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"attack" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.attack",
+						"val" : 3,
+						"valueType" : "BASE_NUMBER",
+						"duration" : "N_TURNS"
+					},
+					"speed" : {
+						"type" : "STACKS_SPEED",
+						"val" : 3,
+						"valueType" : "BASE_NUMBER",
+						"duration" : "N_TURNS"
+					},
+					"morale" : {
+						"type" : "MORALE",
+						"valueType" : "BASE_NUMBER",
+						"val" : 3,
+						"duration" : "N_TURNS"
+					},
+					"luck" : {
+						"type" : "LUCK",
+						"valueType" : "BASE_NUMBER",
+						"val" : 3,
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Inner Fire}\n\nIncreases Attack, Speed, Morale and Luck of a single unit.",
+
+				"cost" : 24
+			},
+			"basic" : {
+				"description" : "{Basic Inner Fire}\n\nIncreases Attack, Speed, Morale and Luck of a single unit.",
+
+				"cost" : 19
+			},
+			"advanced" : {
+				"description" : "{Advanced Inner Fire}\n\nIncreases Attack, Speed, Morale and Luck of a single unit.\n\nThe bonus is twice as big as from Basic Inner Fire.",
+
+				"cost" : 19,
+				"effects" : {
+					"attack" : {
+						"val" : 6
+					},
+					"speed" : {
+						"val" : 6
+					},
+					"morale" : {
+						"val" : 6
+					},
+					"luck" : {
+						"val" : 6
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Inner Fire}\n\nIncreases Attack, Speed, Morale and Luck of all friendly stacks.\n\nThe bonus is twice as big as from Basic Inner Fire.",
+				"cost" : 19,
+				"range" : "X",
+				"effects" : {
+					"attack" : {
+						"val" : 6
+					},
+					"speed" : {
+						"val" : 6
+					},
+					"morale" : {
+						"val" : 6
+					},
+					"luck" : {
+						"val" : 6
+					}
+				}
+			}
+		}
+	}
+}

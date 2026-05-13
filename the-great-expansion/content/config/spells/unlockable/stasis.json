@@ -1,0 +1,129 @@
+{
+	"stasis" : {
+		"type" : "combat",
+		"targetType" : "CREATURE",
+		"name" : "Stasis",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 5,
+		"power" : 10,
+		"defaultGainChance" : 11,
+		"gainChance" : {
+			"rampart" : 28,
+			"tower" : 5,
+			"inferno" : 6,
+			"necropolis" : 8,
+			"dungeon" : 1,
+			"conflux" : 7
+		},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		"flags" : {
+			"negative" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/stasis/book",
+			"iconScroll" : "spells/stasis/scroll",
+			"iconScenarioBonus" : "spells/stasis/scenario",
+			"iconEffect" : "spells/stasis/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/stasis/spell.json"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/stasis/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10, //power value was missing in original files, it's placeholder
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"notActive" : {
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "stasis",
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+					"damageReduction" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeAll",
+						"valueType" : "BASE_NUMBER",
+						"val" : 80,
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+					"magicResistance" : {
+						"type" : "SPELL_DAMAGE_REDUCTION",
+						"subtype" : "spellSchool.any",
+						"valueType" : "BASE_NUMBER",
+						"val" : 80,
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+					"noRetal" : {
+						"type" : "NO_RETALIATION",
+						"duration" : [
+							"N_TURNS"
+						]
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Stasis}\n\nRenders the target unable to act, but also greatly reduces damage received by it.",
+
+				"cost" : 30
+			},
+			"basic" : {
+				"description" : "{Basic Stasis}\n\nRenders the target unable to act, but also greatly reduces damage received by it.",
+
+				"cost" : 25
+			},
+			"advanced" : {
+				"description" : "{Advanced Stasis}\n\nRenders the target unable to act, but also greatly reduces damage received by it.\n\nThe target receives 50% more damage than if affected by Basic Stasis.",
+
+				"cost" : 25,
+				"effects" : {
+					"damageReduction" : {
+						"val" : 70
+					},
+					"magicResistance" : {
+						"val" : 70
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Stasis}\n\nRenders the target unable to act, but also greatly reduces damage received by it.\n\nThe target receives 100% more damage than if affected by Basic Stasis.",
+				"cost" : 25,
+				"effects" : {
+					"damageReduction" : {
+						"val" : 60
+					},
+					"magicResistance" : {
+						"val" : 60
+					}
+				}
+			}
+		}
+	}
+}

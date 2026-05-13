@@ -1,0 +1,39 @@
+{
+	"morningStar" : {
+		"bonuses" : {
+			"seeing" : {
+				"type" : "SIGHT_RADIUS",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			},
+			"movement" : {
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 400,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+			"knowledge" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 6,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "RELIC",
+		"slot" : "MISC",
+		"value" : 18000,
+		"graphics" : {
+			"image" : "artifacts/morningStar/icon",
+			"scenarioBonus" : "artifacts/morningStar/bonus",
+			"map" : "artifacts/morningStar/adventure.def"
+		},
+		"text" : {
+			"description" : "{Morning Star}\r\n\r\nIncreases the hero's Knowledge by 6, Sight Radius by 4 and Movement Points on land by 400.",
+			"event" : "You meet a mysterious woman dressed in white robe, which covers her face. She hands you a mysterious artifacts, then disappears in a bright light.",
+			"name" : "Morning Star"
+		}
+	}
+}

@@ -12,7 +12,9 @@
 			"eliteTraining" : 7,
 			"enchantWeapons" : 4,
 			"evasion" : 7,
+			"explorer" : 10,
 			"gathering" : 5,
+			"gryphonheartLegacy" : 10,
 			"infantryCommander" : 6,
 			"infliction" : 3,
 			"inspiration" : 6,
@@ -25,8 +27,8 @@
 			"skyMaster" : 6,
 			"stormwind" : 4,
 			"suppression" : 8,
-			"swiftness": 6,
-			"vitality": 7
+			"swiftness" : 6,
+			"vitality" : 7
 		}
 	},
 	"core:cleric" : {
@@ -42,7 +44,9 @@
 			"eliteTraining" : 3,
 			"enchantWeapons" : 6,
 			"evasion" : 4,
+			"explorer" : 10,
 			"gathering" : 4,
+			"gryphonheartLegacy" : 10,
 			"infantryCommander" : 3,
 			"infliction" : 3,
 			"inspiration" : 2,
@@ -55,8 +59,8 @@
 			"skyMaster" : 6,
 			"stormwind" : 4,
 			"suppression" : 4,
-			"swiftness": 3,
-			"vitality": 3
+			"swiftness" : 3,
+			"vitality" : 3
 		}
 	},
 	"core:ranger" : {
@@ -80,13 +84,15 @@
 			"manaReserves" : 4,
 			"mentor" : 3,
 			"mindMagic" : 3,
+			"mining" : 10,
+			"naturesFury" : 10,
 			"occultism" : 3,
 			"recruitment" : 4,
 			"skyMaster" : 3,
 			"stormwind" : 7,
 			"suppression" : 3,
-			"swiftness": 5,
-			"vitality": 10
+			"swiftness" : 5,
+			"vitality" : 10
 		}
 	},
 	"core:druid" : {
@@ -110,21 +116,25 @@
 			"manaReserves" : 6,
 			"mentor" : 4,
 			"mindMagic" : 5,
+			"mining" : 10,
+			"naturesFury" : 10,
 			"occultism" : 5,
 			"recruitment" : 3,
 			"skyMaster" : 3,
 			"stormwind" : 7,
 			"suppression" : 1,
-			"swiftness": 4,
-			"vitality": 6
+			"swiftness" : 4,
+			"vitality" : 6
 		}
 	},
 	"core:alchemist" : {
 		"secondarySkills" : {
 			"arcana" : 5,
+			"battleforge" : 10,
 			"battle-fury" : 7,
 			"benevolence" : 3,
 			"bladeBane" : 5,
+			"bracadanMagic" : 10,
 			"championTraining" : 7,
 			"channeling" : 2,
 			"defender" : 6,
@@ -145,16 +155,18 @@
 			"skyMaster" : 4,
 			"stormwind" : 7,
 			"suppression" : 5,
-			"swiftness": 5,
-			"vitality": 8
+			"swiftness" : 5,
+			"vitality" : 8
 		}
 	},
 	"core:wizard" : {
 		"secondarySkills" : {
 			"arcana" : 6,
+			"battleforge" : 10,
 			"battle-fury" : 3,
 			"benevolence" : 4,
 			"bladeBane" : 8,
+			"bracadanMagic" : 10,
 			"championTraining" : 4,
 			"channeling" : 3,
 			"defender" : 4,
@@ -175,8 +187,8 @@
 			"skyMaster" : 6,
 			"stormwind" : 5,
 			"suppression" : 3,
-			"swiftness": 4,
-			"vitality": 4
+			"swiftness" : 4,
+			"vitality" : 4
 		}
 	},
 	"core:demoniac" : {
@@ -192,6 +204,7 @@
 			"eliteTraining" : 7,
 			"enchantWeapons" : 4,
 			"evasion" : 9,
+			"fireResistance" : 10,
 			"gathering" : 2,
 			"infantryCommander" : 7,
 			"infliction" : 2,
@@ -205,8 +218,9 @@
 			"skyMaster" : 5,
 			"stormwind" : 5,
 			"suppression" : 7,
-			"swiftness": 7,
-			"vitality": 7
+			"swiftness" : 7,
+			"verminLord" : 10,
+			"vitality" : 7
 		}
 	},
 	"core:heretic" : {
@@ -222,6 +236,7 @@
 			"eliteTraining" : 3,
 			"enchantWeapons" : 7,
 			"evasion" : 4,
+			"fireResistance" : 10,
 			"gathering" : 1,
 			"infantryCommander" : 4,
 			"infliction" : 3,
@@ -235,8 +250,9 @@
 			"skyMaster" : 5,
 			"stormwind" : 5,
 			"suppression" : 5,
-			"swiftness": 3,
-			"vitality": 4
+			"swiftness" : 3,
+			"verminLord" : 10,
+			"vitality" : 4
 		}
 	},
 	"core:deathknight" : {
@@ -247,6 +263,7 @@
 			"bladeBane" : 5,
 			"championTraining" : 6,
 			"channeling" : 4,
+			"corpseLord" : 10,
 			"defender" : 7,
 			"electromancy" : 5,
 			"eliteTraining" : 7,
@@ -265,8 +282,8 @@
 			"skyMaster" : 5,
 			"stormwind" : 6,
 			"suppression" : 6,
-			"swiftness": 7,
-			"vitality": 8
+			"swiftness" : 7,
+			"vitality" : 8
 		}
 	},
 	"core:necromancer" : {
@@ -277,6 +294,7 @@
 			"bladeBane" : 7,
 			"championTraining" : 3,
 			"channeling" : 7,
+			"corpseLord" : 10,
 			"defender" : 3,
 			"electromancy" : 6,
 			"eliteTraining" : 3,
@@ -295,8 +313,8 @@
 			"skyMaster" : 2,
 			"stormwind" : 9,
 			"suppression" : 4,
-			"swiftness": 3,
-			"vitality": 3
+			"swiftness" : 3,
+			"vitality" : 3
 		}
 	},
 	"core:overlord" : {
@@ -313,6 +331,7 @@
 			"enchantWeapons" : 4,
 			"evasion" : 8,
 			"gathering" : 5,
+			"imposingPresence" : 10,
 			"infantryCommander" : 3,
 			"infliction" : 1,
 			"inspiration" : 8,
@@ -320,13 +339,14 @@
 			"manaReserves" : 4,
 			"mentor" : 2,
 			"mindMagic" : 3,
+			"nighonianSorcery" : 10,
 			"occultism" : 2,
 			"recruitment" : 5,
 			"skyMaster" : 5,
 			"stormwind" : 6,
 			"suppression" : 7,
-			"swiftness": 6,
-			"vitality": 8
+			"swiftness" : 6,
+			"vitality" : 8
 		}
 	},
 	"core:warlock" : {
@@ -343,6 +363,7 @@
 			"enchantWeapons" : 9,
 			"evasion" : 0,
 			"gathering" : 6,
+			"imposingPresence" : 10,
 			"infantryCommander" : 2,
 			"infliction" : 3,
 			"inspiration" : 2,
@@ -350,13 +371,14 @@
 			"manaReserves" : 6,
 			"mentor" : 5,
 			"mindMagic" : 7,
+			"nighonianSorcery" : 10,
 			"occultism" : 5,
 			"recruitment" : 4,
 			"skyMaster" : 4,
 			"stormwind" : 7,
 			"suppression" : 4,
-			"swiftness": 3,
-			"vitality": 4
+			"swiftness" : 3,
+			"vitality" : 4
 		}
 	},
 	"core:barbarian" : {
@@ -381,12 +403,14 @@
 			"mentor" : 3,
 			"mindMagic" : 2,
 			"occultism" : 3,
+			"onslaught" : 10,
 			"recruitment" : 3,
+			"shamanicLore" : 10,
 			"skyMaster" : 2,
 			"stormwind" : 10,
 			"suppression" : 10,
-			"swiftness": 7,
-			"vitality": 4
+			"swiftness" : 7,
+			"vitality" : 4
 		}
 	},
 	"core:battlemage" : {
@@ -411,16 +435,19 @@
 			"mentor" : 5,
 			"mindMagic" : 3,
 			"occultism" : 5,
+			"onslaught" : 10,
 			"recruitment" : 3,
+			"shamanicLore" : 10,
 			"skyMaster" : 2,
 			"stormwind" : 10,
 			"suppression" : 5,
-			"swiftness": 4,
-			"vitality": 3
+			"swiftness" : 4,
+			"vitality" : 3
 		}
 	},
 	"core:beastmaster" : {
 		"secondarySkills" : {
+			"absoluteDefense" : 10,
 			"arcana" : 3,
 			"battle-fury" : 4,
 			"benevolence" : 1,
@@ -445,12 +472,14 @@
 			"skyMaster" : 2,
 			"stormwind" : 8,
 			"suppression" : 8,
-			"swiftness": 7,
-			"vitality": 10
+			"swiftness" : 7,
+			"tatalianTactics" : 10,
+			"vitality" : 10
 		}
 	},
 	"core:witch" : {
 		"secondarySkills" : {
+			"absoluteDefense" : 10,
 			"arcana" : 7,
 			"battle-fury" : 3,
 			"benevolence" : 3,
@@ -475,8 +504,9 @@
 			"skyMaster" : 4,
 			"stormwind" : 6,
 			"suppression" : 3,
-			"swiftness": 3,
-			"vitality": 5
+			"swiftness" : 3,
+			"tatalianTactics" : 10,
+			"vitality" : 5
 		}
 	},
 	"core:planeswalker" : {
@@ -489,6 +519,8 @@
 			"channeling" : 3,
 			"defender" : 6,
 			"electromancy" : 2,
+			"elementalAffinity" : 10,
+			"elementalSummoning" : 10,
 			"eliteTraining" : 6,
 			"enchantWeapons" : 3,
 			"evasion" : 6,
@@ -505,8 +537,8 @@
 			"skyMaster" : 5,
 			"stormwind" : 5,
 			"suppression" : 7,
-			"swiftness": 9,
-			"vitality": 7
+			"swiftness" : 9,
+			"vitality" : 7
 		}
 	},
 	"core:elementalist" : {
@@ -519,6 +551,8 @@
 			"channeling" : 7,
 			"defender" : 3,
 			"electromancy" : 8,
+			"elementalAffinity" : 10,
+			"elementalSummoning" : 10,
 			"eliteTraining" : 4,
 			"enchantWeapons" : 7,
 			"evasion" : 0,
@@ -535,8 +569,8 @@
 			"skyMaster" : 6,
 			"stormwind" : 4,
 			"suppression" : 4,
-			"swiftness": 3,
-			"vitality": 4
+			"swiftness" : 3,
+			"vitality" : 4
 		}
 	}
 }

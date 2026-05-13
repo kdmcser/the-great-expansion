@@ -1,0 +1,62 @@
+{
+	"diev" : {
+		"class" : "barbarian",
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Diev",
+			"biography" : "Diev has been dubbed \"Lightning Bolt\", because of how she fights- she rains down onto her enemies in a flash, delivering a devastating blow, before killing any survivors. She takes pride in being someone whose ambushes always succeed.",
+			"specialty" : {
+				"description" : "Your units receive a bonus of +3 to Attack and Speed during the first round of combat.",
+				"tooltip" : "Unique Bonus: Swift Striker",
+				"name" : "Swift Striker"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/stronghold/diev/specSmall.png",
+			"specialtyLarge" : "heroes/stronghold/diev/specLarge.png",
+			"large" : "heroes/stronghold/diev/large.png",
+			"small" : "heroes/stronghold/diev/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "goblin",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "goblinWolfRider",
+				"max" : 7,
+				"min" : 5
+			},
+			{
+				"creature" : "orc",
+				"max" : 6,
+				"min" : 5
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "onslaught"
+			},
+			{
+				"level" : "basic",
+				"skill" : "inspiration"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"main" : {
+					"subtype" : "spell.swiftStriker",
+					"type" : "OPENING_BATTLE_SPELL",
+					"val" : 2
+				}
+			}
+		}
+	}
+}

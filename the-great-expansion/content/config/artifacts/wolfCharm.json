@@ -1,0 +1,28 @@
+{
+	"wolfCharm" : {
+		"bonuses" : {
+			"dmgmax" : {
+				"type" : "CREATURE_DAMAGE",
+				"subtype" : "creatureDamageMax",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 5250,
+		"graphics" : {
+			"image" : "artifacts/wolfCharm/icon",
+			"scenarioBonus" : "artifacts/wolfCharm/bonus",
+			"map" : "artifacts/wolfCharm/adventure.def"
+		},
+		"text" : {
+			"description" : "{Wolf Charm}\r\n\r\nIncreases the army's Damage by 1.",
+			"event" : "After battling a pack of wolves, you rip their teeth and make a talisman out of them.",
+			"name" : "Wolf Charm"
+		}
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"intervention" : {
+		"type" : "combat",
+		"name" : "Intervention",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 4,
+		"defaultGainChance" : 14,
+		"gainChance" : {
+			"castle" : 30,
+			"rampart" : 30,
+			"tower" : 5,
+			"inferno" : 2,
+			"necropolis" : 5,
+			"dungeon" : 5,
+			"conflux" : 17
+		},
+		"power" : 30,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/intervention/book",
+			"iconScroll" : "spells/intervention/scroll",
+			"iconScenarioBonus" : "spells/intervention/scenario",
+			"iconEffect" : "spells/intervention/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/intervention/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/intervention/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"silence" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"cantCastSpells" : {
+								"type" : "CASTS",
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : [
+									"N_TURNS"
+								],
+								"val" : -100
+							}
+						}
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"cost" : 16
+			},
+			"none" : {
+				"description" : "{Intervention}\n\nDeals water damage to the target and prevents it from casting spells.",
+				"power" : 10,
+				"cost" : 16
+			},
+			"basic" : {
+				"description" : "{Basic Intervention}\n\nDeals water damage to the target and prevents it from casting spells.",
+				"power" : 10,
+				"cost" : 12
+			},
+			"advanced" : {
+				"description" : "{Advanced Intervention}\n\nDeals water damage to the target and prevents it from casting spells.\n\nDamage inflicted is 40 more than Basic Intervention.",
+				"power" : 50,
+				"cost" : 12
+			},
+			"expert" : {
+				"description" : "{Expert Intervention}\n\nDeals water damage to the target and prevents it from casting spells.\n\nDamage inflicted is 90 more than Basic Intervention.",
+				"power" : 100,
+				"cost" : 12
+			}
+		}
+	}
+}

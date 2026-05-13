@@ -1,0 +1,141 @@
+{
+	"blizzard" : {
+		"type" : "combat",
+		"name" : "Blizzard",
+		"targetType" : "LOCATION",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"gainChance" : {
+			"rampart" : 16,
+			"tower" : 16,
+			"inferno" : 0,
+			"necropolis" : 12,
+			"dungeon" : 12,
+			"conflux" : 12
+		},
+		"power" : 25,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/blizzard/book",
+			"iconScroll" : "spells/blizzard/scroll",
+			"iconScenarioBonus" : "spells/blizzard/scenario",
+			"iconEffect" : "spells/blizzard/effect"
+		},
+
+		"animation" : {
+			"hit" : [
+				"spells/blizzard/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/blizzard/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0,1",
+				"power" : 25,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"debuff" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"slow" : {
+								"type" : "STACKS_SPEED",
+								"val" : -1,
+								"duration" : "N_TURNS"
+							},
+							"defense" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.defence",
+								"val" : -3,
+								"duration" : "N_TURNS"
+							}
+						}
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"cost" : 25
+			},
+			"none" : {
+				"description" : "{Blizzard}\n\nDeals water damage to all units in a small radius and reduces their Defense and Speed.",
+				"power" : 25,
+				"cost" : 25
+			},
+			"basic" : {
+				"description" : "{Basic Blizzard}\n\nDeals water damage to all units in a small radius and reduces their Defense and Speed.",
+				"power" : 25,
+				"cost" : 20
+			},
+			"advanced" : {
+				"description" : "{Advanced Blizzard}\n\nDeals water damage to all units in a small radius and reduces their Defense and Speed.\n\nDamage inflicted is 25 more than from Basic Blizzard, and reduction is more effective than from Basic Blizzard.",
+				"power" : 50,
+				"cost" : 20,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"debuff" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"slow" : {
+								"type" : "STACKS_SPEED",
+								"val" : -2,
+								"duration" : "N_TURNS"
+							},
+							"defense" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.defence",
+								"val" : -4,
+								"duration" : "N_TURNS"
+							}
+						}
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Blizzard}\n\nDeals water damage to all units in a small radius and reduces their Defense and Speed.\n\nDamage inflicted is 75 more than from Basic Blizzard, and reduction is more effective than from Basic Blizzard.",
+				"power" : 100,
+				"cost" : 20,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"debuff" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"slow" : {
+								"type" : "STACKS_SPEED",
+								"val" : -3,
+								"duration" : "N_TURNS"
+							},
+							"defense" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.defence",
+								"val" : -6,
+								"duration" : "N_TURNS"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

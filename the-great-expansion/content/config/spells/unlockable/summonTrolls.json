@@ -1,0 +1,70 @@
+{
+	"summonTrolls" : {
+		"type" : "combat",
+		"name" : "Summon Trolls",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"power" : 28,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonTrolls/book",
+			"iconScroll" : "spells/summonTrolls/scroll",
+			"iconScenarioBonus" : "spells/summonTrolls/scenario",
+			"iconEffect" : "spells/summonTrolls/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 30,
+				"power" : 28,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "troll",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Trolls}\r\n\r\nSummons Trolls to fight on your side during the battle.",
+				"cost" : 30,
+				"power" : 28
+			},
+			"basic" : {
+				"description" : "{Basic Summon Trolls}\r\n\r\nSummons Trolls to fight on your side during the battle.",
+				"cost" : 25,
+				"power" : 28
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Trolls}\r\n\r\nSummons Trolls to fight on your side during the battle.\n\nAmount of Trolls summoned is 50% greater than Basic Summon Trolls.",
+				"cost" : 25,
+				"power" : 42
+			},
+			"expert" : {
+				"description" : "{Expert Summon Trolls}\r\n\r\nSummons Trolls to fight on your side during the battle.\n\nAmount of Trolls summoned is 100% greater than Basic Summon Trolls.",
+				"cost" : 25,
+				"power" : 56
+			}
+		}
+	}
+}

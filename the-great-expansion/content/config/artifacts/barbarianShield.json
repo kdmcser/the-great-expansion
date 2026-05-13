@@ -1,0 +1,34 @@
+{
+	"barbarianShield" : {
+		"bonuses" : {
+			"defense" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			},
+			"evasion" : {
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged",
+				"valueType" : "BASE_NUMBER",
+				"val" : 10
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "LEFT_HAND",
+		"value" : 2500,
+		"graphics" : {
+			"image" : "artifacts/barbarianShield/icon",
+			"scenarioBonus" : "artifacts/barbarianShield/bonus",
+			"map" : "artifacts/barbarianShield/adventure.def"
+		},
+		"text" : {
+			"description" : "{Barbarian Shield}\r\n\r\nIncreases Defense of the hero by 1 and reduces damage received from ranged attacks by 10%.",
+			"event" : "After a drunked dwarf accidentally pushes you in a tavern, causing you to spill your beer, you are awarded with Barbarian Shield to even the loss.",
+			"name" : "Barbarian Shield"
+		}
+	}
+}

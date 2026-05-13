@@ -1,0 +1,73 @@
+{
+	"summonEnchanters" : {
+		"type" : "combat",
+		"name" : "Summon Enchanters",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"gainChance" : {
+			"tower" : 22
+		},
+		"power" : 18,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/summonEnchanters/book",
+			"iconScroll" : "spells/summonEnchanters/scroll",
+			"iconScenarioBonus" : "spells/summonEnchanters/scenario",
+			"iconEffect" : "spells/summonEnchanters/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 30,
+				"power" : 18,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "enchanter",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Summon Enchanters}\r\n\r\nSummons Enchanters to fight on your side during the battle.",
+				"cost" : 30,
+				"power" : 18
+			},
+			"basic" : {
+				"description" : "{Basic Summon Enchanters}\r\n\r\nSummons Enchanters to fight on your side during the battle.",
+				"cost" : 25,
+				"power" : 18
+			},
+			"advanced" : {
+				"description" : "{Advanced Summon Enchanters}\r\n\r\nSummons Enchanters to fight on your side during the battle.\n\nAmount of Enchanters summoned is 50% greater than Basic Summon Enchanters.",
+				"cost" : 25,
+				"power" : 27
+			},
+			"expert" : {
+				"description" : "{Expert Summon Enchanters}\r\n\r\nSummons Enchanters to fight on your side during the battle.\n\nAmount of Enchanters summoned is 100% greater than Basic Summon Enchanters.",
+				"cost" : 25,
+				"power" : 36
+			}
+		}
+	}
+}

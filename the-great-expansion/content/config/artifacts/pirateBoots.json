@@ -1,0 +1,27 @@
+{
+	"pirateBoots" : {
+		"bonuses" : {
+			"speed" : {
+				"type" : "BEFORE_BATTLE_REPOSITION",
+				"val" : 2,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "TREASURE",
+		"slot" : "FEET",
+		"value" : 2250,
+		"graphics" : {
+			"image" : "artifacts/pirateBoots/icon",
+			"scenarioBonus" : "artifacts/pirateBoots/bonus",
+			"map" : "artifacts/pirateBoots/adventure.def"
+		},
+		"text" : {
+			"description" : "{Pirate Boots}\r\n\r\nAllows the hero to rearrange their troops within an additional 2 rows of the commanding hero before combat. If the hero doesn't have the Tactics skill, allows the hero to rearrange their troops within 3 rows of the commanding hero before combat.",
+			"event" : "You decide to go fishing, but the best you can get is a pair of boots.",
+			"name" : "Pirate Boots"
+		}
+	}
+}

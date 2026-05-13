@@ -1,0 +1,66 @@
+{
+	"sapphire" : {
+		"class" : "warlock",
+		"spellbook" : [
+			"intervention"
+		],
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Sapphire",
+			"biography" : "Sapphire was once an erathian cleric, devout to the cause. Multiple hardships and lack of understanding from everyone around caused her to abandon all she believed in and join the Nighonians in a way to destroy once her kingdom.",
+			"specialty" : {
+				"description" : "Increases damage dealt by the Intervention spell by 7% every N hero levels, where N is the level of target creature.",
+				"tooltip" : "Spell Bonus: Intervention",
+				"name" : "Intervention"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/dungeon/sapphire/specSmall.png",
+			"specialtyLarge" : "heroes/dungeon/sapphire/specLarge.png",
+			"large" : "heroes/dungeon/sapphire/large.png",
+			"small" : "heroes/dungeon/sapphire/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "troglodyte",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "harpy",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "beholder",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "nighonianSorcery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "irresistibleMagic"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"interventionBonus" : {
+					"subtype" : "intervention",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 7
+				}
+			}
+		}
+	}
+}

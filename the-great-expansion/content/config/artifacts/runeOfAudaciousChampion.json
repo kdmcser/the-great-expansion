@@ -1,0 +1,31 @@
+{
+	"runeOfAudaciousChampion" : {
+		"bonuses" : {
+			"jousting" : {
+				"type" : "JOUSTING",
+				"val" : 5
+			},
+			"speed" : {
+				"type" : "STACKS_SPEED",
+				"val" : 7,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		},
+		"type" : [
+			"CREATURE"
+		],
+		"class" : "RELIC",
+		"slot" : "MISC",
+		"value" : 13000,
+		"graphics" : {
+			"image" : "artifacts/runeOfAudaciousChampion/icon",
+			"scenarioBonus" : "artifacts/runeOfAudaciousChampion/bonus",
+			"map" : "artifacts/runeOfAudaciousChampion/adventure.def"
+		},
+		"text" : {
+			"description" : "{Rune of Audacious Champion}\r\n\r\nStack equipped with this artifact gains 7 Speed and Jousting ability.",
+			"event" : "You help a runesmith by securing a cargo of ore. For this help, he rewards you with a magic rune.",
+			"name" : "Rune of Audacious Champion"
+		}
+	}
+}

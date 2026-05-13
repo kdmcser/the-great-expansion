@@ -1,0 +1,63 @@
+{
+	"sunderTrigger" : {
+		"type" : "ability",
+		"name" : "Sunder",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 5,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"power" : 10,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/sunder/book",
+			"iconScroll" : "spells/sunder/scroll",
+			"iconScenarioBonus" : "spells/sunder/scenario",
+			"iconEffect" : "spells/sunder/effect"
+		},
+		"animation" : {
+			"hit" : [
+				"spells/sunder/spell_trigger.json"
+			]
+		},
+		"sounds" : {
+			"cast" : "spells/sunder/trigger.wav"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 25,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"description" : "",
+				"cost" : 0
+			},
+			"none" : {
+				"power" : 25
+			},
+			"basic" : {
+				"power" : 25
+			},
+			"advanced" : {
+				"power" : 50
+			},
+			"expert" : {
+				"power" : 100
+			}
+		}
+	}
+}

@@ -1,0 +1,102 @@
+{
+	"rend" : {
+		"type" : "combat",
+		"targetType" : "CREATURE",
+		"name" : "Rend",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 2,
+		"power" : 10,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 0,
+			"rampart" : 0,
+			"tower" : 2,
+			"inferno" : 10,
+			"necropolis" : 6,
+			"dungeon" : 0,
+			"stronghold" : 0,
+			"fortress" : 0,
+			"conflux" : 0
+		},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		"flags" : {
+			"negative" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/rend/book",
+			"iconScroll" : "spells/rend/scroll",
+			"iconScenarioBonus" : "spells/rend/scenario",
+			"iconEffect" : "spells/rend/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/rend/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/rend/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10, //power value was missing in original files, it's placeholder
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"primarySkill" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primarySkill.defence",
+						"val" : -3,
+						"valueType" : "ADDITIVE_VALUE",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Rend}\n\nReduces the target's Defense for the duration of the spell.",
+
+				"cost" : 8
+			},
+			"basic" : {
+				"description" : "{Basic Rend}\n\nReduces the target's Defense for the duration of the spell.",
+
+				"cost" : 6
+			},
+			"advanced" : {
+				"description" : "{Advanced Rend}\n\nReduces the target's Defense for the duration of the spell.\n\nThe reduction is twice as effective as from Basic Rend.",
+
+				"cost" : 6,
+				"effects" : {
+					"primarySkill" : {
+						"val" : -6
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Rend}\n\nReduces all enemy units' Defense for the duration of the spell.\n\nThe reduction is twice as effective as from Basic Rend.",
+				"cost" : 6,
+				"range" : "X",
+				"effects" : {
+					"primarySkill" : {
+						"val" : -6
+					}
+				}
+			}
+		}
+	}
+}

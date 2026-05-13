@@ -1,0 +1,27 @@
+{
+	"arcamasterRing" : {
+		"bonuses" : {
+			"spellCastsPerTurn" : {
+				"type" : "HERO_SPELL_CASTS_PER_COMBAT_TURN",
+				"val" : 1,
+				"valueType" : "BASE_NUMBER"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "RELIC",
+		"slot" : "RING",
+		"value" : 26750,
+		"graphics" : {
+			"image" : "artifacts/arcamasterRing/icon",
+			"scenarioBonus" : "artifacts/arcamasterRing/bonus",
+			"map" : "artifacts/arcamasterRing/adventure.def"
+		},
+		"text" : {
+			"description" : "{Arcamaster Ring}\r\n\r\nAllows you to cast two spells per combat round.",
+			"event" : "During your travels, a mad mage picks a fight with you and starts casting multiple fireballs at you. A single lightning bolt from your fingers zaps the mage to a crisp, leaving only dust and a magic ring.",
+			"name" : "Arcamaster Ring"
+		}
+	}
+}

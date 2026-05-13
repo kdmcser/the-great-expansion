@@ -1,0 +1,92 @@
+{
+	"vitality" : {
+		"type" : "combat",
+		"name" : "Vitality",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 2,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 11,
+			"rampart" : 10,
+			"necropolis" : 6,
+			"dungeon" : 7,
+			"stronghold" : 11,
+			"fortress" : 10,
+			"conflux" : 8
+		},
+		"power" : 10,
+		"flags" : {
+			"positive" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/vitality/book",
+			"iconScroll" : "spells/vitality/scroll",
+			"iconScenarioBonus" : "spells/vitality/scenario",
+			"iconEffect" : "spells/vitality/effect"
+		},
+		"animation" : {
+			"affect" : [
+				"spells/vitality/spell.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "spells/vitality/sfx.wav"
+		},
+		"levels" : {
+			"base" : {
+				"cost" : 8,
+				"range" : "0",
+				"power" : 10,
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"health" : {
+						"type" : "STACK_HEALTH",
+						"val" : 8,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					},
+					"healthFlat" : {
+						"type" : "STACK_HEALTH",
+						"val" : 1,
+						"valueType" : "BASE_NUMBER",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Vitality}\n\nIncreases the target's Max Health for the duration of the spell."
+			},
+			"basic" : {
+				"cost" : 6,
+				"description" : "{Basic Vitality}\n\nIncreases the target's Max Health for the duration of the spell."
+			},
+			"advanced" : {
+				"description" : "{Advanced Vitality}\n\nIncreases the target's Max Health for the duration of the spell..\n\nHealth bonus is twice as effective as from Basic Vitality.",
+				"cost" : 6,
+				"effects" : {
+					"health" : {
+						"val" : 15
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Vitality}\n\nIncreases all friendly units' Max Health for the duration of the spell.\n\nHealth bonus is twice as effective as from Basic Vitality.",
+				"cost" : 6,
+				"range" : "X",
+				"effects" : {
+					"health" : {
+						"val" : 15
+					}
+				}
+			}
+		}
+	}
+}

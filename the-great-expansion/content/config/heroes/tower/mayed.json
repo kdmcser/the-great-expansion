@@ -1,0 +1,66 @@
+{
+	"mayed" : {
+		"class" : "wizard",
+		"spellbook" : [
+			"volt"
+		],
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Mayed",
+			"biography" : "Mayed was fascinated with how much power was garnered in a single lightning strike. She promised herself to spend her life researching this natural phenomenon and uses this knowledge not only to fight, but also to help in research.",
+			"specialty" : {
+				"description" : "Volt deals 5% more damage every N levels, where N is the level of targeted unit.",
+				"tooltip" : "Spell Bonus: Volt",
+				"name" : "Volt"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/tower/mayed/specSmall.png",
+			"specialtyLarge" : "heroes/tower/mayed/specLarge.png",
+			"large" : "heroes/tower/mayed/large.png",
+			"small" : "heroes/tower/mayed/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "gremlin",
+				"max" : 40,
+				"min" : 30
+			},
+			{
+				"creature" : "stoneGargoyle",
+				"max" : 7,
+				"min" : 5
+			},
+			{
+				"creature" : "ironGolem",
+				"max" : 5,
+				"min" : 4
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "bracadanMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "electromancy"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"volt" : {
+					"subtype" : "volt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		}
+	}
+}

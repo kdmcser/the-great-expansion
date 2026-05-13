@@ -1,0 +1,83 @@
+{
+	"tarq" : {
+		"class" : "alchemist",
+		"spellbook" : [
+			"disruptingRay"
+		],
+		"female" : false,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Tarq",
+			"biography" : "Tarq is an avid engineer, fascinated with all things mechanical and artificial. He surrounds himself with gremlins who share his passion.",
+			"specialty" : {
+				"description" : "Repair ability of Gremlins in the hero's army revives an additional 1 Health per Gremlin and can be used once more.",
+				"tooltip" : "Creature Bonus: Gremlins",
+				"name" : "Gremlins"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/tower/tarq/specSmall.png",
+			"specialtyLarge" : "heroes/tower/tarq/specLarge.png",
+			"large" : "heroes/tower/tarq/large.png",
+			"small" : "heroes/tower/tarq/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "gremlin",
+				"max" : 40,
+				"min" : 30
+			},
+			{
+				"creature" : "stoneGargoyle",
+				"max" : 7,
+				"min" : 5
+			},
+			{
+				"creature" : "ironGolem",
+				"max" : 5,
+				"min" : 4
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "battleforge"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"repairPower" : {
+					"type" : "SPECIFIC_SPELL_POWER",
+					"subtype" : "spell.repair",
+					"val" : 1,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "gremlin",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"castsAmount" : {
+					"type" : "CASTS",
+					"val" : 1,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "gremlin",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			}
+		}
+	}
+}

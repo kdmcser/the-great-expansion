@@ -1,0 +1,106 @@
+{
+	"severan" : {
+		"class" : "necromancer",
+		"spellbook" : [
+			"anchor"
+		],
+		"female" : false,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Severan",
+			"biography" : "Severan experimented on the dead for a long time. Not very liked by the comrades-at-work, he prefers to work in solitude and focus on upgrading his creatures through alchemy.",
+			"specialty" : {
+				"description" : "Walking Dead gain +1 Speed, Regeneration and gain 25% chance to strike the enemy with Acid.",
+				"tooltip" : "Creature Bonus: Walking Dead",
+				"name" : "Walking Dead"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/necropolis/severan/specSmall.png",
+			"specialtyLarge" : "heroes/necropolis/severan/specLarge.png",
+			"large" : "heroes/necropolis/severan/large.png",
+			"small" : "heroes/necropolis/severan/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "walkingDead",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "walkingDead",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "walkingDead",
+				"max" : 8,
+				"min" : 6
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "necromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "corpseLord"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"speed" : {
+					"type" : "STACKS_SPEED",
+					"val" : 1,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "walkingDead",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"regen" : {
+					"type" : "HP_REGENERATION",
+					"val" : 75,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "walkingDead",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"acidBreath" : {
+					"type" : "ACID_BREATH",
+					"val" : 3,
+					"addInfo" : 25,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "walkingDead",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"reduceDefence" : {
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.acidBreath",
+					"val" : 25,
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "walkingDead",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			}
+		}
+	}
+}

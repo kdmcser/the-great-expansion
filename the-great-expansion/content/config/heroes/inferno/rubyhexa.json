@@ -1,0 +1,116 @@
+{
+	"rubyhexa" : {
+		"class" : "heretic",
+		"spellbook" : [
+			"regeneration"
+		],
+		"female" : true,
+		"special" : false,
+		"onlyOnWaterMap" : false,
+		"onlyOnMapWithoutWater" : false,
+
+		"texts" : {
+			"name" : "Rubyhexa",
+			"biography" : "Rubyhexa is a sorceress that is known from her special breed of imps. Although many of them died before she succeeded, now they are flying and biting hard enough that they can pierce even through armor.",
+			"specialty" : {
+				"description" : "Imps in the hero's army gain Flying, but their Health is reduced by 1. They also gain 1-2 Damage every 20 levels.",
+				"tooltip" : "Creature Bonus: Imps",
+				"name" : "Imps"
+			}
+		},
+		"images" : {
+			"specialtySmall" : "heroes/inferno/rubyhexa/specSmall.png",
+			"specialtyLarge" : "heroes/inferno/rubyhexa/specLarge.png",
+			"large" : "heroes/inferno/rubyhexa/large.png",
+			"small" : "heroes/inferno/rubyhexa/small.png"
+		},
+		"army" : [
+			{
+				"creature" : "imp",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "imp",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "imp",
+				"max" : 30,
+				"min" : 20
+			}
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "verminLord"
+			},
+			{
+				"level" : "basic",
+				"skill" : "fireResistance"
+			}
+		],
+
+		"specialty" : {
+			"bonuses" : {
+				"impDamageMax" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax",
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "imp",
+							"includeUpgrades" : true
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 2,
+						"stepSize" : 1
+					}
+				},
+				"impDamageMin" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin",
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "imp",
+							"includeUpgrades" : true
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 1,
+						"stepSize" : 1
+					}
+				},
+				"impHealth" : {
+					"type" : "STACK_HEALTH",
+					"val" : -1,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "imp",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"impSkills" : {
+					"type" : "FLYING",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "imp",
+							"includeUpgrades" : true
+						}
+					]
+				}
+			}
+		}
+	}
+}
