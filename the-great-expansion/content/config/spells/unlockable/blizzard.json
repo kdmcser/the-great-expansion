@@ -110,7 +110,7 @@
 				}
 			},
 			"expert" : {
-				"description" : "{Expert Blizzard}\n\nDeals water damage to the target and prevents it from casting spells.\n\nDamage inflicted is 75 more than from Basic Blizzard, and reduction is more effective than from Basic Blizzard.",
+				"description" : "{Expert Blizzard}\n\nDeals water damage to all units in a small radius and reduces their Defense and Speed.\n\nDamage inflicted is 75 more than from Basic Blizzard, and reduction is more effective than from Basic Blizzard.",
 				"power" : 100,
 				"cost" : 20,
 				"battleEffects" : {

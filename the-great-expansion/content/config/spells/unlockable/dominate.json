@@ -19,7 +19,7 @@
 			"dungeon" : 13,
 			"conflux" : 20
 		},
-		"power" : 60,
+		"power" : 75,
 		"flags" : {
 			"negative" : true
 		},
@@ -68,27 +68,27 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"cost" : 32
+				"cost" : 30
 			},
 			"none" : {
 				"description" : "{Dominate}\n\nTarget troop is put under the hero's control.",
-				"power" : 25,
-				"cost" : 32
+				"power" : 75,
+				"cost" : 30
 			},
 			"basic" : {
 				"description" : "{Basic Dominate}\n\nTarget troop is put under the hero's control.",
-				"power" : 25,
-				"cost" : 27
+				"power" : 75,
+				"cost" : 25
 			},
 			"advanced" : {
-				"description" : "{Advanced Dominate}\n\nTarget troop is put under the hero's control.\n\nHealth threshold is greater by 25 than from Basic Dominate.",
-				"power" : 50,
-				"cost" : 27
+				"description" : "{Advanced Dominate}\n\nTarget troop is put under the hero's control.\n\nHealth threshold is greater by 75 than from Basic Dominate.",
+				"power" : 150,
+				"cost" : 25
 			},
 			"expert" : {
-				"description" : "{Expert Dominate}\n\nDeals fire damage to the target.\n\nHealth threshold is greater by 100 than from Basic Dominate.",
-				"power" : 125,
-				"cost" : 27
+				"description" : "{Expert Dominate}\n\nTarget troop is put under the hero's control.\n\nHealth threshold is greater by 225 than from Basic Dominate.",
+				"power" : 300,
+				"cost" : 25
 			}
 		}
 	}

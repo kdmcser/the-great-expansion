@@ -49,7 +49,7 @@
 				"effects" : {
 					"health" : {
 						"type" : "STACK_HEALTH",
-						"val" : 10,
+						"val" : 8,
 						"valueType" : "PERCENT_TO_ALL",
 						"duration" : "N_TURNS"
 					},
@@ -73,7 +73,7 @@
 				"cost" : 6,
 				"effects" : {
 					"health" : {
-						"val" : 20
+						"val" : 15
 					}
 				}
 			},
@@ -83,7 +83,7 @@
 				"range" : "X",
 				"effects" : {
 					"health" : {
-						"val" : 20
+						"val" : 15
 					}
 				}
 			}

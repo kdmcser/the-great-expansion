@@ -59,7 +59,7 @@
 				},
 				"effects" : {
 					"meleeDmg" : {
-						"val" : -20,
+						"val" : -15,
 						"subtype" : "damageTypeMelee",
 						"type" : "PERCENTAGE_DAMAGE_BOOST",
 						"duration" : "N_TURNS"
@@ -77,23 +77,23 @@
 				"cost" : 9
 			},
 			"advanced" : {
-				"description" : "{Advanced Disarm}\n\nReduces hand-to-hand damage dealt by the target.\n\nThe reduction is  greater than from Basic Disarm.",
+				"description" : "{Advanced Disarm}\n\nReduces hand-to-hand damage dealt by the target.\n\nThe reduction is greater than from Basic Disarm.",
 
 				"cost" : 9,
 				"effects" : {
 					"meleeDmg" : {
-						"val" : -33
+						"val" : -25
 					}
 				}
 			},
 			"expert" : {
 				"range" : "X",
 
-				"description" : "{Expert Disarm}\n\nReduces hand-to-hand damage dealt by all enemy units.\n\nThe reduction is  greater than from Basic Disarm.",
+				"description" : "{Expert Disarm}\n\nReduces hand-to-hand damage dealt by all enemy units.\n\nThe reduction is greater than from Basic Disarm.",
 				"cost" : 9,
 				"effects" : {
 					"meleeDmg" : {
-						"val" : -33
+						"val" : -25
 					}
 				}
 			}

@@ -22,7 +22,7 @@
 			"fortress" : 12,
 			"conflux" : 13
 		},
-		"power" : 5,
+		"power" : 7,
 		"flags" : {
 			"damage" : true,
 			"negative" : true
@@ -56,27 +56,27 @@
 				"targetModifier" : {
 					"smart" : false
 				},
-				"cost" : 5
+				"cost" : 7
 			},
 			"none" : {
 				"description" : "{Acid Burst}\n\nDeals earth damage to enemies in the chosen area.",
-				"power" : 5,
-				"cost" : 5
+				"power" : 7,
+				"cost" : 7
 			},
 			"basic" : {
 				"description" : "{Basic Acid Burst}\n\nDeals earth damage to enemies in the chosen area.",
-				"power" : 5,
-				"cost" : 4
+				"power" : 7,
+				"cost" : 6
 			},
 			"advanced" : {
-				"description" : "{Advanced Acid Burst}\n\nDeals earth damage to enemies in the chosen area.\n\nDamage inflicted is 5 more than Basic Acid Burst.",
-				"power" : 10,
-				"cost" : 4
+				"description" : "{Advanced Acid Burst}\n\nDeals earth damage to enemies in the chosen area.\n\nDamage inflicted is 7 more than Basic Acid Burst.",
+				"power" : 14,
+				"cost" : 6
 			},
 			"expert" : {
-				"description" : "{Expert Acid Burst}\n\nDeals earth damage to enemies in the chosen area.\n\nDamage inflicted is 10 more than Basic Acid Burst.",
-				"power" : 15,
-				"cost" : 4
+				"description" : "{Expert Acid Burst}\n\nDeals earth damage to enemies in the chosen area.\n\nDamage inflicted is 14 more than Basic Acid Burst.",
+				"power" : 21,
+				"cost" : 6
 			}
 		}
 	}

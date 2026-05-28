@@ -1,11 +1,22 @@
 {
-	"name" : "The Great Expansion Beta",
+	"name" : "The Great Expansion",
 	"description" : "This mod adds: \n\n• 135 new artifacts\n\n• 36 new heroes\n\n• 43 new secondary skills\n\n• 14 new map objects\n\n• 39 new spells\n\n\n\nThe mod also changes some of the game configs:\n\n• Creatures can equip creature artifacts\n\nFor more info, check the THE GREAT EXPANSION.pdf.",
 	"modType" : "Expansion",
-	"author" : "Nathill; megan1999 (russian translation), Toriko (some icons), Assets are from: Heroes of Might and Magic II, Heroes of Might and Magic IV, Heroes of Might and Magic V, Epic War IV, Towers Tactics: Aphelion, Warcraft III, League of Legends, Tibia, Sonny 2",
+	"author" : "Nathill; Assets are from: Heroes of Might and Magic II, Heroes of Might and Magic IV, Heroes of Might and Magic V, Epic War IV, Towers Tactics: Aphelion, Warcraft III, League of Legends, Tibia, Sonny 2",
 	"contact" : "",
-	"version" : "0.4.0",
+	"version" : "0.4.1",
 	"changelog" : {
+		"0.4.1" : [
+			"Artifact: Boots of Haste: Changed identifier to differentiate the item from WoG's Boots of Haste.",
+			"Spell: Acid Burst: Damage increased from 5/5/10/15 + 5*SPP to 7/7/14/21 + 7*SPP. Mana cost increased from 5 to 7.",
+			"Spell: Blizzard: Fixed tooltip of Expert Blizzard.",
+			"Spell: Destiny: Also reduces Max Health by 3/4/5.",
+			"Spell: Disarm: Melee damage reduction reduced from 20/20/33/33 to 15/15/25/25%.",
+			"Spell: Dominate: Fixed tooltip of Expert Dominate. Mana cost reduced from 32/27 to 30/25. Health threshold increased from 25/25/50/125 + 60*SPP to 75/75/150/300 + 75*SPP.",
+			"Spell: Venom: Max Health reduction reduced from 10/10/20/20% to 7/7/15/15%.",
+			"Spell: Vitality: Max Health bonus reduced from 10/10/20/20 to 8/8/15/15%.",
+			"Miscellanous: Fixed mod name"
+		],
 		"0.4.0" : [
 			"New artifacts: Arcamaster Ring (+1 spell per turn), Autumn Charm (Casts Expert Wither for 10 turns at the start of each combat), Barbarian Shield (+1 DEF, -10% ranged damage received), Beholder Shield (+4DEF & SPP, grants Ranged Retaliation), Blacksteel Ring (-1 Morale and Luck to enemies), Blood Charm (+1 Damage), Morning Star (+6 KNW, +4 Sight Radius, +400 Move Points on land), Paragon Rune (+2 Attack, Defense, Damage, Speed and Morale), Pirate Boots (+2 Tactics), Pirate Vest (+1 ATK and DEF), Quagmire Rod (+4 SPP & KNW, cast Quicksand at the start of each combat), Ring of the Gog (+25% Fireball damage, grants Expert Fireball), Rune of Arcane Mastery (+2 casts, an cast Expert Bless, Blind and Slow), Rune of Audacious Champion (+7 Speed and Jousting to a creature), Rune of Berserk (Grants Double Attack and Mind Immunity to a creature), Rune of Close Combat (Ranged stack gains +4 Attack, +4 Defense, +50% Health, but also can't shoot), Rune of the Earthlord (Stack gains +3 Defense, Immunity to level 1-3 spells and receives 30% less damage from melee attacks), Rune of Flamefury (+16 Attack, -11 Defense, Fire Shield 20%), Rune of the Skylord (+3 Speed, +1 Luck, +3 Attack, +1 Retaliation, -30% ranged damage received, +20% spell deflection), Stoneheel Totem (Casts Expert Slow for 3 turns at the start of each combat), Treads of Enlightenment (+1 Speed to army, +20% XP gained), Wolf Charm (+1 Max Damage)",
 			"New heroes: Traugutt (Knight, Specialty in Explorer), Evelyn (Cleric, Gives Speed, Max Damage and No Enemy Retaliation to Griffins), Vivian (Ranger, Gives Max Damage to Tier 3+ units), Rindell (Druid, Gains Spellpower), Tarq (Gremlins' Repair is better and has an additional use), Mayed (Volt specialty), Pyraeus (Fire Resistance specialty), Rubyhexa (Imp specialty), Lilian (Most debuffs increase damage received), Severan (Zombie specialty), Adhara (Morale specialty), Sapphire (Intervention specialty), Diev (Attack and Speed during the first round of each combat)",
