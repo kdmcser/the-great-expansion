@@ -32,7 +32,7 @@
 					"type" : "SPECIFIC_SPELL_DAMAGE",
 					"subtype" : "summonBoars",
 					"val" : 14
-				},
+				}
 			}
 		},
 		"basic" : {

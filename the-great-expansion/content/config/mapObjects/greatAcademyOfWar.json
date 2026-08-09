@@ -21,7 +21,7 @@
 						"resources" : {
 							"gold" : -3250
 						},
-						"primary": [
+						"primary" : [
 							{
 								"type" : "attack",
 								"amount" : 1
@@ -38,7 +38,7 @@
 						"resources" : {
 							"gold" : -3250
 						},
-						"primary": [
+						"primary" : [
 							{
 								"type" : "defence",
 								"amount" : 1
@@ -54,7 +54,7 @@
 				],
 				"onSelectMessage" : "{Great Academy of War}\r\n\r\nA strong man dressed in formal clothing greets you \"Welcome. If you wish to extend your combat abilities, this is the place for you.\"",
 				"onEmptyMessage" : "{Great Academy of War}\r\n\r\nA strong man dressed in formal clothing greets you \"Welcome. If you wish to extend your combat abilities, this is the place for you. However, each class costs 3250 gold!\"",
-				
+
 				"description" : "(Increases Attack or Defense permanently at the cost of 3250 gold. Can be used repeatedly.)",
 				"visitMode" : "unlimited",
 				"canRefuse" : true,
@@ -74,7 +74,7 @@
 							"VBAB"
 						]
 					}
-				},
+				}
 			}
 		}
 	}

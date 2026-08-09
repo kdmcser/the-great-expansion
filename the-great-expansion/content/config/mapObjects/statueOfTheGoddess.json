@@ -72,7 +72,7 @@
 							"crystal" : -7,
 							"gems" : -7
 						},
-						"manaPoints": -100,
+						"manaPoints" : -100,
 						"limiter" : {
 							"resources" : {
 								"gold" : 15000,
@@ -81,9 +81,9 @@
 								"mercury" : 7,
 								"sulfur" : 7,
 								"crystal" : 7,
-								"gems" : 7,
+								"gems" : 7
 							},
-							"manaPoints": 100,
+							"manaPoints" : 100
 						},
 						"message" : "Do you wish to upgrade your tier 1 creatures?"
 					},
@@ -142,7 +142,7 @@
 							"crystal" : -7,
 							"gems" : -7
 						},
-						"manaPoints": -100,
+						"manaPoints" : -100,
 						"limiter" : {
 							"resources" : {
 								"gold" : 15000,
@@ -151,9 +151,9 @@
 								"mercury" : 7,
 								"sulfur" : 7,
 								"crystal" : 7,
-								"gems" : 7,
+								"gems" : 7
 							},
-							"manaPoints": 100,
+							"manaPoints" : 100
 						},
 						"message" : "Do you wish to upgrade your tier 2 creatures?"
 					},
@@ -212,7 +212,7 @@
 							"crystal" : -7,
 							"gems" : -7
 						},
-						"manaPoints": -100,
+						"manaPoints" : -100,
 						"limiter" : {
 							"resources" : {
 								"gold" : 15000,
@@ -221,9 +221,9 @@
 								"mercury" : 7,
 								"sulfur" : 7,
 								"crystal" : 7,
-								"gems" : 7,
+								"gems" : 7
 							},
-							"manaPoints": 100,
+							"manaPoints" : 100
 						},
 						"message" : "Do you wish to upgrade your tier 3 creatures?"
 					},
@@ -282,7 +282,7 @@
 							"crystal" : -7,
 							"gems" : -7
 						},
-						"manaPoints": -100,
+						"manaPoints" : -100,
 						"limiter" : {
 							"resources" : {
 								"gold" : 15000,
@@ -291,9 +291,9 @@
 								"mercury" : 7,
 								"sulfur" : 7,
 								"crystal" : 7,
-								"gems" : 7,
+								"gems" : 7
 							},
-							"manaPoints": 100,
+							"manaPoints" : 100
 						},
 						"message" : "Do you wish to upgrade your tier 4 creatures?"
 					},
@@ -352,7 +352,7 @@
 							"crystal" : -7,
 							"gems" : -7
 						},
-						"manaPoints": -100,
+						"manaPoints" : -100,
 						"limiter" : {
 							"resources" : {
 								"gold" : 15000,
@@ -361,9 +361,9 @@
 								"mercury" : 7,
 								"sulfur" : 7,
 								"crystal" : 7,
-								"gems" : 7,
+								"gems" : 7
 							},
-							"manaPoints": 100,
+							"manaPoints" : 100
 						},
 						"message" : "Do you wish to upgrade your tier 5 creatures?"
 					},
@@ -422,7 +422,7 @@
 							"crystal" : -7,
 							"gems" : -7
 						},
-						"manaPoints": -100,
+						"manaPoints" : -100,
 						"limiter" : {
 							"resources" : {
 								"gold" : 15000,
@@ -431,9 +431,9 @@
 								"mercury" : 7,
 								"sulfur" : 7,
 								"crystal" : 7,
-								"gems" : 7,
+								"gems" : 7
 							},
-							"manaPoints": 100,
+							"manaPoints" : 100
 						},
 						"message" : "Do you wish to upgrade your tier 6 creatures?"
 					},
@@ -492,7 +492,7 @@
 							"crystal" : -7,
 							"gems" : -7
 						},
-						"manaPoints": -100,
+						"manaPoints" : -100,
 						"limiter" : {
 							"resources" : {
 								"gold" : 15000,
@@ -501,16 +501,16 @@
 								"mercury" : 7,
 								"sulfur" : 7,
 								"crystal" : 7,
-								"gems" : 7,
+								"gems" : 7
 							},
-							"manaPoints": 100,
+							"manaPoints" : 100
 						},
 						"message" : "Do you wish to upgrade your tier 7 creatures?"
 					}
 				],
 				"onSelectMessage" : "{Statue of the Goddess}\r\n\r\nYou stand before a statue of a goddess. If you wish, you can empower units of a specific tier for all your heroes and towns, increasing their health, damage and speed. The upgrade costs 15000 Gold, 15 Wood, 15 Ore, 7 Mercury, 7 Sulfur, 7 Crystal, 7 Gems and 100 Spell Points.",
 				"onEmptyMessage" : "{Statue of the Goddess}\r\n\r\nYou stand before a statue of a goddess. If you had 15 Wood, 15 Ore, 7 Mercury, 7 Sulfur, 7 Crystals, 7 Gems, 15000 Gold and 100 Mana Points, you could empower units of specific tier in all your towns and heroes.",
-				
+
 				"description" : "(Upgrades units of specific tier for all your towns and heroes at a great cost)",
 				"visitMode" : "unlimited",
 				"canRefuse" : true,
@@ -531,7 +531,7 @@
 							"VVVAV"
 						]
 					}
-				},
+				}
 			}
 		}
 	}

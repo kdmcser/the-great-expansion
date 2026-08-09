@@ -61,7 +61,7 @@
 							{
 								"amount" : 12,
 								"type" : "pegasus"
-							},
+							}
 						],
 
 						"creatures" : [
@@ -94,7 +94,7 @@
 							{
 								"amount" : 18,
 								"type" : "pegasus"
-							},
+							}
 						],
 
 						"creatures" : [
@@ -127,7 +127,7 @@
 							{
 								"amount" : 24,
 								"type" : "pegasus"
-							},
+							}
 						],
 
 						"creatures" : [
@@ -160,7 +160,7 @@
 							{
 								"amount" : 30,
 								"type" : "pegasus"
-							},
+							}
 						],
 
 						"creatures" : [

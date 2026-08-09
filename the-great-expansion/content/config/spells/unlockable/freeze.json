@@ -40,13 +40,15 @@
 			"iconEffect" : "spells/freeze/effect"
 		},
 
-		"animation":{
-			"affect":[ {
-				"effectName" : "freeze"
-			} ]
+		"animation" : {
+			"affect" : [
+				{
+					"effectName" : "freeze"
+				}
+			]
 		},
-		"sounds": {
-			"cast": "PARALYZE"
+		"sounds" : {
+			"cast" : "PARALYZE"
 		},
 
 		"levels" : {

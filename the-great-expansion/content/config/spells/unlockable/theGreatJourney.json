@@ -2,7 +2,7 @@
 	"theGreatJourney" : {
 		"type" : "adventure",
 		"name" : "The Great Journey",
-		"targetType": "NO_TARGET",
+		"targetType" : "NO_TARGET",
 		"school" : {
 			"air" : true,
 			"earth" : false,

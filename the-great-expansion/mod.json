@@ -364,7 +364,7 @@
 		"config/mapObjects/tribalTotem",
 		"config/mapObjects/unholyCitadel",
 		"config/mapObjects/veteransHall",
-		"config/mapObjects/warlocksLibrary",
+		"config/mapObjects/warlocksLibrary"
 	],
 	"settings" : {
 		"modules" : {

@@ -18,8 +18,7 @@
 						}
 					]
 				},
-				"fireballOnAttack" :
-				{
+				"fireballOnAttack" : {
 					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.fireball",
 					"val" : 40,
@@ -30,8 +29,7 @@
 						}
 					]
 				},
-				"fireballStrength" :
-				{
+				"fireballStrength" : {
 					"type" : "SPECIFIC_SPELL_POWER",
 					"subtype" : "spell.fireball",
 					"limiters" : [

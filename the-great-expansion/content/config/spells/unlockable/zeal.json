@@ -87,7 +87,7 @@
 				"cost" : 11,
 				"effects" : {
 					"ferocity" : {
-						"addInfo" : 45,
+						"addInfo" : 45
 					}
 				}
 			},
@@ -97,7 +97,7 @@
 				"range" : "X",
 				"effects" : {
 					"ferocity" : {
-						"addInfo" : 45,
+						"addInfo" : 45
 					}
 				}
 			}

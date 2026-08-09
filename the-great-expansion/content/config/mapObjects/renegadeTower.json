@@ -61,7 +61,7 @@
 							{
 								"amount" : 36,
 								"type" : "archer"
-							},
+							}
 						],
 						"creatures" : [
 							{
@@ -93,7 +93,7 @@
 							{
 								"amount" : 54,
 								"type" : "archer"
-							},
+							}
 						],
 						"creatures" : [
 							{
@@ -125,7 +125,7 @@
 							{
 								"amount" : 72,
 								"type" : "archer"
-							},
+							}
 						],
 						"creatures" : [
 							{
@@ -157,7 +157,7 @@
 							{
 								"amount" : 90,
 								"type" : "archer"
-							},
+							}
 						],
 						"creatures" : [
 							{

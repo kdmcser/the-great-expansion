@@ -20,12 +20,12 @@
 			"dungeon" : 3,
 			"stronghold" : 2,
 			"fortress" : 2,
-			"conflux" : 2,
+			"conflux" : 2
 		},
 		"power" : 42,
 		"flags" : {
-			"rising": true,
-			"positive": true
+			"rising" : true,
+			"positive" : true
 		},
 		"targetCondition" : {
 			"noneOf" : {
@@ -35,11 +35,16 @@
 				"bonus.GARGOYLE" : "absolute"
 			}
 		},
-		"animation":{
-			"affect":[{ "defName" : "C01SPE0", "transparency" : 0.5}]
+		"animation" : {
+			"affect" : [
+				{
+					"defName" : "C01SPE0",
+					"transparency" : 0.5
+				}
+			]
 		},
-		"sounds": {
-			"cast": "RESURECT"
+		"sounds" : {
+			"cast" : "RESURECT"
 		},
 
 		"graphics" : {
@@ -53,13 +58,15 @@
 			"base" : {
 				"range" : "0",
 				"cost" : 32,
-				"targetModifier":{"smart":true},
+				"targetModifier" : {
+					"smart" : true
+				},
 				"power" : 42,
 				"battleEffects" : {
-					"raiseDead":{
-						"id":"vampire",
-						"permanent":true,
-						"type":"core:demonSummon"
+					"raiseDead" : {
+						"id" : "vampire",
+						"permanent" : true,
+						"type" : "core:demonSummon"
 					}
 				}
 			},

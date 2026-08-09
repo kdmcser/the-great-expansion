@@ -43,7 +43,7 @@
 		"sounds" : {
 			"cast" : "spells/iceLance/sfx.wav"
 		},
-		
+
 		"levels" : {
 			"base" : {
 				"range" : "0",
@@ -88,7 +88,7 @@
 					"slow" : {
 						"bonus" : {
 							"speed" : {
-								"val" : -2,
+								"val" : -2
 							}
 						}
 					}
@@ -102,7 +102,7 @@
 					"slow" : {
 						"bonus" : {
 							"speed" : {
-								"val" : -3,
+								"val" : -3
 							}
 						}
 					}

@@ -21,7 +21,7 @@
 						"resources" : {
 							"gold" : -3250
 						},
-						"primary": [
+						"primary" : [
 							{
 								"type" : "spellpower",
 								"amount" : 1
@@ -38,7 +38,7 @@
 						"resources" : {
 							"gold" : -3250
 						},
-						"primary": [
+						"primary" : [
 							{
 								"type" : "knowledge",
 								"amount" : 1
@@ -54,7 +54,7 @@
 				],
 				"onSelectMessage" : "{Great Academy of Magic}\r\n\r\nA wizened woman dressed in formal clothing greets you \"Welcome. If you wish to extend your magic abilities, this is the place for you.\"",
 				"onEmptyMessage" : "{Great Academy of Magic}\r\n\r\nA wizened woman dressed in formal clothing greets you \"Welcome. If you wish to extend your magic abilities, this is the place for you. However, each class costs 3250 gold!\"",
-				
+
 				"description" : "(Increases Spellpower or Knowledge permanently at the cost of 3250 gold. Can be used repeatedly.)",
 				"visitMode" : "unlimited",
 				"canRefuse" : true,
@@ -74,7 +74,7 @@
 							"VVAB"
 						]
 					}
-				},
+				}
 			}
 		}
 	}

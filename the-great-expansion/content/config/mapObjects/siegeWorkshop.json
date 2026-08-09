@@ -54,7 +54,7 @@
 								"gold" : 750
 							},
 							"noneOf" : [
-								{	
+								{
 									"artifacts" : [
 										"firstAidTent"
 									]
@@ -120,7 +120,7 @@
 				],
 				"onSelectMessage" : "{Siege Workshop}\r\n\r\nOi, I got machines and I can make 'em better. So what do ye want?\n\nBallista: Costs 1000 Gold, 3 Wood and 3 Ore.\nFirst Aid Tent: Costs 750 Gold.\nAmmo Cart: Costs 500 Gold, 1 Wood and 1 Ore.\nUpgrade: Costs 800 Gold, 1 Wood and 1 Ore. Increases Health of war machines under player's control by 5 permanently (stacks).",
 				"onEmptyMessage" : "{Siege Workshop}\r\n\r\nOi, yo need some wood, ore and/or gold to get some war machines and/or upgrades.",
-				
+
 				"description" : "(Sells war machines and upgrades their health)",
 				"visitMode" : "unlimited",
 				"canRefuse" : true,
@@ -139,7 +139,7 @@
 							"BAB"
 						]
 					}
-				},
+				}
 			}
 		}
 	}

@@ -40,7 +40,7 @@
 		"sounds" : {
 			"cast" : "spells/meltdown/sfx.wav"
 		},
-		
+
 		"levels" : {
 			"base" : {
 				"range" : "X",

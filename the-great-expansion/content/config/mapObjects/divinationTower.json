@@ -41,7 +41,7 @@
 						"message" : "A blind seer blesses your hero with the blessing of third sight.",
 						"spellCast" : {
 							"spell" : "visions",
-							"schoolLevel": 3
+							"schoolLevel" : 3
 						}
 					}
 				]

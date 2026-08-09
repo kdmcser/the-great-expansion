@@ -15,7 +15,7 @@
 						"GENIE"
 					]
 				},
-				
+
 				"resetParameters" : {
 					"period" : 7,
 					"visitors" : true,
@@ -28,22 +28,40 @@
 						"message" : "{Dwarven Warren}\n\nA tired dwarf meets you. He nods and shouts at other laborers to bring forth what they have already gathered.",
 						"resources" : [
 							{
-								"anyOf" : [ "wood", "ore" ],
+								"anyOf" : [
+									"wood",
+									"ore"
+								],
 								"min" : 0,
 								"max" : 14
 							},
 							{
-								"anyOf" : [ "mercury", "sulfur", "crystal", "gems" ],
+								"anyOf" : [
+									"mercury",
+									"sulfur",
+									"crystal",
+									"gems"
+								],
 								"min" : 0,
 								"max" : 7
 							},
 							{
-								"anyOf" : [ "gold" ],
+								"anyOf" : [
+									"gold"
+								],
 								"min" : 0,
 								"max" : 3427
 							},
 							{
-								"anyOf" : [ "wood", "ore", "mercury", "sulfur", "crystal", "gems", "gold" ],
+								"anyOf" : [
+									"wood",
+									"ore",
+									"mercury",
+									"sulfur",
+									"crystal",
+									"gems",
+									"gold"
+								],
 								"min" : 0,
 								"max" : 10
 							}

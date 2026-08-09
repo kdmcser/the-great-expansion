@@ -65,7 +65,7 @@
 							{
 								"amount" : 16,
 								"type" : "wight"
-							},
+							}
 						],
 
 						"creatures" : [
@@ -102,7 +102,7 @@
 							{
 								"amount" : 24,
 								"type" : "wight"
-							},
+							}
 						],
 
 						"creatures" : [
@@ -139,7 +139,7 @@
 							{
 								"amount" : 32,
 								"type" : "wight"
-							},
+							}
 						],
 
 						"creatures" : [
@@ -176,7 +176,7 @@
 							{
 								"amount" : 40,
 								"type" : "wight"
-							},
+							}
 						],
 
 						"creatures" : [

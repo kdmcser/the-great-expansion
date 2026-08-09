@@ -21,7 +21,7 @@
 						"artifacts" : [
 							{
 								"class" : "TREASURE"
-							},
+							}
 						],
 						"resources" : {
 							"gold" : -2000
@@ -41,7 +41,7 @@
 						"artifacts" : [
 							{
 								"class" : "MINOR"
-							},
+							}
 						],
 						"resources" : {
 							"gold" : -5000
@@ -61,7 +61,7 @@
 						"artifacts" : [
 							{
 								"class" : "MAJOR"
-							},
+							}
 						],
 						"resources" : {
 							"gold" : -10000
@@ -81,7 +81,7 @@
 						"artifacts" : [
 							{
 								"class" : "RELIC"
-							},
+							}
 						],
 						"resources" : {
 							"gold" : -20000
@@ -122,7 +122,7 @@
 							"VA"
 						]
 					}
-				},
+				}
 			}
 		}
 	}

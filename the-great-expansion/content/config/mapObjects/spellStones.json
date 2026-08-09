@@ -49,12 +49,12 @@
 							"min" : 0,
 							"max" : 674
 						},
-						"manaPoints": {
+						"manaPoints" : {
 							"min" : 0,
 							"max" : 13
 						},
 						"manaOverflowFactor" : 100,
-						"movePoints": {
+						"movePoints" : {
 							"min" : 0,
 							"max" : 306
 						},

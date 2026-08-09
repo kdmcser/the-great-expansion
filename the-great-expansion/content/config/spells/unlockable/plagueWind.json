@@ -43,7 +43,7 @@
 		"sounds" : {
 			"cast" : "spells/plagueWind/sfx.wav"
 		},
-		
+
 		"levels" : {
 			"base" : {
 				"range" : "0-2",
