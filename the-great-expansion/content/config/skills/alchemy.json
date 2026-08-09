@@ -1,0 +1,75 @@
+{
+	"alchemy" : {
+		"name" : "Alchemy",
+		"gainChance" : {
+			"might" : 5,
+			"magic" : 5
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"subtype" : "resource.mercury",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Alchemy}\n\nGenerates 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 0
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/alchemy/icons/small/basic",
+				"medium" : "skills/alchemy/icons/medium/basic",
+				"large" : "skills/alchemy/icons/large/basic",
+				"scenarioBonus" : "skills/alchemy/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Alchemy}\n\nGenerates 1 Mercury and 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 1
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/alchemy/icons/small/advanced",
+				"medium" : "skills/alchemy/icons/medium/advanced",
+				"large" : "skills/alchemy/icons/large/advanced",
+				"scenarioBonus" : "skills/alchemy/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Alchemy}\n\nGenerates 2 Mercury and 100 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 2
+				},
+				"gold" : {
+					"val" : 100
+				}
+			},
+			"images" : {
+				"small" : "skills/alchemy/icons/small/expert",
+				"medium" : "skills/alchemy/icons/medium/expert",
+				"large" : "skills/alchemy/icons/large/expert",
+				"scenarioBonus" : "skills/alchemy/icons/large/expert"
+			}
+		}
+	}
+}

@@ -1,0 +1,206 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"goblinTower" : {
+				"name" : "Goblin Tower",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/goblinTower.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VV",
+							"VV",
+							"VB",
+							"VA"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 2988,
+					"rarity" : 71
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the Goblin Tower. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 40,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 40,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 40,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 40,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 40,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 40,
+								"type" : "goblin"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "roc",
+								"upgradeChance" : 0,
+								"amount" : 6
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 60,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 60,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 60,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 60,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 60,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 60,
+								"type" : "goblin"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "roc",
+								"upgradeChance" : 0,
+								"amount" : 9
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 80,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 80,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 80,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 80,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 80,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 80,
+								"type" : "goblin"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "roc",
+								"upgradeChance" : 0,
+								"amount" : 12
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 100,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 100,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 100,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 100,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 100,
+								"type" : "goblin"
+							},
+							{
+								"amount" : 100,
+								"type" : "goblin"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "roc",
+								"upgradeChance" : 0,
+								"amount" : 15
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

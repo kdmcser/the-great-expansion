@@ -1,0 +1,88 @@
+{
+	"raiseWights" : {
+		"type" : "combat",
+		"name" : "Raise Wights",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 4,
+		"defaultGainChance" : 2,
+		"gainChance" : {
+			"castle" : 0,
+			"rampart" : 0,
+			"tower" : 1,
+			"inferno" : 3,
+			"necropolis" : 7,
+			"dungeon" : 3,
+			"stronghold" : 2,
+			"fortress" : 2,
+			"conflux" : 2,
+		},
+		"power" : 30,
+		"flags" : {
+			"rising": true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		},
+		"animation":{
+			"affect":[{ "defName" : "C01SPE0", "transparency" : 0.5}]
+		},
+		"sounds": {
+			"cast": "RESURECT"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/raiseWights/book",
+			"iconScroll" : "spells/raiseWights/scroll",
+			"iconScenarioBonus" : "spells/raiseWights/scenario",
+			"iconEffect" : "spells/raiseWights/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"cost" : 24,
+				"targetModifier":{"smart":true},
+				"power" : 36,
+				"battleEffects" : {
+					"raiseDead":{
+						"id":"wight",
+						"permanent":true,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Raise Wights}\r\n\r\nPermanently raises Wights from the chosen allied corpse.",
+				"cost" : 24,
+				"power" : 36
+			},
+			"basic" : {
+				"description" : "{Basic Raise Wights}\r\n\r\nPermanently raises Wights from the chosen allied corpse.",
+				"cost" : 20,
+				"power" : 36
+			},
+			"advanced" : {
+				"description" : "{Advanced Raise Wights}\r\n\r\nPermanently raises Wights from the chosen allied corpse.\n\nAmount of Wights raised is 50% greater than from Basic Raise Wights.",
+				"cost" : 20,
+				"power" : 54
+			},
+			"expert" : {
+				"description" : "{Expert Raise Wights}\r\n\r\nPermanently raises Wights from the chosen allied corpse.\n\nAmount of Wights raised is 100% greater than from Basic Raise Wights.",
+				"cost" : 20,
+				"power" : 72
+			}
+		}
+	}
+}

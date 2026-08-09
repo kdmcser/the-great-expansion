@@ -9,17 +9,22 @@
 		"base" : {
 			"effects" : {
 				"hypnotize" : {
-					"val" : 12,
+					"val" : 14,
 					"subtype" : "spell.hypnotize",
 					"type" : "SPECIFIC_SPELL_DAMAGE"
 				},
 				"chainLightning" : {
-					"val" : 12,
+					"val" : 14,
 					"subtype" : "spell.chainLightning",
 					"type" : "SPECIFIC_SPELL_DAMAGE"
 				},
+				"blizzard" : {
+					"val" : 25,
+					"subtype" : "blizzard",
+					"type" : "SPECIFIC_SPELL_DAMAGE"
+				},
 				"haste" : {
-					"addInfo" : 0,
+					"addInfo" : 1,
 					"subtype" : "spell.haste",
 					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
 				},
@@ -31,16 +36,19 @@
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 12%.\nChain Lightning deals 12% more damage.",
+			"description" : "{Basic Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 14%.\nChain Lightning deals 14% more damage.\nBlizzard deals 25% more damage.\nHaste increases speed by an additional 1.",
 			"effects" : {
 				"hypnotize" : {
-					"val" : 12
+					"val" : 14
 				},
 				"chainLightning" : {
-					"val" : 12
+					"val" : 14
+				},
+				"blizzard" : {
+					"val" : 25
 				},
 				"haste" : {
-					"addInfo" : 0
+					"addInfo" : 1
 				},
 				"fortune" : {
 					"addInfo" : 0
@@ -54,13 +62,16 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 24%.\nChain Lightning deals 24% more damage.\nHaste increases speed by an additional 1.",
+			"description" : "{Advanced Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 28%.\nChain Lightning deals 28% more damage.\nBlizzard deals 50% more damage.\nHaste increases speed by an additional 1.",
 			"effects" : {
 				"hypnotize" : {
-					"val" : 24
+					"val" : 28
 				},
 				"chainLightning" : {
-					"val" : 24
+					"val" : 28
+				},
+				"blizzard" : {
+					"val" : 50
 				},
 				"haste" : {
 					"addInfo" : 1
@@ -77,16 +88,19 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 36%.\nChain Lightning deals 36% more damage.\nHaste increases speed by an additional 1.\nFortune increases Luck by an additional 1.",
+			"description" : "{Expert Bracadan Magic}\n\nIncreases effectiveness of some spells:\nHypnotize health threshold is increased by 42%.\nChain Lightning deals 42% more damage.\nBlizzard deals 25% more damage.\nHaste increases speed by an additional 2.\nFortune increases Luck by an additional 1.",
 			"effects" : {
 				"hypnotize" : {
-					"val" : 36
+					"val" : 42
 				},
 				"chainLightning" : {
-					"val" : 36
+					"val" : 42
+				},
+				"blizzard" : {
+					"val" : 75
 				},
 				"haste" : {
-					"addInfo" : 1
+					"addInfo" : 2
 				},
 				"fortune" : {
 					"addInfo" : 1

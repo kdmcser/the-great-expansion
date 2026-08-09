@@ -1,0 +1,88 @@
+{
+	"raiseWalkingDead" : {
+		"type" : "combat",
+		"name" : "Raise Walking Dead",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 3,
+		"defaultGainChance" : 2,
+		"gainChance" : {
+			"castle" : 0,
+			"rampart" : 0,
+			"tower" : 1,
+			"inferno" : 3,
+			"necropolis" : 7,
+			"dungeon" : 3,
+			"stronghold" : 2,
+			"fortress" : 2,
+			"conflux" : 2,
+		},
+		"power" : 30,
+		"flags" : {
+			"rising": true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		},
+		"animation":{
+			"affect":[{ "defName" : "C01SPE0", "transparency" : 0.5}]
+		},
+		"sounds": {
+			"cast": "RESURECT"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/raiseWalkingDead/book",
+			"iconScroll" : "spells/raiseWalkingDead/scroll",
+			"iconScenarioBonus" : "spells/raiseWalkingDead/scenario",
+			"iconEffect" : "spells/raiseWalkingDead/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"cost" : 11,
+				"targetModifier":{"smart":true},
+				"power" : 30,
+				"battleEffects" : {
+					"raiseDead":{
+						"id":"walkingDead",
+						"permanent":true,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Raise Walking Dead}\r\n\r\nPermanently raises Walking Dead from the chosen allied corpse.",
+				"cost" : 11,
+				"power" : 30
+			},
+			"basic" : {
+				"description" : "{Basic Raise Walking Dead}\r\n\r\nPermanently raises Walking Dead from the chosen allied corpse.",
+				"cost" : 8,
+				"power" : 30
+			},
+			"advanced" : {
+				"description" : "{Advanced Raise Walking Dead}\r\n\r\nPermanently raises Walking Dead from the chosen allied corpse.\n\nAmount of Walking Dead raised is 50% greater than from Basic Raise Walking Dead.",
+				"cost" : 8,
+				"power" : 45
+			},
+			"expert" : {
+				"description" : "{Expert Raise Walking Dead}\r\n\r\nPermanently raises Walking Dead from the chosen allied corpse.\n\nAmount of Walking Dead raised is 100% greater than from Basic Raise Walking Dead.",
+				"cost" : 8,
+				"power" : 60
+			}
+		}
+	}
+}

@@ -40,7 +40,7 @@
 
 		"animation" : {
 			"affect" : [
-				"spells/regeneration/spell.def"
+				"spells/regeneration/spell.json"
 			]
 		},
 

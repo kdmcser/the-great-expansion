@@ -1,0 +1,51 @@
+{
+	"sapphirePendant" : {
+		"bonuses" : {
+			"immunity" : {
+				"subtype" : "spell.weakness",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"regenerate" : {
+				"type" : "HP_REGENERATION",
+				"val" : 75,
+				"limiters" : [
+					{
+						"type" : "CREATURE_LEVEL_LIMITER",
+						"minLevel" : 5,
+						"maxlevel" : 6
+					}
+				]
+			},
+			"health" : {
+				"type" : "STACK_HEALTH",
+				"val" : 5,
+				"valueType" : "ADDITIVE_VALUE",
+				"limiters" : [
+					{
+						"type" : "CREATURE_LEVEL_LIMITER",
+						"minLevel" : 5,
+						"maxlevel" : 6
+					}
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "NECK",
+		"value" : 4250,
+		"graphics" : {
+			"image" : "artifacts/sapphirePendant/icon",
+			"scenarioBonus" : "artifacts/sapphirePendant/bonus",
+			"map" : "artifacts/sapphirePendant/adventure.def"
+		},
+		"text" : {
+			"description" : "{Sapphire Pendant}\r\n\r\nGrants immunity to Weakness spell to all units in the hero's army and grants your tier 5 units +5 Max Health and 75 Health per turn Regeneration.",
+			"event" : "You find a pendant lying next to a skeleton. You pick it up.",
+			"name" : "Sapphire Pendant"
+		}
+	}
+}

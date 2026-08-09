@@ -1,0 +1,27 @@
+{
+	"frozenStar" : {
+		"bonuses" : {
+			"main" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.water",
+				"val" : 30
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 5250,
+		"graphics" : {
+			"image" : "artifacts/frozenStar/icon",
+			"scenarioBonus" : "artifacts/frozenStar/bonus",
+			"map" : "artifacts/frozenStar/adventure.def"
+		},
+		"text" : {
+			"description" : "{Frozen Star}\r\n\r\nReduces damage received from water spells by 30%.",
+			"event" : "You see a falling star on the sky and decide to follow it. Upon reaching destination, you find a frozen star.",
+			"name" : "Frozen Star"
+		}
+	}
+}

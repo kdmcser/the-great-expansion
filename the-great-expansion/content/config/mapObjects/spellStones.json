@@ -1,0 +1,67 @@
+{
+	"core:treasureChest" : {
+		"types" : {
+			"spellStones" : {
+				"name" : "Spell Stones",
+				"templates" : {
+					"base" : {
+						"animation" : "mapObjects/spellStones.def",
+						"visitableFrom" : [
+							"+++",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"A"
+						]
+					}
+				},
+				"aiValue" : 1000,
+				"rmg" : {
+					"value" : 1000,
+					"rarity" : 1000
+				},
+				"removable" : true,
+				"sounds" : {
+					"visit" : [
+						"CHEST"
+					],
+					"removal" : [
+						"PICKUP01",
+						"PICKUP02",
+						"PICKUP03",
+						"PICKUP04",
+						"PICKUP05",
+						"PICKUP06",
+						"PICKUP07"
+					]
+				},
+				"compatibilityIdentifiers" : [
+					"object"
+				],
+				"blockedVisitable" : true,
+				"onSelectMessage" : "You pick up some spell stone, gaining movement points, mana points and experience.",
+				"visitMode" : "unlimited",
+				"selectMode" : "selectPlayer",
+				"rewards" : [
+					{
+						"heroExperience" : {
+							"min" : 0,
+							"max" : 674
+						},
+						"manaPoints": {
+							"min" : 0,
+							"max" : 13
+						},
+						"manaOverflowFactor" : 100,
+						"movePoints": {
+							"min" : 0,
+							"max" : 306
+						},
+						"removeObject" : true
+					}
+				]
+			}
+		}
+	}
+}

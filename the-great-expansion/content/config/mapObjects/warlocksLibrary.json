@@ -1,0 +1,209 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"warlocksLibrary" : {
+				"name" : "Warlock's Library",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/warlocksLibrary.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVVV",
+							"VVBB",
+							"VVAB"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 5421,
+					"rarity" : 50
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the Warlock's Library. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 56,
+								"type" : "infernalTroglodyte"
+							},
+							{
+								"amount" : 20,
+								"type" : "harpyHag"
+							},
+							{
+								"amount" : 12,
+								"type" : "evilEye"
+							},
+							{
+								"amount" : 8,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 4,
+								"type" : "minotaurKing"
+							},
+							{
+								"amount" : 2,
+								"type" : "scorpicore"
+							}
+						],
+
+						"heroExperience" : 2750,
+						"artifacts" : [
+							{
+								"class" : "MAJOR"
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 84,
+								"type" : "infernalTroglodyte"
+							},
+							{
+								"amount" : 30,
+								"type" : "harpyHag"
+							},
+							{
+								"amount" : 18,
+								"type" : "evilEye"
+							},
+							{
+								"amount" : 12,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 6,
+								"type" : "minotaurKing"
+							},
+							{
+								"amount" : 3,
+								"type" : "scorpicore"
+							}
+						],
+
+						"heroExperience" : 6500,
+						"artifacts" : [
+							{
+								"class" : "MAJOR"
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 112,
+								"type" : "infernalTroglodyte"
+							},
+							{
+								"amount" : 40,
+								"type" : "harpyHag"
+							},
+							{
+								"amount" : 24,
+								"type" : "evilEye"
+							},
+							{
+								"amount" : 16,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 8,
+								"type" : "minotaurKing"
+							},
+							{
+								"amount" : 4,
+								"type" : "scorpicore"
+							}
+						],
+
+						"heroExperience" : 7250,
+						"artifacts" : [
+							{
+								"class" : "MINOR"
+							},
+							{
+								"class" : "MAJOR"
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 140,
+								"type" : "infernalTroglodyte"
+							},
+							{
+								"amount" : 50,
+								"type" : "harpyHag"
+							},
+							{
+								"amount" : 30,
+								"type" : "evilEye"
+							},
+							{
+								"amount" : 20,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 10,
+								"type" : "minotaurKing"
+							},
+							{
+								"amount" : 5,
+								"type" : "scorpicore"
+							}
+						],
+
+						"heroExperience" : 7500,
+						"artifacts" : [
+							{
+								"class" : "RELIC"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

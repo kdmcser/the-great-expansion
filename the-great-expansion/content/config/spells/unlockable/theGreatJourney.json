@@ -1,0 +1,98 @@
+{
+	"theGreatJourney" : {
+		"type" : "adventure",
+		"name" : "The Great Journey",
+		"targetType": "NO_TARGET",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 4,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 6,
+			"rampart" : 6,
+			"inferno" : 5,
+			"necropolis" : 5,
+			"dungeon" : 5
+		},
+		"power" : 10,
+		"flags" : {
+			"indifferent" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/theGreatJourney/book",
+			"iconScroll" : "spells/theGreatJourney/scroll",
+			"iconScenarioBonus" : "spells/theGreatJourney/scenario",
+			"iconEffect" : "spells/theGreatJourney/effect"
+		},
+
+		"sounds" : {
+			"cast" : "FLYSPELL"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10,
+				"adventureEffect" : {
+					"type" : "generic",
+					"castsPerDay" : 1,
+					"bonuses" : {
+						"main" : {
+							"type" : "ROUGH_TERRAIN_DISCOUNT",
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_DAY",
+							"val" : 17
+						},
+						"minCost" : {
+							"type" : "BASE_TILE_MOVEMENT_COST",
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_DAY",
+							"val" : -17
+						}
+					}
+				},
+				"cost" : 24
+			},
+			"none" : {
+				"description" : "{The Great Journey}\n\nReduces cost of travel for the rest of the day.",
+				"cost" : 24
+			},
+			"basic" : {
+				"description" : "{Basic The Great Journey}\n\nReduces cost of travel for the rest of the day.",
+				"cost" : 20
+			},
+			"advanced" : {
+				"description" : "{Advanced The Great Journey}\n\nReduces cost of travel for the rest of the day.\n\nThe reduction is greater than that from Basic The Great Journey.",
+				"cost" : 20,
+				"adventureEffect" : {
+					"bonuses" : {
+						"main" : {
+							"val" : 25
+						},
+						"minCost" : {
+							"val" : -25
+						}
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert The Great Journey}\n\nReduces cost of travel for the rest of the day.\n\nThe reduction is greater than that from Basic The Great Journey.",
+				"cost" : 20,
+				"adventureEffect" : {
+					"bonuses" : {
+						"main" : {
+							"val" : 30
+						},
+						"minCost" : {
+							"val" : -30
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -27,11 +27,16 @@
 					"addInfo" : 0,
 					"subtype" : "spell.slow",
 					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				},
+				"rend" : {
+					"addInfo" : 0,
+					"subtype" : "rend",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
 				}
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Occultism}\n\nIncreases effectiveness of some spells:\nCurse reduces the target's Damage by an additional 1.\nWeakness reduces Attack by an additional 1.\nSlow reduces Speed by an additional 1.\nDisrupting Ray reduces Defense by an additional 1.",
+			"description" : "{Basic Occultism}\n\nIncreases effectiveness of some spells:\nCurse reduces the target's Damage by an additional 1.\nWeakness reduces Attack by an additional 1.\nSlow reduces Speed by an additional 1.\nDisrupting Ray reduces Defense by an additional 1.\nRend reduces Defense by an additional 1.",
 			"effects" : {
 				"curse" : {
 					"addInfo" : 1
@@ -44,6 +49,9 @@
 				},
 				"slow" : {
 					"addInfo" : -1
+				},
+				"rend" : {
+					"addInfo" : -1
 				}
 			},
 			"images" : {
@@ -54,7 +62,7 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Occultism}\n\nIncreases effectiveness of some spells:\nCurse reduces the target's Damage by an additional 2.\nWeakness reduces Attack by an additional 2.\nSlow reduces Speed by an additional 2.\nDisrupting Ray reduces Defense by an additional 2.",
+			"description" : "{Advanced Occultism}\n\nIncreases effectiveness of some spells:\nCurse reduces the target's Damage by an additional 2.\nWeakness reduces Attack by an additional 2.\nSlow reduces Speed by an additional 2.\nDisrupting Ray reduces Defense by an additional 2.\nRend reduces Defense by an additional 2.",
 			"effects" : {
 				"curse" : {
 					"addInfo" : 2
@@ -67,6 +75,9 @@
 				},
 				"slow" : {
 					"addInfo" : -2
+				},
+				"rend" : {
+					"addInfo" : -2
 				}
 			},
 			"images" : {
@@ -77,7 +88,7 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Occultism}\n\nIncreases effectiveness of some spells:\nCurse reduces the target's Damage by an additional 3.\nWeakness reduces Attack by an additional 3.\nSlow reduces Speed by an additional 3.\nDisrupting Ray reduces Defense by an additional 3.",
+			"description" : "{Expert Occultism}\n\nIncreases effectiveness of some spells:\nCurse reduces the target's Damage by an additional 3.\nWeakness reduces Attack by an additional 3.\nSlow reduces Speed by an additional 3.\nDisrupting Ray reduces Defense by an additional 3.\nRend reduces Defense by an additional 3.",
 			"effects" : {
 				"curse" : {
 					"addInfo" : 3
@@ -89,6 +100,9 @@
 					"addInfo" : -3
 				},
 				"slow" : {
+					"addInfo" : -3
+				},
+				"rend" : {
 					"addInfo" : -3
 				}
 			},

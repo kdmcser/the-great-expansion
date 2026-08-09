@@ -1,0 +1,104 @@
+{
+	"huntersMark" : {
+		"type" : "combat",
+		"targetType" : "CREATURE",
+		"name" : "Hunter's Mark",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 1,
+		"power" : 10,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 4,
+			"rampart" : 8,
+			"tower" : 8,
+			"inferno" : 2,
+			"necropolis" : 4,
+			"dungeon" : 4,
+			"stronghold" : 8,
+			"fortress" : 4,
+			"conflux" : 4
+		},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		"flags" : {
+			"negative" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/huntersMark/book",
+			"iconScroll" : "spells/huntersMark/scroll",
+			"iconScenarioBonus" : "spells/huntersMark/scenario",
+			"iconEffect" : "spells/huntersMark/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/huntersMark/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "HCRSSHOT.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10, //power value was missing in original files, it's placeholder
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"damageAmp" : {
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeRanged",
+						"valueType" : "BASE_NUMBER",
+						"val" : -17,
+						"duration" : [
+							"N_TURNS"
+						]
+					},
+				}
+			},
+			"none" : {
+				"description" : "{Hunter's Mark}\n\nIncreases ranged damage received by the target.",
+
+				"cost" : 5
+			},
+			"basic" : {
+				"description" : "{Basic Hunter's Mark}\n\nIncreases ranged damage received by the target",
+
+				"cost" : 4
+			},
+			"advanced" : {
+				"description" : "{Advanced Hunter's Mark}\n\nIncreases ranged damage received by the target.\n\nThe damage amplification is twice as effective as from Basic Hunter's Mark.",
+
+				"cost" : 4,
+				"effects" : {
+					"damageAmp" : {
+						"val" : -33
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Hunter's Mark}\n\nIncreases ranged damage received by all enemy targets.\n\nThe reduction to Defense is twice as effective as from Basic Hunter's Mark.",
+				"cost" : 4,
+				"range" : "X",
+				"effects" : {
+					"damageAmp" : {
+						"val" : -33
+					}
+				}
+			}
+		}
+	}
+}

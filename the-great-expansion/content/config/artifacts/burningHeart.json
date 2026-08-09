@@ -1,0 +1,27 @@
+{
+	"burningHeart" : {
+		"bonuses" : {
+			"main" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.fire",
+				"val" : 30
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 5250,
+		"graphics" : {
+			"image" : "artifacts/burningHeart/icon",
+			"scenarioBonus" : "artifacts/burningHeart/bonus",
+			"map" : "artifacts/burningHeart/adventure.def"
+		},
+		"text" : {
+			"description" : "{Burning Heart}\r\n\r\nReduces damage received from fire spells by 30%.",
+			"event" : "After battling a surprisingly ferocious demon, you rip off its heart and take it as trophy.",
+			"name" : "Burning Heart"
+		}
+	}
+}

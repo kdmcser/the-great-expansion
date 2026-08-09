@@ -1,0 +1,86 @@
+{
+	"arcaneAllies" : {
+		"name" : "Arcane Allies",
+		"gainChance" : {
+			"might" : 1,
+			"magic" : 1
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "MORALE",
+					"val" : 1,
+					"valueType" : "ADDITIVE_VALUE",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "CASTS"
+						}
+					]
+				},
+				"castsCount" : {
+					"type" : "CASTS",
+					"val" : 0,
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "CASTS"
+						}
+					]
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Arcane Allies}\n\nIncreases Morale of all casting units under the hero's control by 1.",
+			"effects" : {
+				"main" : {
+					"val" : 1
+				},
+				"castsCount" : {
+					"val" : 0
+				}
+			},
+			"images" : {
+				"small" : "skills/arcaneAllies/icons/small/basic",
+				"medium" : "skills/arcaneAllies/icons/medium/basic",
+				"large" : "skills/arcaneAllies/icons/large/basic",
+				"scenarioBonus" : "skills/arcaneAllies/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Arcane Allies}\n\nIncreases Morale of all casting units under the hero's control by 2 and their number of casts by 1.",
+			"effects" : {
+				"main" : {
+					"val" : 2
+				},
+				"castsCount" : {
+					"val" : 1
+				}
+			},
+			"images" : {
+				"small" : "skills/arcaneAllies/icons/small/advanced",
+				"medium" : "skills/arcaneAllies/icons/medium/advanced",
+				"large" : "skills/arcaneAllies/icons/large/advanced",
+				"scenarioBonus" : "skills/arcaneAllies/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Arcane Allies}\n\nIncreases Morale of all casting units under the hero's control by 3 and their number of casts by 1.",
+			"effects" : {
+				"main" : {
+					"val" : 3
+				},
+				"castsCount" : {
+					"val" : 1
+				}
+			},
+			"images" : {
+				"small" : "skills/arcaneAllies/icons/small/expert",
+				"medium" : "skills/arcaneAllies/icons/medium/expert",
+				"large" : "skills/arcaneAllies/icons/large/expert",
+				"scenarioBonus" : "skills/arcaneAllies/icons/large/expert"
+			}
+		}
+	}
+}

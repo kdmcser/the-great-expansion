@@ -1,0 +1,44 @@
+{
+	"ancientBook" : {
+		"bonuses" : {
+			"knowledge" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 1,
+				"valueType" : "PERCENT_TO_ALL"
+			},
+			"spellpower" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 1,
+				"valueType" : "PERCENT_TO_ALL"
+			},
+			"castsCount" : {
+				"type" : "CASTS",
+				"val" : 1,
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"bonusType" : "CASTS"
+					}
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 4500,
+		"graphics" : {
+			"image" : "artifacts/ancientBook/icon",
+			"scenarioBonus" : "artifacts/ancientBook/bonus",
+			"map" : "artifacts/ancientBook/adventure.def"
+		},
+		"text" : {
+			"description" : "{Ancient Book}\r\n\r\nIncreases Spellpower and Knowledge by 1.",
+			"event" : "You rummage through your belonging and, to your surprise, find Ancient Book.",
+			"name" : "Ancient Book"
+		}
+	}
+}

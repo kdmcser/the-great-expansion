@@ -4,9 +4,9 @@
 		"targetType" : "CREATURE",
 		"name" : "Heroism",
 		"school" : {
-			"air" : false,
+			"air" : true,
 			"earth" : false,
-			"fire" : true,
+			"fire" : false,
 			"water" : false
 		},
 		"level" : 5,

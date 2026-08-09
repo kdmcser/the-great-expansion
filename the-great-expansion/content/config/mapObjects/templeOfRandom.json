@@ -1,0 +1,1728 @@
+{
+	"templeOfRandom" : {
+		"name" : "Temple of Random",
+		"handler" : "configurable",
+		"types" : {
+			"templeOfRandom" : {
+				"templates" : {
+					"base" : {
+						"animation" : "mapObjects/templeOfRandom.def",
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"VV",
+							"VA"
+						]
+					}
+				},
+				"aiValue" : 2500,
+				"rmg" : {
+					"value" : 2500,
+					"rarity" : 100
+				},
+				"removable" : false,
+				"sounds" : {
+					"visit" : [
+						"MORALE"
+					]
+				},
+				"compatibilityIdentifiers" : [
+					"object"
+				],
+				"description" : "Increases Movement Points and grants a random bonus to the visiting hero: resources, units, permanent upgrades or temporal bonuses. Can be visited once per week.",
+				"onVisitedMessage" : "{Temple of Random}\n\nYou pray at the temple. After you finish, you see a piece of paper flowing in your directions. It reads \"Try again next week\". The gods sure are demanding these days.",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"visitMode" : "once",
+				"rewards" : [
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +5 Attack for the next battle.",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 1
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"subtype" : "primarySkill.attack",
+								"type" : "PRIMARY_SKILL",
+								"val" : 5,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +5 Defense for the next battle.",
+						"appearChance" : {
+							"min" : 1,
+							"max" : 2
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"subtype" : "primarySkill.defence",
+								"type" : "PRIMARY_SKILL",
+								"val" : 5,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero gains +5 Spellpower for the next battle.",
+						"appearChance" : {
+							"min" : 2,
+							"max" : 3
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"subtype" : "primarySkill.spellpower",
+								"type" : "PRIMARY_SKILL",
+								"val" : 5,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +3 Morale for the next battle.",
+						"appearChance" : {
+							"min" : 3,
+							"max" : 4
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "MORALE",
+								"val" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +3 Luck for the next battle.",
+						"appearChance" : {
+							"min" : 4,
+							"max" : 5
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "LUCK",
+								"val" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +3 Max Health for the next battle.",
+						"appearChance" : {
+							"min" : 5,
+							"max" : 6
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "STACK_HEALTH",
+								"val" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +1 Speed for the next battle.",
+						"appearChance" : {
+							"min" : 6,
+							"max" : 7
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "STACKS_SPEED",
+								"val" : 1,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +1 Max Damage for the next battle.",
+						"appearChance" : {
+							"min" : 7,
+							"max" : 8
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageMax",
+								"val" : 1,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units regenerate 18 Health at the start of their turns for the next battle.",
+						"appearChance" : {
+							"min" : 8,
+							"max" : 9
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "HP_REGENERATION",
+								"val" : 18,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your surrender cost is 40% lower for the next battle.",
+						"appearChance" : {
+							"min" : 9,
+							"max" : 10
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "SURRENDER_DISCOUNT",
+								"val" : 40,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero gains +3 to units reposition range for the next battle.",
+						"appearChance" : {
+							"min" : 10,
+							"max" : 11
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "BEFORE_BATTLE_REPOSITION",
+								"val" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero gains 20% more experience from the next battle.",
+						"appearChance" : {
+							"min" : 11,
+							"max" : 12
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero deals 20% more spell damage for the next battle.",
+						"appearChance" : {
+							"min" : 12,
+							"max" : 13
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "SPELL_DAMAGE",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's spells last 3 more turns for the next battle.",
+						"appearChance" : {
+							"min" : 13,
+							"max" : 14
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "SPELL_DURATION",
+								"val" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units are affected by Expert Bless for three rounds for the next battle.",
+						"appearChance" : {
+							"min" : 14,
+							"max" : 15
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "OPENING_BATTLE_SPELL",
+								"subtype" : "spell.bless",
+								"val" : 3,
+								"addInfo" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units are affected by Expert Shield for three rounds for the next battle.",
+						"appearChance" : {
+							"min" : 15,
+							"max" : 16
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "OPENING_BATTLE_SPELL",
+								"subtype" : "spell.shield",
+								"val" : 3,
+								"addInfo" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units are affected by Expert Stone Skin for three rounds for the next battle.",
+						"appearChance" : {
+							"min" : 16,
+							"max" : 17
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "OPENING_BATTLE_SPELL",
+								"subtype" : "spell.stoneSkin",
+								"val" : 3,
+								"addInfo" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Imps.",
+						"appearChance" : {
+							"min" : 17,
+							"max" : 18
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "imp",
+								"upgradeChance" : 0,
+								"amount" : 50
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units are affected by Expert Bloodlust for three rounds for the next battle.",
+						"appearChance" : {
+							"min" : 18,
+							"max" : 19
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "OPENING_BATTLE_SPELL",
+								"subtype" : "spell.bloodlust",
+								"val" : 3,
+								"addInfo" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units are affected by Expert Protection from Fire for three rounds for the next battle.",
+						"appearChance" : {
+							"min" : 19,
+							"max" : 20
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "OPENING_BATTLE_SPELL",
+								"subtype" : "spell.protectFire",
+								"val" : 3,
+								"addInfo" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units are affected by Expert Protection from Water for three rounds for the next battle.",
+						"appearChance" : {
+							"min" : 20,
+							"max" : 21
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "OPENING_BATTLE_SPELL",
+								"subtype" : "spell.protectWater",
+								"val" : 3,
+								"addInfo" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain +3% damage to attack for each tile they move before attacking for the next battle.",
+						"appearChance" : {
+							"min" : 21,
+							"max" : 22
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "JOUSTING",
+								"val" : 3,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units ignore 20% of enemy Defense while attacking for the next battle.",
+						"appearChance" : {
+							"min" : 22,
+							"max" : 23
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "ENEMY_DEFENCE_REDUCTION",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units receive 20% less melee damage for the next battle.",
+						"appearChance" : {
+							"min" : 23,
+							"max" : 24
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "GENERAL_DAMAGE_REDUCTION",
+								"subtype" : "damageTypeMelee",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units receive 25% less ranged damage for the next battle.",
+						"appearChance" : {
+							"min" : 24,
+							"max" : 25
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "GENERAL_DAMAGE_REDUCTION",
+								"subtype" : "damageTypeRanged",
+								"val" : 25,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units receive 17% less damage from attacks for the next battle.",
+						"appearChance" : {
+							"min" : 25,
+							"max" : 26
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "GENERAL_DAMAGE_REDUCTION",
+								"subtype" : "damageTypeBoth",
+								"val" : 17,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units deal 25% more melee damage for the next battle.",
+						"appearChance" : {
+							"min" : 26,
+							"max" : 27
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "PERCENTAGE_DAMAGE_BOOST",
+								"subtype" : "damageTypeMelee",
+								"val" : 25,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units deal 33% more ranged damage for the next battle.",
+						"appearChance" : {
+							"min" : 27,
+							"max" : 28
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "PERCENTAGE_DAMAGE_BOOST",
+								"subtype" : "damageTypeRanged",
+								"val" : 33,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain an additional 13 Defense when defending for the next battle.",
+						"appearChance" : {
+							"min" : 28,
+							"max" : 29
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "DEFENSIVE_STANCE",
+								"val" : 13,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units ignore 20% of enemy attack for the next battle.",
+						"appearChance" : {
+							"min" : 29,
+							"max" : 30
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "ENEMY_ATTACK_REDUCTION",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain 10% life drain for the next battle.",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 31
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "LIFE_DRAIN",
+								"val" : 10,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain 20% chance to deal double damage on attack the next battle.",
+						"appearChance" : {
+							"min" : 31,
+							"max" : 32
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "DOUBLE_DAMAGE_CHANCE",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units reflect 20% of damage received as fire damage back to the attackers the next battle.",
+						"appearChance" : {
+							"min" : 32,
+							"max" : 33
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "FIRE_SHIELD",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain 10% chance to deflect enemy spell for the next battle.",
+						"appearChance" : {
+							"min" : 33,
+							"max" : 34
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "MAGIC_MIRROR",
+								"val" : 10,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain 20% chance to resist enemy spell for the next battle.",
+						"appearChance" : {
+							"min" : 34,
+							"max" : 35
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "MAGIC_RESISTANCE",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units receive 20% less damage from spells for the next battle.",
+						"appearChance" : {
+							"min" : 35,
+							"max" : 36
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "SPELL_DAMAGE_REDUCTION",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain Mind Immunity for the next battle.",
+						"appearChance" : {
+							"min" : 36,
+							"max" : 37
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "MIND_IMMUNITY",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units deal 20% more damage for the next battle.",
+						"appearChance" : {
+							"min" : 37,
+							"max" : 38
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "GENERAL_DAMAGE_PREMY",
+								"val" : 20,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your heroes can move great distance this turn.",
+						"appearChance" : {
+							"min" : 38,
+							"max" : 39
+						},
+						"movePoints" : 1000
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units' defense if converted to 120% that much attack for the next battle.",
+						"appearChance" : {
+							"min" : 39,
+							"max" : 40
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "IN_FRENZY",
+								"val" : 120,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain 2 speed and lose 4 defense for the next battle.",
+						"appearChance" : {
+							"min" : 40,
+							"max" : 41
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "STACKS_SPEED",
+								"val" : 2,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							},
+							{
+								"subtype" : "primarySkill.defence",
+								"type" : "PRIMARY_SKILL",
+								"val" : -4,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your units gain 5 attack and defense but lose 2 speed for the next battle.",
+						"appearChance" : {
+							"min" : 41,
+							"max" : 42
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "STACKS_SPEED",
+								"val" : -2,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							},
+							{
+								"subtype" : "primarySkill.defence",
+								"type" : "PRIMARY_SKILL",
+								"val" : 5,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							},
+							{
+								"subtype" : "primarySkill.attack",
+								"type" : "PRIMARY_SKILL",
+								"val" : 5,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some rare resources.",
+						"appearChance" : {
+							"min" : 42,
+							"max" : 43
+						},
+						"movePoints" : 500,
+						"resources" : [
+							{
+								"anyOf" : [ "mercury", "sulfur", "crystal", "gems" ],
+								"min" : 3,
+								"max" : 7
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some common resources.",
+						"appearChance" : {
+							"min" : 43,
+							"max" : 44
+						},
+						"movePoints" : 500,
+						"resources" : [
+							{
+								"anyOf" : [ "wood", "ore" ],
+								"min" : 6,
+								"max" : 14
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some gold.",
+						"appearChance" : {
+							"min" : 44,
+							"max" : 45
+						},
+						"movePoints" : 500,
+						"resources" : [
+							{
+								"anyOf" : [ "gold" ],
+								"min" : 1667,
+								"max" : 3333
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some resources.",
+						"appearChance" : {
+							"min" : 45,
+							"max" : 46
+						},
+						"movePoints" : 500,
+						"resources" : [
+							{
+								"anyOf" : [ "wood", "ore", "mercury", "sulfur", "crystal", "gems", "gold" ],
+								"min" : 4,
+								"max" : 10
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted a small treasure.",
+						"appearChance" : {
+							"min" : 46,
+							"max" : 47
+						},
+						"movePoints" : 500,
+						"artifacts" : [
+							{
+								"class" : "TREASURE"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some experience.",
+						"appearChance" : {
+							"min" : 47,
+							"max" : 48
+						},
+						"movePoints" : 500,
+						"heroExperience" : 2500,
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some resources.",
+						"appearChance" : {
+							"min" : 48,
+							"max" : 49
+						},
+						"movePoints" : 500,
+						"resources" : {
+							"wood" : 1,
+							"ore" : 1,
+							"mercury" : 1,
+							"sulfur" : 1,
+							"crystal" : 1,
+							"gems" : 1
+						}
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's attack is permanently increased by 1.",
+						"appearChance" : {
+							"min" : 49,
+							"max" : 50
+						},
+						"movePoints" : 500,
+						"primary" : [
+							{
+								"type" : "attack",
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's defense is permanently increased by 1.",
+						"appearChance" : {
+							"min" : 50,
+							"max" : 51
+						},
+						"movePoints" : 500,
+						"primary" : [
+							{
+								"type" : "defence",
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's spellpower is permanently increased by 1.",
+						"appearChance" : {
+							"min" : 51,
+							"max" : 52
+						},
+						"movePoints" : 500,
+						"primary" : [
+							{
+								"type" : "spellpower",
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's knowledge is permanently increased by 1.",
+						"appearChance" : {
+							"min" : 52,
+							"max" : 53
+						},
+						"movePoints" : 500,
+						"primary" : [
+							{
+								"type" : "knowledge",
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Hobgoblins.",
+						"appearChance" : {
+							"min" : 53,
+							"max" : 54
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "hobgoblin",
+								"upgradeChance" : 0,
+								"amount" : 32
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Centaurs.",
+						"appearChance" : {
+							"min" : 54,
+							"max" : 55
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "centaur",
+								"upgradeChance" : 0,
+								"amount" : 25
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Air Elementals.",
+						"appearChance" : {
+							"min" : 55,
+							"max" : 56
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "airElemental",
+								"upgradeChance" : 0,
+								"amount" : 7
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Water Elementals.",
+						"appearChance" : {
+							"min" : 56,
+							"max" : 57
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "waterElemental",
+								"upgradeChance" : 0,
+								"amount" : 8
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Minotaurs.",
+						"appearChance" : {
+							"min" : 57,
+							"max" : 58
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "minotaur",
+								"upgradeChance" : 0,
+								"amount" : 3
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Dragon Flies.",
+						"appearChance" : {
+							"min" : 58,
+							"max" : 59
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "dragonFly",
+								"upgradeChance" : 0,
+								"amount" : 8
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Lizard Warriors.",
+						"appearChance" : {
+							"min" : 59,
+							"max" : 60
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "lizardWarrior",
+								"upgradeChance" : 0,
+								"amount" : 16
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted an Efreet Sultan.",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 61
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "efreetSultan",
+								"upgradeChance" : 0,
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Hell Hounds.",
+						"appearChance" : {
+							"min" : 61,
+							"max" : 62
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "hellHound",
+								"upgradeChance" : 0,
+								"amount" : 7
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Pit Lords.",
+						"appearChance" : {
+							"min" : 62,
+							"max" : 63
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "pitLord",
+								"upgradeChance" : 0,
+								"amount" : 2
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted a Dread Knight.",
+						"appearChance" : {
+							"min" : 63,
+							"max" : 64
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "dreadKnight",
+								"upgradeChance" : 0,
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Liches.",
+						"appearChance" : {
+							"min" : 64,
+							"max" : 65
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "lich",
+								"upgradeChance" : 0,
+								"amount" : 3
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Wights.",
+						"appearChance" : {
+							"min" : 65,
+							"max" : 66
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "wight",
+								"upgradeChance" : 0,
+								"amount" : 10
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Wraiths.",
+						"appearChance" : {
+							"min" : 66,
+							"max" : 67
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "wraith",
+								"upgradeChance" : 0,
+								"amount" : 8
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Battle Dwarves.",
+						"appearChance" : {
+							"min" : 67,
+							"max" : 68
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "battleDwarf",
+								"upgradeChance" : 0,
+								"amount" : 12
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Cyclopes.",
+						"appearChance" : {
+							"min" : 68,
+							"max" : 69
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "cyclop",
+								"upgradeChance" : 0,
+								"amount" : 2
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Ogres.",
+						"appearChance" : {
+							"min" : 69,
+							"max" : 70
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "ogre",
+								"upgradeChance" : 0,
+								"amount" : 6
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Orcs.",
+						"appearChance" : {
+							"min" : 70,
+							"max" : 71
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "orc",
+								"upgradeChance" : 0,
+								"amount" : 13
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Iron Golems.",
+						"appearChance" : {
+							"min" : 71,
+							"max" : 72
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "ironGolem",
+								"upgradeChance" : 0,
+								"amount" : 6
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Stone Golems.",
+						"appearChance" : {
+							"min" : 72,
+							"max" : 73
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "stoneGolem",
+								"upgradeChance" : 0,
+								"amount" : 10
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Enchanters.",
+						"appearChance" : {
+							"min" : 73,
+							"max" : 74
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "enchanter",
+								"upgradeChance" : 0,
+								"amount" : 2
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Reveals a large portion of the map.",
+						"appearChance" : {
+							"min" : 74,
+							"max" : 75
+						},
+						"movePoints" : 500,
+						"revealTiles" : {
+							"radius" : 28,
+							"surface" : 1,
+							"subterra" : 1,
+							"water" : 1,
+							"rock" : 1,
+							"hide" : false
+						}
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is rewarded with hefty amount of spell points.",
+						"appearChance" : {
+							"min" : 75,
+							"max" : 76
+						},
+						"movePoints" : 500,
+						"manaPoints": 75, 
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is rewarded with a spell and a small amount of spell points.",
+						"appearChance" : {
+							"min" : 76,
+							"max" : 77
+						},
+						"movePoints" : 500,
+						"manaPoints": 20, 
+						"spells": [
+							{
+								"level" : 3
+							}
+						],
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is rewarded with two spells and a small amount of spell points.",
+						"appearChance" : {
+							"min" : 77,
+							"max" : 78
+						},
+						"movePoints" : 500,
+						"manaPoints": 14, 
+						"spells": [
+							{
+								"level" : 2
+							},
+							{
+								"level" : 2
+							}
+						],
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero gains 10 spellpower, but loses 5 attack and defense for the next battle.",
+						"appearChance" : {
+							"min" : 78,
+							"max" : 79
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"subtype" : "primarySkill.defence",
+								"type" : "PRIMARY_SKILL",
+								"val" : -5,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							},
+							{
+								"subtype" : "primarySkill.attack",
+								"type" : "PRIMARY_SKILL",
+								"val" : -5,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							},
+							{
+								"subtype" : "primarySkill.spellpower",
+								"type" : "PRIMARY_SKILL",
+								"val" : 10,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some resources.",
+						"appearChance" : {
+							"min" : 79,
+							"max" : 80
+						},
+						"movePoints" : 500,
+						"resources" : [
+							{
+								"anyOf" : [ "wood", "ore", "gold" ],
+								"min" : 10,
+								"max" : 20
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some resources.",
+						"appearChance" : {
+							"min" : 80,
+							"max" : 81
+						},
+						"movePoints" : 500,
+						"resources" : [
+							{
+								"anyOf" : [ "mercury", "sulfur", "crystal", "gems", "gold" ],
+								"min" : 4,
+								"max" : 9
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some resources.",
+						"appearChance" : {
+							"min" : 81,
+							"max" : 82
+						},
+						"movePoints" : 500,
+						"resources" : [
+							{
+								"anyOf" : [ "wood", "ore", "mercury", "sulfur", "crystal", "gems" ],
+								"min" : 4,
+								"max" : 8
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some resources.",
+						"appearChance" : {
+							"min" : 82,
+							"max" : 83
+						},
+						"movePoints" : 500,
+						"resources" : {
+							"wood" : 5,
+							"ore" : 5
+						}
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. You are granted some resources.",
+						"appearChance" : {
+							"min" : 83,
+							"max" : 84
+						},
+						"movePoints" : 500,
+						"resources" : {
+							"mercury" : 1,
+							"crystal" : 1,
+							"sulfur" : 1,
+							"gems" : 1,
+							"gold" : 500
+						}
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's spell points are changed.",
+						"appearChance" : {
+							"min" : 84,
+							"max" : 85
+						},
+						"movePoints" : 500,
+						"manaPercentage": 75, 
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted a Naga Queen.",
+						"appearChance" : {
+							"min" : 85,
+							"max" : 86
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "nagaQueen",
+								"upgradeChance" : 0,
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Master Gremlins.",
+						"appearChance" : {
+							"min" : 86,
+							"max" : 87
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "masterGremlin",
+								"upgradeChance" : 0,
+								"amount" : 38
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Dwarves.",
+						"appearChance" : {
+							"min" : 87,
+							"max" : 88
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "dwarf",
+								"upgradeChance" : 0,
+								"amount" : 18
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Dendroid Soldiers.",
+						"appearChance" : {
+							"min" : 88,
+							"max" : 89
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "dendroidSoldier",
+								"upgradeChance" : 0,
+								"amount" : 3
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Centaur Captains.",
+						"appearChance" : {
+							"min" : 89,
+							"max" : 90
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "centaurCaptain",
+								"upgradeChance" : 0,
+								"amount" : 18
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Wyverns.",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 91
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "wyvern",
+								"upgradeChance" : 0,
+								"amount" : 2
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Magma Elementals.",
+						"appearChance" : {
+							"min" : 91,
+							"max" : 92
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "magmaElemental",
+								"upgradeChance" : 0,
+								"amount" : 5
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Storm Elementals.",
+						"appearChance" : {
+							"min" : 92,
+							"max" : 93
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "stormElemental",
+								"upgradeChance" : 0,
+								"amount" : 5
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is granted some Griffins.",
+						"appearChance" : {
+							"min" : 93,
+							"max" : 94
+						},
+						"movePoints" : 500,
+						"creatures" : [
+							{
+								"type" : "griffin",
+								"upgradeChance" : 0,
+								"amount" : 7
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is rewarded with several spells.",
+						"appearChance" : {
+							"min" : 94,
+							"max" : 95
+						},
+						"movePoints" : 500,
+						"spells": [
+							{
+								"level" : 3
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is rewarded with several spells.",
+						"appearChance" : {
+							"min" : 95,
+							"max" : 96
+						},
+						"movePoints" : 500,
+						"spells": [
+							{
+								"level" : 2
+							},
+							{
+								"level" : 2
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is rewarded with several spells.",
+						"appearChance" : {
+							"min" : 96,
+							"max" : 97
+						},
+						"movePoints" : 500,
+						"spells": [
+							{
+								"level" : 2
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero is rewarded with several spells.",
+						"appearChance" : {
+							"min" : 97,
+							"max" : 98
+						},
+						"movePoints" : 500,
+						"spells": [
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							},
+							{
+								"level" : 1
+							}
+						]
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's movement points are changed this turn.",
+						"appearChance" : {
+							"min" : 98,
+							"max" : 99
+						},
+						"movePercentage": 75,
+						"movePoints" : 500
+					},
+					{
+						"message" : "You pray at the temple and feel refreshed. Your hero's army is immune to level 1 spells for the next battle.",
+						"appearChance" : {
+							"min" : 99,
+							"max" : 100
+						},
+						"movePoints" : 500,
+						"bonuses" : [
+							{
+								"type" : "LEVEL_SPELL_IMMUNITY",
+								"val" : 1,
+								"valueType" : "BASE_NUMBER",
+								"duration" : "ONE_BATTLE",
+								"description" : "Temple of Random"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

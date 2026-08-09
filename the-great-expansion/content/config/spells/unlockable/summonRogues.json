@@ -10,10 +10,10 @@
 			"water" : false
 		},
 		"level" : 3,
-		"defaultGainChance" : 7,
+		"defaultGainChance" : 3,
 		"gainChance" : {
-			"dungeon" : 11,
-			"fortress" : 11
+			"dungeon" : 6,
+			"fortress" : 6
 		},
 		"power" : 20,
 		"flags" : {

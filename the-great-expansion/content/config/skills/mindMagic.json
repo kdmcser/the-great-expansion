@@ -9,14 +9,19 @@
 		"base" : {
 			"effects" : {
 				"frenzy" : {
-					"addInfo" : 15,
+					"addInfo" : 21,
 					"subtype" : "spell.frenzy",
 					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
 				},
 				"hypnotize" : {
 					"subtype" : "spell.hypnotize",
 					"type" : "SPECIFIC_SPELL_DAMAGE",
-					"val" : 10
+					"val" : 14
+				},
+				"dominate" : {
+					"subtype" : "dominate",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 14
 				},
 				"mirth" : {
 					"addInfo" : 0,
@@ -31,13 +36,16 @@
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 15%. Hypnotize's threshold is increased by 15%.",
+			"description" : "{Basic Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 21%. Hypnotize and Dominate thresholds is increased by 14%.",
 			"effects" : {
 				"frenzy" : {
-					"addInfo" : 15
+					"addInfo" : 21
 				},
 				"hypnotize" : {
-					"val" : 15
+					"val" : 14
+				},
+				"dominate" : {
+					"val" : 14
 				},
 				"mirth" : {
 					"addInfo" : 0
@@ -54,13 +62,16 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 30%. Hypnotize's threshold is increased by 30%.",
+			"description" : "{Advanced Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 42%. Hypnotize and Dominate thresholds is increased by 28%.",
 			"effects" : {
 				"frenzy" : {
-					"addInfo" : 30
+					"addInfo" : 42
 				},
 				"hypnotize" : {
-					"val" : 30
+					"val" : 28
+				},
+				"dominate" : {
+					"val" : 28
 				},
 				"mirth" : {
 					"addInfo" : 0
@@ -77,13 +88,16 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 45%. Hypnotize's threshold is increased by 45%. Mirth and Sorrow Morale modifier increased by 1.",
+			"description" : "{Expert Mind Magic}\n\nFrenzy's Defense to Attack bonus increased by 63%. Hypnotize and Dominate thresholds is increased by 42%. Mirth and Sorrow Morale modifier increased by 1.",
 			"effects" : {
 				"frenzy" : {
-					"addInfo" : 45
+					"addInfo" : 63
 				},
 				"hypnotize" : {
-					"val" : 45
+					"val" : 42
+				},
+				"dominate" : {
+					"val" : 42
 				},
 				"mirth" : {
 					"addInfo" : 1

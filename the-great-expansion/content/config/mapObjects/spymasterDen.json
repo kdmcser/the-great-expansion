@@ -1,0 +1,81 @@
+{
+	"spymasterDen" : {
+		"name" : "Spymaster's Den",
+		"handler" : "configurable",
+		"types" : {
+			"default" : {
+				"blockedVisitable" : true,
+				"name" : "Spymaster's Den",
+				"rmg" : {
+					"value" : 4639,
+					"rarity" : 50,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : [
+						"MYSTERY"
+					]
+				},
+				"rewards" : [
+					{
+						"revealTiles" : {
+							"radius" : 50,
+							"surface" : 1,
+							"subterra" : 1,
+							"water" : 1,
+							"rock" : 1,
+							"hide" : false
+						},
+						"resources" : {
+							"wood" : -2,
+							"ore" : -2,
+							"mercury" : -2,
+							"sulfur" : -2,
+							"crystal" : -2,
+							"gems" : -2,
+							"gold" : -1500
+						},
+						"limiter" : {
+							"resources" : {
+								"wood" : 2,
+								"ore" : 2,
+								"mercury" : 2,
+								"sulfur" : 2,
+								"crystal" : 2,
+								"gems" : 2,
+								"gold" : 1500
+							}
+						},
+						"message" : "{Spymaster's Den}\r\n\r\nHello there! If you want, I could go on a mission to scout a huge area for you. I just need some resources to complete the task."
+					}
+				],
+				"onSelectMessage" : "{Spymaster's Den}\r\n\r\nHello there! If you want, I could go on a mission to scout a huge area for you. I just need some resources to complete the task.",
+				"onVisitedMessage" : "{Spymaster's Den}\r\n\r\nYou try to contact the local spymaster, but it seems there's noone inside.",
+				"onEmptyMessage" : "{Spymaster's Den}\r\n\r\nHello there! If you want, I could go on a mission to scout a huge area for you. I just need some resources you seem to not have. (2 of each resource, 1500 gold)",
+				"visitMode" : "once",
+				"resetParameters" : {
+					"period" : 3,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"canRefuse" : true,
+				"selectMode" : "selectPlayer",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/spymasterDen.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"VBB",
+							"VBA"
+						]
+					}
+				},
+			}
+		}
+	}
+}

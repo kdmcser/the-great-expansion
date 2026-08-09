@@ -9,7 +9,7 @@
 	"spell.the-great-expansion.anchor.description.expert" : "{Эксперт Якорь}\n\nСнижает Защиту цели и лишает ее возможности двигаться. Эффект снимается, когда существо получает урон.\n\nСнижение защиты в три раза эффективнее, чем Основной Якорь.",
 	"spell.the-great-expansion.anchor.description.none" : "{Якорь}\n\nСнижает Защиту цели и лишает ее возможности двигаться. Эффект снимается, когда существо получает урон.",
 	"spell.the-great-expansion.anchor.name" : "Якорь",
-	"spell.the-great-expansion.blockedSummonEnchanters.name" : "Призыв Чародеев",
+	"spell.the-great-expansion.summonersAmbushSpell.name" : "Призыв Чародеев",
 	"spell.the-great-expansion.coldDeath.description.advanced" : "{Продвинутый Потоп}\n\nНаносит урон от Воды, достаточный для того, чтобы убить количество существ, равное 2+сила заклинания.",
 	"spell.the-great-expansion.coldDeath.description.basic" : "{Основной Потоп}\n\nНаносит урон от Воды, достаточный для того, чтобы убить количество существ, равное 1+сила заклинания.",
 	"spell.the-great-expansion.coldDeath.description.expert" : "{Эксперт Потоп}\n\nНаносит урон от Воды, достаточный для того, чтобы убить количество существ, равное 3+сила заклинания.",

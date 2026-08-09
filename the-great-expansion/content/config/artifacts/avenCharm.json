@@ -1,0 +1,27 @@
+{
+	"avenCharm" : {
+		"bonuses" : {
+			"main" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.air",
+				"val" : 30
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 5250,
+		"graphics" : {
+			"image" : "artifacts/avenCharm/icon",
+			"scenarioBonus" : "artifacts/avenCharm/bonus",
+			"map" : "artifacts/avenCharm/adventure.def"
+		},
+		"text" : {
+			"description" : "{Aven Charm}\r\n\r\nReduces damage received from air spells by 30%.",
+			"event" : "A seagull flies above you for some time now, so you decide to take it down. To your surprise, you find Aven Charm where the bird landed.",
+			"name" : "Aven Charm"
+		}
+	}
+}

@@ -10,9 +10,9 @@
 			"water" : false
 		},
 		"level" : 4,
-		"defaultGainChance" : 7,
+		"defaultGainChance" : 3,
 		"gainChance" : {
-			"necropolis" : 15
+			"necropolis" : 7
 		},
 		"power" : 54,
 		"flags" : {

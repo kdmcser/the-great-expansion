@@ -10,9 +10,9 @@
 			"water" : true
 		},
 		"level" : 1,
-		"defaultGainChance" : 7,
+		"defaultGainChance" : 3,
 		"gainChance" : {
-			"castle" : 15
+			"castle" : 7
 		},
 		"power" : 4,
 		"flags" : {

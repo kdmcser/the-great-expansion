@@ -1,0 +1,48 @@
+{
+	"ancientTeacher" : {
+		"name" : "Ancient Teacher",
+		"handler" : "configurable",
+		"types" : {
+			"ancientTeacher" : {
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/ancientTeacher.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"VVB",
+							"VVA"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 6000,
+					"rarity" : 71
+				},
+				"blockedVisitable" : false,
+				"onVisited" : [
+					{
+						"message" : "The ancient teacher has already taught you. He stays silent and unmoving, as if he was just a statue."
+					}
+				],
+				"visitMode" : "hero",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"message" : "A deep voice calls you to listen for a while. After reaching its source, you find a statue of an ancient entity who tells you stories of different worlds.",
+						"heroExperience" : 6000, 
+					}
+				]
+			}
+		}
+	}
+}

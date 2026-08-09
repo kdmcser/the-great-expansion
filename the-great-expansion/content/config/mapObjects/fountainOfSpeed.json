@@ -1,0 +1,62 @@
+{
+	"fountainOfSpeed" : {
+		"name" : "Fountain of Speed",
+		"handler" : "configurable",
+		"types" : {
+			"fountainOfSpeed" : {
+				"templates" : {
+					"base" : {
+						"animation" : "mapObjects/fountainOfSpeed.def",
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"VV",
+							"VA"
+						]
+					}
+				},
+				"aiValue" : 400,
+				"rmg" : {
+					"value" : 400,
+					"rarity" : 13
+				},
+				"removable" : false,
+				"sounds" : {
+					"visit" : [
+						"MORALE"
+					]
+				},
+				"compatibilityIdentifiers" : [
+					"object"
+				],
+				"description" : "Increases Movement Points and Speed of units for the next battle.",
+				"visitMode" : "bonus",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"message" : "Your army drinks from the Fountain of Speed. They are refreshed and eager to move.",
+						"movePoints" : 400,
+						"bonuses" : [
+							{
+								"type" : "STACKS_SPEED",
+								"val" : 1,
+								"duration" : "ONE_BATTLE",
+								"description" : "Fountain of Speed +1"
+							},
+							{
+								"type" : "STACKS_SPEED",
+								"val" : 10,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "ONE_BATTLE",
+								"description" : "Fountain of Speed +10%"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

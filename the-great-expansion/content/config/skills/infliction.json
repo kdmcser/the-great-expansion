@@ -30,10 +30,10 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Infliction}\n\nIncreases duration of the hero's spells by 3 turns.",
+			"description" : "{Advanced Infliction}\n\nIncreases duration of the hero's spells by 10 turns.",
 			"effects" : {
 				"main" : {
-					"val" : 3
+					"val" : 10
 				}
 			},
 			"images" : {
@@ -44,10 +44,20 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Infliction}\n\nIncreases duration of the hero's spells by 5 turns.",
+			"description" : "{Expert Infliction}\n\nIncreases duration of the hero's spells by 10 turns. Also reduces enemy units' Magic Immunity Level Threshold by 1.",
 			"effects" : {
 				"main" : {
-					"val" : 5
+					"val" : 10
+				},
+				"magicImmunity" : {
+					"type" : "LEVEL_SPELL_IMMUNITY",
+					"val" : -1,
+					"valueType" : "BASE_NUMBER",
+					"propagator" : "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [
+						"OPPOSITE_SIDE"
+					]
 				}
 			},
 			"images" : {

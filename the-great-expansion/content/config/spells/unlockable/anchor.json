@@ -40,7 +40,7 @@
 
 		"animation" : {
 			"affect" : [
-				"spells/anchor/spell.def"
+				"spells/anchor/spell.json"
 			]
 		},
 

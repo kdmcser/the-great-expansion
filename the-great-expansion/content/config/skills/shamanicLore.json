@@ -27,23 +27,31 @@
 					"addInfo" : 0,
 					"subtype" : "spell.counterstrike",
 					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
-				}
+				},
+				"summonBoar" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "summonBoars",
+					"val" : 14
+				},
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 1.\nFire Shield reflects an additional 3% damage.",
+			"description" : "{Basic Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 1.\nFire Shield reflects an additional 4% damage.\nHaste increases Speed by an additional 1.\nSummon Boars summons 14% more units.",
 			"effects" : {
 				"fireShield" : {
-					"addInfo" : 3
+					"addInfo" : 4
 				},
 				"bloodlust" : {
 					"addInfo" : 1
 				},
 				"haste" : {
-					"addInfo" : 0
+					"addInfo" : 1
 				},
 				"counterstrike" : {
 					"addInfo" : 0
+				},
+				"summonBoar" : {
+					"val" : 14
 				}
 			},
 			"images" : {
@@ -54,10 +62,10 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 1.\nFire Shield reflects an additional 6% damage.\nHaste increases Speed by an additional 1.",
+			"description" : "{Advanced Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 1.\nFire Shield reflects an additional 7% damage.\nHaste increases Speed by an additional 1.\nSummon Boars summons 28% more units.",
 			"effects" : {
 				"fireShield" : {
-					"addInfo" : 6
+					"addInfo" : 7
 				},
 				"bloodlust" : {
 					"addInfo" : 1
@@ -67,6 +75,9 @@
 				},
 				"counterstrike" : {
 					"addInfo" : 0
+				},
+				"summonBoar" : {
+					"val" : 28
 				}
 			},
 			"images" : {
@@ -77,19 +88,22 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 2.\nCounterstrike grants 1 additional counterattack.\nFire Shield reflects an additional 9% damage.\nHaste increases Speed by an additional 1.",
+			"description" : "{Expert Shamanic Lore}\n\nIncreases effectiveness of some spells:\nBloodlust increases Attack by an additional 2.\nCounterstrike grants 1 additional counterattack.\nFire Shield reflects an additional 11% damage.\nHaste increases Speed by an additional 2.\nSummon Boars summons 42% more units.",
 			"effects" : {
 				"fireShield" : {
-					"addInfo" : 9
+					"addInfo" : 11
 				},
 				"bloodlust" : {
 					"addInfo" : 2
 				},
 				"haste" : {
-					"addInfo" : 1
+					"addInfo" : 2
 				},
 				"counterstrike" : {
 					"addInfo" : 1
+				},
+				"summonBoar" : {
+					"val" : 42
 				}
 			},
 			"images" : {

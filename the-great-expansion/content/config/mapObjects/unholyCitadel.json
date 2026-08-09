@@ -1,0 +1,190 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"unholyCitadel" : {
+				"name" : "Unholy Citadel",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/unholyCitadel.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"VVV",
+							"VBB",
+							"VAB"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 4980,
+					"rarity" : 50
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the Unholy Citadel. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 10,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 10,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 10,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 10,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 10,
+								"type" : "hornedDemon"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "devil",
+								"upgradeChance" : 0,
+								"amount" : 2
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 15,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 15,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 15,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 15,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 15,
+								"type" : "hornedDemon"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "devil",
+								"upgradeChance" : 0,
+								"amount" : 3
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 20,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 20,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 20,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 20,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 20,
+								"type" : "hornedDemon"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "devil",
+								"upgradeChance" : 0,
+								"amount" : 4
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 25,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 25,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 25,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 25,
+								"type" : "hornedDemon"
+							},
+							{
+								"amount" : 25,
+								"type" : "hornedDemon"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "devil",
+								"upgradeChance" : 0,
+								"amount" : 5
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

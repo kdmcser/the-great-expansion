@@ -1,0 +1,75 @@
+{
+	"veteransHall" : {
+		"name" : "Veteran's Hall",
+		"handler" : "configurable",
+		"types" : {
+			"veteransHall" : {
+				"name" : "Veteran's Hall",
+				"description" : "(Increases max damage of t3+ units permanently)",
+				"rmg" : {
+					"value" : 25372,
+					"rarity" : 100
+				},
+				"sounds" : {
+					"visit" : [
+						"NOMAD"
+					]
+				},
+				"rewards" : [
+					{
+						"message" : "{Veteran's Hall}\r\n\r\nYou are invited by a venerable warrior, who helps you train your troops.\n\n(Units of tier 3+ in the hero's army permanently have their damage increased by 1)",
+
+						"bonuses" : [
+							{
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageMin",
+								"val" : 1,
+								"valueType" : "ADDITIVE_VALUE",
+								"limiters" : [
+									{
+										"type" : "CREATURE_LEVEL_LIMITER",
+										"minLevel" : 3,
+										"maxlevel" : 63
+									}
+								],
+								"duration" : "PERMANENT",
+								"description" : "Veteran's Hall Damage Bonus"
+							},
+							{
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageMax",
+								"val" : 1,
+								"valueType" : "ADDITIVE_VALUE",
+								"limiters" : [
+									{
+										"type" : "CREATURE_LEVEL_LIMITER",
+										"minLevel" : 3,
+										"maxlevel" : 63
+									}
+								],
+								"duration" : "PERMANENT",
+								"description" : "Veteran's Hall Damage Bonus"
+							}
+						]
+					}
+				],
+				"onVisitedMessage" : "{Veteran's Hall}\r\n\r\nYou are greeted by a venerable warrior, who only shakes his head sadly. It seems he won't have any more time to train your troops.",
+				"visitMode" : "hero",
+				"templates" : {
+					"veteransHall" : {
+						"animation" : "mapObjects/veteransHall.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			}
+		}
+	}
+}

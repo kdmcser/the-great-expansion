@@ -40,7 +40,7 @@
 
 		"animation" : {
 			"affect" : [
-				"spells/doom/spell.def"
+				"spells/doom/spell.json"
 			]
 		},
 

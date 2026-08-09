@@ -9,38 +9,46 @@
 		"base" : {
 			"effects" : {
 				"lightningBolt" : {
-					"val" : 12,
+					"val" : 14,
 					"subtype" : "spell.lightningBolt",
 					"type" : "SPECIFIC_SPELL_DAMAGE"
 				},
 				"meteorShower" : {
-					"val" : 12,
+					"val" : 14,
 					"subtype" : "spell.meteorShower",
 					"type" : "SPECIFIC_SPELL_DAMAGE"
 				},
+				"acidBurst" : {
+					"val" : 14,
+					"subtype" : "acidBurst",
+					"type" : "SPECIFIC_SPELL_DAMAGE"
+				},
 				"haste" : {
-					"addInfo" : 0,
+					"addInfo" : 1,
 					"subtype" : "spell.haste",
 					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
 				},
 				"stoneSkin" : {
-					"addInfo" : 0,
+					"addInfo" : 1,
 					"subtype" : "spell.stoneSkin",
 					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
 				}
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt and Meteor Shower damage increased by 12%.\nStone Skin increases Defense by an additional 1.",
+			"description" : "{Basic Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt, Acid Burst and Meteor Shower damage increased by 14%.\nStone Skin increases Defense by an additional 1.\nHaste increases Speed by an additional 1.",
 			"effects" : {
 				"lightningBolt" : {
-					"val" : 12
+					"val" : 14
 				},
 				"meteorShower" : {
-					"val" : 12
+					"val" : 14
+				},
+				"acidBurst" : {
+					"val" : 14
 				},
 				"haste" : {
-					"addInfo" : 0
+					"addInfo" : 1
 				},
 				"stoneSkin" : {
 					"addInfo" : 1
@@ -54,13 +62,16 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt and Meteor Shower damage increased by 24%.\nStone Skin increases Defense by an additional 1.\nHaste increases Speed by an additional 1.",
+			"description" : "{Advanced Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt, Acid Burst and Meteor Shower damage increased by 28%.\nStone Skin increases Defense by an additional 1.\nHaste increases Speed by an additional 1.",
 			"effects" : {
 				"lightningBolt" : {
-					"val" : 24
+					"val" : 28
 				},
 				"meteorShower" : {
-					"val" : 24
+					"val" : 28
+				},
+				"acidBurst" : {
+					"val" : 28
 				},
 				"haste" : {
 					"addInfo" : 1
@@ -77,16 +88,19 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt and Meteor Shower damage increased by 36%.\nStone Skin increases Defense by an additional 2.\nHaste increases Speed by an additional 1.",
+			"description" : "{Expert Nighonian Sorcery}\n\nIncreases effectiveness of some spells:\nLightning Bolt, Acid Burst and Meteor Shower damage increased by 42%.\nStone Skin increases Defense by an additional 2.\nHaste increases Speed by an additional 2.",
 			"effects" : {
 				"lightningBolt" : {
-					"val" : 36
+					"val" : 42
 				},
 				"meteorShower" : {
-					"val" : 36
+					"val" : 42
+				},
+				"acidBurst" : {
+					"val" : 42
 				},
 				"haste" : {
-					"addInfo" : 1
+					"addInfo" : 2
 				},
 				"stoneSkin" : {
 					"addInfo" : 2

@@ -1,0 +1,88 @@
+{
+	"raiseVampires" : {
+		"type" : "combat",
+		"name" : "Raise Vampires",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 5,
+		"defaultGainChance" : 2,
+		"gainChance" : {
+			"castle" : 0,
+			"rampart" : 0,
+			"tower" : 1,
+			"inferno" : 3,
+			"necropolis" : 7,
+			"dungeon" : 3,
+			"stronghold" : 2,
+			"fortress" : 2,
+			"conflux" : 2,
+		},
+		"power" : 42,
+		"flags" : {
+			"rising": true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		},
+		"animation":{
+			"affect":[{ "defName" : "C01SPE0", "transparency" : 0.5}]
+		},
+		"sounds": {
+			"cast": "RESURECT"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/raiseVampires/book",
+			"iconScroll" : "spells/raiseVampires/scroll",
+			"iconScenarioBonus" : "spells/raiseVampires/scenario",
+			"iconEffect" : "spells/raiseVampires/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"cost" : 32,
+				"targetModifier":{"smart":true},
+				"power" : 42,
+				"battleEffects" : {
+					"raiseDead":{
+						"id":"vampire",
+						"permanent":true,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Raise Vampires}\r\n\r\nPermanently raises Vampires from the chosen allied corpse.",
+				"cost" : 32,
+				"power" : 42
+			},
+			"basic" : {
+				"description" : "{Basic Raise Vampires}\r\n\r\nPermanently raises Vampires from the chosen allied corpse.",
+				"cost" : 27,
+				"power" : 42
+			},
+			"advanced" : {
+				"description" : "{Advanced Raise Vampires}\r\n\r\nPermanently raises Vampires from the chosen allied corpse.\n\nAmount of Vampires raised is 50% greater than from Basic Raise Vampires.",
+				"cost" : 27,
+				"power" : 63
+			},
+			"expert" : {
+				"description" : "{Expert Raise Vampires}\r\n\r\nPermanently raises Vampires from the chosen allied corpse.\n\nAmount of Vampires raised is 100% greater than from Basic Raise Vampires.",
+				"cost" : 27,
+				"power" : 84
+			}
+		}
+	}
+}

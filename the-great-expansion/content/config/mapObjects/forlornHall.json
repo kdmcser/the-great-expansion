@@ -1,0 +1,174 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"forlornHall" : {
+				"name" : "Forlorn Hall",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/forlornHall.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVBB",
+							"VVBB",
+							"VVAB"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 3140,
+					"rarity" : 41
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the Forlorn Hall. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 4,
+								"type" : "lich"
+							},
+							{
+								"amount" : 2,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 4,
+								"type" : "lich"
+							},
+							{
+								"amount" : 2,
+								"type" : "blackKnight"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "boneDragon",
+								"upgradeChance" : 0,
+								"amount" : 2
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 6,
+								"type" : "lich"
+							},
+							{
+								"amount" : 3,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 6,
+								"type" : "lich"
+							},
+							{
+								"amount" : 3,
+								"type" : "blackKnight"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "boneDragon",
+								"upgradeChance" : 0,
+								"amount" : 3
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 8,
+								"type" : "lich"
+							},
+							{
+								"amount" : 4,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 8,
+								"type" : "lich"
+							},
+							{
+								"amount" : 4,
+								"type" : "blackKnight"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "boneDragon",
+								"upgradeChance" : 0,
+								"amount" : 4
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 10,
+								"type" : "lich"
+							},
+							{
+								"amount" : 5,
+								"type" : "blackKnight"
+							},
+							{
+								"amount" : 10,
+								"type" : "lich"
+							},
+							{
+								"amount" : 5,
+								"type" : "blackKnight"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "boneDragon",
+								"upgradeChance" : 0,
+								"amount" : 5
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

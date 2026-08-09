@@ -1,0 +1,27 @@
+{
+	"primordialStar" : {
+		"bonuses" : {
+			"main" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.earth",
+				"val" : 30
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 5250,
+		"graphics" : {
+			"image" : "artifacts/primordialStar/icon",
+			"scenarioBonus" : "artifacts/primordialStar/bonus",
+			"map" : "artifacts/primordialStar/adventure.def"
+		},
+		"text" : {
+			"description" : "{Primordial Star}\r\n\r\nReduces damage received from earth spells by 30%.",
+			"event" : "You see a falling star on the sky and decide to follow it. Upon reaching destination, you find a frozen star.",
+			"name" : "Primordial Star"
+		}
+	}
+}

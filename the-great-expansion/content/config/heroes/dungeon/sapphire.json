@@ -2,7 +2,7 @@
 	"sapphire" : {
 		"class" : "warlock",
 		"spellbook" : [
-			"intervention"
+			"smite"
 		],
 		"female" : true,
 		"special" : false,
@@ -13,9 +13,9 @@
 			"name" : "Sapphire",
 			"biography" : "Sapphire was once an erathian cleric, devout to the cause. Multiple hardships and lack of understanding from everyone around caused her to abandon all she believed in and join the Nighonians in a way to destroy once her kingdom.",
 			"specialty" : {
-				"description" : "Increases damage dealt by the Intervention spell by 7% every N hero levels, where N is the level of target creature.",
-				"tooltip" : "Spell Bonus: Intervention",
-				"name" : "Intervention"
+				"description" : "Increases damage dealt by the Smite spell by 7% every N hero levels, where N is the level of target creature.",
+				"tooltip" : "Spell Bonus: Smite",
+				"name" : "Smite"
 			}
 		},
 		"images" : {
@@ -54,8 +54,8 @@
 
 		"specialty" : {
 			"bonuses" : {
-				"interventionBonus" : {
-					"subtype" : "intervention",
+				"smiteBonus" : {
+					"subtype" : "smite",
 					"type" : "SPECIAL_SPELL_LEV",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 7

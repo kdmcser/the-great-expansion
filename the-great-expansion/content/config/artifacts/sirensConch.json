@@ -1,0 +1,55 @@
+{
+	"sirensConch" : {
+		"bonuses" : {
+			"immunity" : {
+				"subtype" : "spell.hypnotize",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"hypnotizeOnAttack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.hypnotize",
+				"val" : 25,
+				"limiters" : [
+					{
+						"type" : "CREATURE_LEVEL_LIMITER",
+						"minLevel" : 4,
+						"maxlevel" : 5
+					}
+				]
+				
+			},
+			"hypnotizeStrength" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.hypnotize",
+				"val" : 9,
+				"limiters" : [
+					{
+						"type" : "CREATURE_LEVEL_LIMITER",
+						"minLevel" : 4,
+						"maxlevel" : 5
+					}
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 4500,
+		"graphics" : {
+			"image" : "artifacts/sirensConch/icon",
+			"scenarioBonus" : "artifacts/sirensConch/bonus",
+			"map" : "artifacts/sirensConch/adventure.def"
+		},
+		"text" : {
+			"description" : "{Siren's Conch}\r\n\r\nGrants immunity to Hypnotize spell to all units in the hero's army and grants your tier 4 units Hypnotizing attack.",
+			"event" : "You walk through a shore and find a peculiar shell.",
+			"name" : "Siren's Conch"
+		}
+	}
+}

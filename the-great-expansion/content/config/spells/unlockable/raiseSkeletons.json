@@ -1,0 +1,88 @@
+{
+	"raiseSkeletons" : {
+		"type" : "combat",
+		"name" : "Raise Skeletons",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 2,
+		"defaultGainChance" : 2,
+		"gainChance" : {
+			"castle" : 0,
+			"rampart" : 0,
+			"tower" : 1,
+			"inferno" : 3,
+			"necropolis" : 7,
+			"dungeon" : 3,
+			"stronghold" : 2,
+			"fortress" : 2,
+			"conflux" : 2,
+		},
+		"power" : 12,
+		"flags" : {
+			"rising": true,
+			"positive": true
+		},
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.NON_LIVING" : "absolute",
+				"bonus.MECHANICAL" : "absolute",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.GARGOYLE" : "absolute"
+			}
+		},
+		"animation":{
+			"affect":[{ "defName" : "C01SPE0", "transparency" : 0.5}]
+		},
+		"sounds": {
+			"cast": "RESURECT"
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/raiseSkeletons/book",
+			"iconScroll" : "spells/raiseSkeletons/scroll",
+			"iconScenarioBonus" : "spells/raiseSkeletons/scenario",
+			"iconEffect" : "spells/raiseSkeletons/effect"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"cost" : 8,
+				"targetModifier":{"smart":true},
+				"power" : 12,
+				"battleEffects" : {
+					"raiseDead":{
+						"id":"skeleton",
+						"permanent":true,
+						"type":"core:demonSummon"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Raise Skeletons}\r\n\r\nPermanently raises Skeletons from the chosen allied corpse.",
+				"cost" : 8,
+				"power" : 12
+			},
+			"basic" : {
+				"description" : "{Basic Raise Skeletons}\r\n\r\nPermanently raises Skeletons from the chosen allied corpse.",
+				"cost" : 6,
+				"power" : 12
+			},
+			"advanced" : {
+				"description" : "{Advanced Raise Skeletons}\r\n\r\nPermanently raises Skeletons from the chosen allied corpse.\n\nAmount of Skeletons raised is 50% greater than from Basic Raise Skeletons.",
+				"cost" : 6,
+				"power" : 18
+			},
+			"expert" : {
+				"description" : "{Expert Raise Skeletons}\r\n\r\nPermanently raises Skeletons from the chosen allied corpse.\n\nAmount of Skeletons raised is 100% greater than from Basic Raise Skeletons.",
+				"cost" : 6,
+				"power" : 24
+			}
+		}
+	}
+}

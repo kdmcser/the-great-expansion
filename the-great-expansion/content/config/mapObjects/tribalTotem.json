@@ -1,8 +1,9 @@
 {
-	"core:idolOfFortune" : {
+	"tribalTotem" : {
+		"name" : "Tribal Totem",
+		"handler" : "configurable",
 		"types" : {
 			"tribalTotem" : {
-				"name" : "Tribal Totem",
 				"templates" : {
 					"base" : {
 						"animation" : "mapObjects/tribalTotem.def",
@@ -20,7 +21,7 @@
 				"aiValue" : 400,
 				"rmg" : {
 					"value" : 400,
-					"rarity" : 12
+					"rarity" : 13
 				},
 				"removable" : false,
 				"sounds" : {

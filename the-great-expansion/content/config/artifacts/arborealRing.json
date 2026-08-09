@@ -10,7 +10,7 @@
 			},
 			"growth" : {
 				"type" : "CREATURE_GROWTH_PERCENT",
-				"val" : 40,
+				"val" : 10,
 				"propagator" : "PLAYER"
 			}
 		},
@@ -19,14 +19,14 @@
 		],
 		"class" : "RELIC",
 		"slot" : "RING",
-		"value" : 14750,
+		"value" : 15000,
 		"graphics" : {
 			"image" : "artifacts/arborealRing/icon",
 			"scenarioBonus" : "artifacts/arborealRing/bonus",
 			"map" : "artifacts/arborealRing/adventure.def"
 		},
 		"text" : {
-			"description" : "{Arboreal Ring}\r\n\r\nGrants the wielder 750 Gold per day and increases weekly creature growth in all controlled towns by 40%.",
+			"description" : "{Arboreal Ring}\r\n\r\nGrants the wielder 750 Gold per day and increases weekly creature growth in all controlled towns by 10%.",
 			"event" : "During your travels, a mad mage picks a fight with you and starts casting multiple fireballs at you. A single lightning bolt from your fingers zaps the mage to a crisp, leaving only dust and a magic ring.",
 			"name" : "Arboreal Ring"
 		}

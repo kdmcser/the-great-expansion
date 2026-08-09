@@ -1,0 +1,129 @@
+{
+	"smugglersCart" : {
+		"name" : "Smugglers' Cart",
+		"handler" : "configurable",
+		"types" : {
+			"default" : {
+				"blockedVisitable" : false,
+				"name" : "Smugglers' Cart",
+				"rmg" : {
+					"value" : 2605,
+					"rarity" : 100,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : [
+						"MYSTERY"
+					]
+				},
+				"rewards" : [
+					{
+						"artifacts" : [
+							{
+								"class" : "TREASURE"
+							},
+						],
+						"resources" : {
+							"gold" : -2000
+						},
+						"appearChance" : {
+							"min" : 0,
+							"max" : 53
+						},
+						"limiter" : {
+							"resources" : {
+								"gold" : 2000
+							}
+						},
+						"message" : "{Smugglers' Cart}\r\n\r\n'I have something nice for you if you are willing to buy. Only 2000 gold! Just don't mention where you bought it."
+					},
+					{
+						"artifacts" : [
+							{
+								"class" : "MINOR"
+							},
+						],
+						"resources" : {
+							"gold" : -5000
+						},
+						"appearChance" : {
+							"min" : 53,
+							"max" : 78
+						},
+						"limiter" : {
+							"resources" : {
+								"gold" : 5000
+							}
+						},
+						"message" : "{Smugglers' Cart}\r\n\r\n'I have something nice for you if you are willing to buy. Only 5000 gold! Just don't mention where you bought it."
+					},
+					{
+						"artifacts" : [
+							{
+								"class" : "MAJOR"
+							},
+						],
+						"resources" : {
+							"gold" : -10000
+						},
+						"appearChance" : {
+							"min" : 78,
+							"max" : 93
+						},
+						"limiter" : {
+							"resources" : {
+								"gold" : 10000
+							}
+						},
+						"message" : "{Smugglers' Cart}\r\n\r\n'I have something nice for you if you are willing to buy. Only 10000 gold! Just don't mention where you bought it."
+					},
+					{
+						"artifacts" : [
+							{
+								"class" : "RELIC"
+							},
+						],
+						"resources" : {
+							"gold" : -20000
+						},
+						"appearChance" : {
+							"min" : 93,
+							"max" : 100
+						},
+						"limiter" : {
+							"resources" : {
+								"gold" : 20000
+							}
+						},
+						"message" : "{Smugglers' Cart}\r\n\r\n'I have something nice for you if you are willing to buy. Only 20000 gold! Just don't mention where you bought it."
+					}
+				],
+				"onSelectMessage" : "{Smugglers' Cart}\r\n\r\n'I have something nice for you if you are willing to buy. Just don't mention where you bought it.",
+				"onVisitedMessage" : "{Smugglers' Cart}\r\n\r\n'Sorry, but I have nothing right now. Come back in a few days and I'm sure I'll surprise you!",
+				"onEmptyMessage" : "{Smugglers' Cart}\r\n\r\n'I do have something that could pique your interest, but I don't think you can afford it.",
+				"visitMode" : "once",
+				"resetParameters" : {
+					"period" : 5,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"canRefuse" : true,
+				"selectMode" : "selectPlayer",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/smugglersCart.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VV",
+							"VA"
+						]
+					}
+				},
+			}
+		}
+	}
+}

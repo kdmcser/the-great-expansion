@@ -21,7 +21,7 @@
 			"description" : "{Basic Electromancy}\n\nBlasts all enemies with a weak lightning at the start of each combat (deals 3*Spellpower damage).",
 			"effects" : {
 				"main" : {
-					"addInfo" : 1
+					"subtype" : "spell.instantLightning",
 				}
 			},
 			"images" : {
@@ -32,10 +32,10 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Electromancy}\n\nBlasts all enemies with a medium lightning at the start of each combat (deals 35+3*Spellpower damage).",
+			"description" : "{Advanced Electromancy}\n\nBlasts all enemies with a medium lightning at the start of each combat (deals 6*Spellpower damage).",
 			"effects" : {
 				"main" : {
-					"addInfo" : 2
+					"subtype" : "spell.instantLightning2",
 				}
 			},
 			"images" : {
@@ -46,10 +46,10 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Electromancy}\n\nBlasts all enemies with a strong lightning at the start of each combat (deals 75+3*Spellpower damage).",
+			"description" : "{Expert Electromancy}\n\nBlasts all enemies with a strong lightning at the start of each combat (deals 9*Spellpower damage).",
 			"effects" : {
 				"main" : {
-					"addInfo" : 3
+					"subtype" : "spell.instantLightning3",
 				}
 			},
 			"images" : {

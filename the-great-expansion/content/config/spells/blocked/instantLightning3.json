@@ -1,0 +1,60 @@
+{
+	"instantLightning3" : {
+		"type" : "ability",
+		"name" : "Expert Electromancy",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 0,
+		"defaultGainChance" : 0,
+		"power" : 9,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"animation" : {
+			"affect" : [
+				{
+					"defName" : "C03SPA0",
+					"verticalPosition" : "bottom"
+				},
+				"C11SPA1"
+			]
+		},
+		"sounds" : {
+			"cast" : "LIGHTBLT"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"power" : 9,
+				"cost" : 0,
+				"description" : "",
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				}
+			},
+			"none" : {
+				"power" : 0
+			},
+			"basic" : {
+				"power" : 0
+			},
+			"advanced" : {
+				"power" : 0
+			},
+			"expert" : {
+				"power" : 0
+			}
+		}
+	}
+}

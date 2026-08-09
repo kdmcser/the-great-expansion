@@ -1,0 +1,70 @@
+{
+	"grandmastersHall" : {
+		"name" : "Grandmaster's Hall",
+		"handler" : "configurable",
+		"types" : {
+			"grandmastersHall" : {
+				"name" : "Grandmaster's Hall",
+				"description" : "(Increases max health and max damage of units permanently)",
+				"rmg" : {
+					"value" : 32000,
+					"rarity" : 38
+				},
+				"sounds" : {
+					"visit" : [
+						"NOMAD"
+					]
+				},
+				"rewards" : [
+					{
+						"message" : "{Grandmaster's Hall}\r\n\r\nYou are invited by an imposing warrior, who helps you train your troops.\n\n(Units in the hero's army permanently have their damage and health increased by 6%.)",
+
+						"bonuses" : [
+							{
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageMin",
+								"val" : 6,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "PERMANENT",
+								"description" : "Grandmaster's Hall Damage Bonus"
+							},
+							{
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageMax",
+								"val" : 6,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "PERMANENT",
+								"description" : "Grandmaster's Hall Damage Bonus"
+							},
+							{
+								"type" : "STACK_HEALTH",
+								"val" : 6,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "PERMANENT",
+								"description" : "Heroic Shrine Health Bonus"
+							}
+						]
+					}
+				],
+				"onVisitedMessage" : "{Grandmaster's Hall}\r\n\r\nYou are greeted by a venerable warrior, who only shakes his head sadly. It seems he won't have any more time to train your troops.",
+				"visitMode" : "hero",
+				"templates" : {
+					"grandmastersHall" : {
+						"animation" : "mapObjects/grandmastersHall.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVBV",
+							"VBBB",
+							"VBAB"
+						]
+					}
+				}
+			}
+		}
+	}
+}

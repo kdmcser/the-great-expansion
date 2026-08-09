@@ -1,0 +1,113 @@
+{
+	"iceLance" : {
+		"type" : "combat",
+		"name" : "Ice Lance",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 1,
+		"defaultGainChance" : 18,
+		"gainChance" : {
+			"castle" : 19,
+			"rampart" : 20,
+			"tower" : 19,
+			"inferno" : 17,
+			"necropolis" : 16,
+			"dungeon" : 16,
+			"stronghold" : 16,
+			"fortress" : 17,
+			"conflux" : 19
+		},
+		"power" : 10,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/iceLance/book",
+			"iconScroll" : "spells/iceLance/scroll",
+			"iconScenarioBonus" : "spells/iceLance/scenario",
+			"iconEffect" : "spells/iceLance/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/iceLance/spell.json"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/iceLance/sfx.wav"
+		},
+		
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 0,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"slow" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"speed" : {
+								"type" : "STACKS_SPEED",
+								"val" : -1,
+								"duration" : "N_TURNS",
+								"turns" : 1
+							}
+						}
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"cost" : 7
+			},
+			"none" : {
+				"description" : "{Ice Lance}\n\nDeals water damage to the target and reduces its Speed for one turn.",
+				"power" : 10,
+				"cost" : 7
+			},
+			"basic" : {
+				"description" : "{Basic Ice Lance}\n\nDeals water damage to the target and reduces its Speed for one turn.",
+				"power" : 10,
+				"cost" : 6
+			},
+			"advanced" : {
+				"description" : "{Advanced Ice Lance}\n\nDeals water damage to the target and reduces its Speed for one turn.\n\nDamage inflicted is 10 more and Speed reduction is 1 more than Basic Ice Lance.",
+				"power" : 20,
+				"cost" : 6,
+				"battleEffects" : {
+					"slow" : {
+						"bonus" : {
+							"speed" : {
+								"val" : -2,
+							}
+						}
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Ice Lance}\n\nDeals water damage to the target and reduces its Speed for one turn.\n\nDamage inflicted is 20 more and Speed reduction is 2 more than Basic Ice Lance.",
+				"power" : 30,
+				"cost" : 6,
+				"battleEffects" : {
+					"slow" : {
+						"bonus" : {
+							"speed" : {
+								"val" : -3,
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

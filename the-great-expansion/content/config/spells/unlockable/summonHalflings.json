@@ -10,7 +10,7 @@
 			"water" : false
 		},
 		"level" : 2,
-		"defaultGainChance" : 11,
+		"defaultGainChance" : 6,
 		"power" : 8,
 		"flags" : {
 			"indifferent" : true

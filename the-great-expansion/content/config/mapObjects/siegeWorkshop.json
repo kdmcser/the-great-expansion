@@ -1,0 +1,146 @@
+{
+	"siegeWorkshop" : {
+		"name" : "Siege Workshop",
+		"handler" : "configurable",
+		"types" : {
+			"default" : {
+				"blockedVisitable" : false,
+				"name" : "Siege Workshop",
+				"rmg" : {
+					"value" : 2800,
+					"rarity" : 20,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : [
+						"MYSTERY"
+					]
+				},
+				"rewards" : [
+					{
+						"resources" : {
+							"gold" : -1000,
+							"wood" : -1,
+							"ore" : -1
+						},
+						"artifacts" : [
+							"ballista"
+						],
+						"limiter" : {
+							"resources" : {
+								"gold" : 1000,
+								"wood" : 1,
+								"ore" : 1
+							},
+							"noneOf" : [
+								{
+									"artifacts" : [
+										"ballista"
+									]
+								}
+							]
+						},
+						"message" : "Oi, you buying Ballista for 1000 gold, 1 wood and 1 ore?"
+					},
+					{
+						"resources" : {
+							"gold" : -750
+						},
+						"artifacts" : [
+							"firstAidTent"
+						],
+						"limiter" : {
+							"resources" : {
+								"gold" : 750
+							},
+							"noneOf" : [
+								{	
+									"artifacts" : [
+										"firstAidTent"
+									]
+								}
+							]
+						},
+						"message" : "Oi, you buying First Aid Tent for 750 gold?"
+					},
+					{
+						"resources" : {
+							"gold" : -500,
+							"wood" : -1,
+							"ore" : -1
+						},
+						"artifacts" : [
+							"ammoCart"
+						],
+						"limiter" : {
+							"resources" : {
+								"gold" : 500,
+								"wood" : 1,
+								"ore" : 1
+							},
+							"noneOf" : [
+								{
+									"artifacts" : [
+										"ammoCart"
+									]
+								}
+							]
+						},
+						"message" : "Oi, you buying Ammo Cart for 500 gold, 1 wood and 1 ore?"
+					},
+					{
+						"resources" : {
+							"gold" : -800,
+							"wood" : -1,
+							"ore" : -1
+						},
+						"limiter" : {
+							"resources" : {
+								"gold" : 800,
+								"wood" : 1,
+								"ore" : 1
+							}
+						},
+						"bonuses" : [
+							{
+								"type" : "STACK_HEALTH",
+								"val" : 5,
+								"propagator" : "PLAYER",
+								"propagationUpdater" : "BONUS_OWNER_UPDATER",
+								"limiters" : [
+									{
+										"type" : "HAS_ANOTHER_BONUS_LIMITER",
+										"bonusType" : "SIEGE_WEAPON"
+									}
+								]
+							}
+						],
+						"message" : "Oi, you buying an upgrade for 800 gold, 1 wood and 1 ore? It will increase Max Health of all war machines owned by all your heroes by 5."
+					}
+				],
+				"onSelectMessage" : "{Siege Workshop}\r\n\r\nOi, I got machines and I can make 'em better. So what do ye want?\n\nBallista: Costs 1000 Gold, 3 Wood and 3 Ore.\nFirst Aid Tent: Costs 750 Gold.\nAmmo Cart: Costs 500 Gold, 1 Wood and 1 Ore.\nUpgrade: Costs 800 Gold, 1 Wood and 1 Ore. Increases Health of war machines under player's control by 5 permanently (stacks).",
+				"onEmptyMessage" : "{Siege Workshop}\r\n\r\nOi, yo need some wood, ore and/or gold to get some war machines and/or upgrades.",
+				
+				"description" : "(Sells war machines and upgrades their health)",
+				"visitMode" : "unlimited",
+				"canRefuse" : true,
+				"selectMode" : "selectPlayer",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/siegeWorkshop.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"VBB",
+							"BAB"
+						]
+					}
+				},
+			}
+		}
+	}
+}

@@ -8,9 +8,21 @@
 		"specialty" : [], // generic specialty not applicable
 		"base" : {
 			"effects" : {
-				"speed" : {
-					"type" : "STACKS_SPEED",
-					"val" : 0,
+				"defense" : {
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER",
+					"limiters" : [
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"creature" : "walkingDead",
+							"includeUpgrades" : true
+						}
+					]
+				},
+				"attack" : {
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
 					"valueType" : "BASE_NUMBER",
 					"limiters" : [
 						{
@@ -23,10 +35,13 @@
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Corpse Lord}\n\nIncreases Walking Dead's Speed by 1.",
+			"description" : "{Basic Corpse Lord}\n\nIncreases Walking Dead's Attack and Defense by 2.",
 			"effects" : {
-				"speed" : {
-					"val" : 1
+				"attack" : {
+					"val" : 2
+				},
+				"defense" : {
+					"val" : 2
 				}
 			},
 			"images" : {
@@ -37,10 +52,13 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Corpse Lord}\n\nIncreases Walking Dead's Speed by 2.",
+			"description" : "{Advanced Corpse Lord}\n\nIncreases Walking Dead's Attack and Defense by 3.",
 			"effects" : {
-				"speed" : {
-					"val" : 2
+				"attack" : {
+					"val" : 3
+				},
+				"defense" : {
+					"val" : 3
 				}
 			},
 			"images" : {
@@ -51,10 +69,13 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Corpse Lord}\n\nIncreases Walking Dead's Speed by 2. Necromancy now raises Walking Dead instead of Skeletons.",
+			"description" : "{Expert Corpse Lord}\n\nIncreases Walking Dead's Attack and Defense by 3. Necromancy now raises Walking Dead instead of Skeletons.",
 			"effects" : {
-				"speed" : {
-					"val" : 2
+				"attack" : {
+					"val" : 3
+				},
+				"defense" : {
+					"val" : 3
 				},
 				"walkingDead" : {
 					"type" : "IMPROVED_NECROMANCY",

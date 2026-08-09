@@ -1,0 +1,189 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"templeOfTheTides" : {
+				"name" : "Temple of the Tides",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/templeOfTheTides.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVV",
+							"VBV",
+							"BAB"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 3268,
+					"rarity" : 50
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the Temple of the Tides. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 10,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 10,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 10,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 10,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 10,
+								"type" : "waterElemental"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "psychicElemental",
+								"upgradeChance" : 0,
+								"amount" : 4
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 15,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 15,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 15,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 15,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 15,
+								"type" : "waterElemental"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "psychicElemental",
+								"upgradeChance" : 0,
+								"amount" : 6
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 20,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 20,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 20,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 20,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 20,
+								"type" : "waterElemental"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "psychicElemental",
+								"upgradeChance" : 0,
+								"amount" : 8
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 25,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 25,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 25,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 25,
+								"type" : "waterElemental"
+							},
+							{
+								"amount" : 25,
+								"type" : "waterElemental"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "psychicElemental",
+								"upgradeChance" : 0,
+								"amount" : 10
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

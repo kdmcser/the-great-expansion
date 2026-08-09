@@ -10,9 +10,9 @@
 			"water" : false
 		},
 		"level" : 5,
-		"defaultGainChance" : 11,
+		"defaultGainChance" : 6,
 		"gainChance" : {
-			"rampart" : 22
+			"rampart" : 11
 		},
 		"power" : 18,
 		"flags" : {

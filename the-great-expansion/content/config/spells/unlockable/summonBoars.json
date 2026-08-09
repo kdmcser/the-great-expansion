@@ -10,9 +10,9 @@
 			"water" : false
 		},
 		"level" : 3,
-		"defaultGainChance" : 7,
+		"defaultGainChance" : 3,
 		"gainChance" : {
-			"stronghold" : 15
+			"stronghold" : 7
 		},
 		"power" : 30,
 		"flags" : {

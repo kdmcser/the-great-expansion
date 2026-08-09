@@ -1,0 +1,106 @@
+{
+	"zeal" : {
+		"type" : "combat",
+		"targetType" : "CREATURE",
+		"name" : "Zeal",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 3,
+		"power" : 10,
+		"defaultGainChance" : 7,
+		"gainChance" : {
+			"castle" : 8,
+			"rampart" : 4,
+			"tower" : 2,
+			"inferno" : 8,
+			"necropolis" : 2,
+			"dungeon" : 8,
+			"stronghold" : 10,
+			"fortress" : 8,
+			"conflux" : 2
+		},
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+		"flags" : {
+			"positive" : true
+		},
+
+		"graphics" : {
+			"iconBook" : "spells/zeal/book",
+			"iconScroll" : "spells/zeal/scroll",
+			"iconScenarioBonus" : "spells/zeal/scenario",
+			"iconEffect" : "spells/zeal/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/zeal/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/zeal/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10, //power value was missing in original files, it's placeholder
+				"targetModifier" : {
+					"smart" : true
+				},
+				"effects" : {
+					"ferocity" : {
+						"type" : "FEROCITY",
+						"val" : 1,
+						"addInfo" : 110,
+						"valueType" : "BASE_NUMBER",
+						"duration" : "N_TURNS"
+					},
+					"mindImmunity" : {
+						"type" : "MIND_IMMUNITY",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Zeal}\n\nGrants the target Mind Immunity and an additional attack if the main attack kills at least 110 units.",
+
+				"cost" : 14
+			},
+			"basic" : {
+				"description" : "{Basic Zeal}\n\nGrants the target Mind Immunity and an additional attack if the main attack kills at least 110 units.",
+
+				"cost" : 11
+			},
+			"advanced" : {
+				"description" : "{Advanced Zeal}\n\nGrants the target Mind Immunity and an additional attack if the main attack kills at least 45 units.",
+
+				"cost" : 11,
+				"effects" : {
+					"ferocity" : {
+						"addInfo" : 45,
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Zeal}\n\nGrants all friendly units Mind Immunity and an additional attack if the main attack kills at least 45 units.",
+				"cost" : 11,
+				"range" : "X",
+				"effects" : {
+					"ferocity" : {
+						"addInfo" : 45,
+					}
+				}
+			}
+		}
+	}
+}

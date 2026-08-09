@@ -1,0 +1,81 @@
+{
+	"greatAcademyOfMagic" : {
+		"name" : "Great Academy of Magic",
+		"handler" : "configurable",
+		"types" : {
+			"default" : {
+				"blockedVisitable" : false,
+				"name" : "Great Academy of Magic",
+				"rmg" : {
+					"value" : 3214,
+					"rarity" : 14,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : [
+						"MYSTERY"
+					]
+				},
+				"rewards" : [
+					{
+						"resources" : {
+							"gold" : -3250
+						},
+						"primary": [
+							{
+								"type" : "spellpower",
+								"amount" : 1
+							}
+						],
+						"limiter" : {
+							"resources" : {
+								"gold" : 3250
+							}
+						},
+						"message" : "{Great Academy of Magic}\r\n\r\nA wizened woman dressed in formal clothing greets you \"Welcome. If you wish to extend your magic abilities, this is the place for you.\""
+					},
+					{
+						"resources" : {
+							"gold" : -3250
+						},
+						"primary": [
+							{
+								"type" : "knowledge",
+								"amount" : 1
+							}
+						],
+						"limiter" : {
+							"resources" : {
+								"gold" : 3250
+							}
+						},
+						"message" : "{Great Academy of Magic}\r\n\r\nA wizened woman dressed in formal clothing greets you \"Welcome. If you wish to extend your magic abilities, this is the place for you.\""
+					}
+				],
+				"onSelectMessage" : "{Great Academy of Magic}\r\n\r\nA wizened woman dressed in formal clothing greets you \"Welcome. If you wish to extend your magic abilities, this is the place for you.\"",
+				"onEmptyMessage" : "{Great Academy of Magic}\r\n\r\nA wizened woman dressed in formal clothing greets you \"Welcome. If you wish to extend your magic abilities, this is the place for you. However, each class costs 3250 gold!\"",
+				
+				"description" : "(Increases Spellpower or Knowledge permanently at the cost of 3250 gold. Can be used repeatedly.)",
+				"visitMode" : "unlimited",
+				"canRefuse" : true,
+				"selectMode" : "selectPlayer",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/greatAcademyOfMagic.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVBB",
+							"VVBB",
+							"VVAB"
+						]
+					}
+				},
+			}
+		}
+	}
+}

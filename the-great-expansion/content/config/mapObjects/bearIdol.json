@@ -1,0 +1,64 @@
+{
+	"bearIdol" : {
+		"name" : "Bear Idol",
+		"handler" : "configurable",
+		"types" : {
+			"bearIdol" : {
+				"templates" : {
+					"base" : {
+						"animation" : "mapObjects/bearIdol.def",
+						"visitableFrom" : [
+							"---",
+							"-++",
+							"+++"
+						],
+						"mask" : [
+							"VB",
+							"BA"
+						]
+					}
+				},
+				"aiValue" : 400,
+				"rmg" : {
+					"value" : 400,
+					"rarity" : 13
+				},
+				"removable" : false,
+				"sounds" : {
+					"visit" : [
+						"MORALE"
+					]
+				},
+				"compatibilityIdentifiers" : [
+					"object"
+				],
+				"description" : "Increases Movement Points and Damage of units for the next battle.",
+				"visitMode" : "bonus",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"message" : "You channel ancient powers through the nearby idol, bolstering strength of your troops momentarily.",
+						"movePoints" : 400,
+						"bonuses" : [
+							{
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageBoth",
+								"val" : 1,
+								"duration" : "ONE_BATTLE",
+								"description" : "Bear Idol +1"
+							},
+							{
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageBoth",
+								"val" : 10,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "ONE_BATTLE",
+								"description" : "Bear Idol +10%"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

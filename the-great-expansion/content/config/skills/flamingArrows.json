@@ -1,0 +1,124 @@
+{
+	"flamingArrows" : {
+		"name" : "Flaming Arrows",
+		"gainChance" : {
+			"might" : 6,
+			"magic" : 4
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 33,
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "SIEGE_WEAPON"
+						}
+					]
+				},
+				"fireballOnAttack" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.fireball",
+					"val" : 40,
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "SIEGE_WEAPON"
+						}
+					]
+				},
+				"fireballStrength" :
+				{
+					"type" : "SPECIFIC_SPELL_POWER",
+					"subtype" : "spell.fireball",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "SIEGE_WEAPON"
+						}
+					],
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 40,
+						"stepSize" : 1
+					}
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Flaming Arrows}\n\nYour war machines ignore 33% of enemy Defense and have 40% chance to fire a fireball which deals fire damage equal to two times your hero level.",
+			"effects" : {
+				"main" : {
+					"val" : 33
+				},
+				"fireballOnAttack" : {
+					"val" : 40
+				},
+				"fireballStrength" : {
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 40,
+						"stepSize" : 1
+					}
+				}
+			},
+			"images" : {
+				"small" : "skills/flamingArrows/icons/small/basic",
+				"medium" : "skills/flamingArrows/icons/medium/basic",
+				"large" : "skills/flamingArrows/icons/large/basic",
+				"scenarioBonus" : "skills/flamingArrows/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Flaming Arrows}\n\nYour war machines ignore 66% of enemy Defense and have 55% chance to fire a fireball which deals fire damage equal to three times your hero level.",
+			"effects" : {
+				"main" : {
+					"val" : 66
+				},
+				"fireballOnAttack" : {
+					"val" : 55
+				},
+				"fireballStrength" : {
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 60,
+						"stepSize" : 1
+					}
+				}
+			},
+			"images" : {
+				"small" : "skills/flamingArrows/icons/small/advanced",
+				"medium" : "skills/flamingArrows/icons/medium/advanced",
+				"large" : "skills/flamingArrows/icons/large/advanced",
+				"scenarioBonus" : "skills/flamingArrows/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Flaming Arrows}\n\nYour war machines ignore 100% of enemy Defense and have 65% chance to fire a fireball which deals fire damage equal to four times your hero level.",
+			"effects" : {
+				"main" : {
+					"val" : 100
+				},
+				"fireballOnAttack" : {
+					"val" : 65
+				},
+				"fireballStrength" : {
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 80,
+						"stepSize" : 1
+					}
+				}
+			},
+			"images" : {
+				"small" : "skills/flamingArrows/icons/small/expert",
+				"medium" : "skills/flamingArrows/icons/medium/expert",
+				"large" : "skills/flamingArrows/icons/large/expert",
+				"scenarioBonus" : "skills/flamingArrows/icons/large/expert"
+			}
+		}
+	}
+}

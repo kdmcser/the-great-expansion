@@ -54,9 +54,27 @@
 
 		"specialty" : {
 			"bonuses" : {
-				"electromancyBonus" : {
+				"electromancyBonus1" : {
 					"type" : "SPECIFIC_SPELL_DAMAGE",
 					"subtype" : "spell.instantLightning",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 100,
+						"stepSize" : 1
+					}
+				},
+				"electromancyBonus2" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "spell.instantLightning2",
+					"updater" : {
+						"type" : "GROWS_WITH_LEVEL",
+						"valPer20" : 100,
+						"stepSize" : 1
+					}
+				},
+				"electromancyBonus3" : {
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"subtype" : "spell.instantLightning3",
 					"updater" : {
 						"type" : "GROWS_WITH_LEVEL",
 						"valPer20" : 100,

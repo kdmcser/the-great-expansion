@@ -27,11 +27,16 @@
 					"addInfo" : 0,
 					"subtype" : "spell.stoneSkin",
 					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
+				},
+				"defender" : {
+					"addInfo" : 0,
+					"subtype" : "defender",
+					"type" : "SPECIAL_ADD_VALUE_ENCHANT"
 				}
 			}
 		},
 		"basic" : {
-			"description" : "{Basic Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 1.\nBloodlust increases Attack by an additional 1.\nHaste increases Speed by an additional 1.\nStone Skin increases Defense by an additional 1.",
+			"description" : "{Basic Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 1.\nBloodlust increases Attack by an additional 1.\nHaste increases Speed by an additional 1.\nStone Skin increases Defense by an additional 1.\nDefender increases Defense by an additional 2 when defending.",
 			"effects" : {
 				"bless" : {
 					"addInfo" : 1
@@ -44,6 +49,9 @@
 				},
 				"stoneSkin" : {
 					"addInfo" : 1
+				},
+				"defender" : {
+					"addInfo" : 2
 				}
 			},
 			"images" : {
@@ -54,7 +62,7 @@
 			}
 		},
 		"advanced" : {
-			"description" : "{Advanced Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 2. Bloodlust increases Attack by an additional 2.\nHaste increases Speed by an additional 2.\nStone Skin increases Defense by an additional 2.",
+			"description" : "{Advanced Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 2. Bloodlust increases Attack by an additional 2.\nHaste increases Speed by an additional 2.\nStone Skin increases Defense by an additional 2.\nDefender increases Defense by an additional 4 when defending.",
 			"effects" : {
 				"bless" : {
 					"addInfo" : 2
@@ -67,6 +75,9 @@
 				},
 				"stoneSkin" : {
 					"addInfo" : 2
+				},
+				"defender" : {
+					"addInfo" : 4
 				}
 			},
 			"images" : {
@@ -77,7 +88,7 @@
 			}
 		},
 		"expert" : {
-			"description" : "{Expert Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 3. Bloodlust increases Attack by an additional 3.\nHaste increases Speed by an additional 3.\nStone Skin increases Defense by an additional 3.",
+			"description" : "{Expert Benevolence}\n\nIncreases effectiveness of some spells:\nBless increases the target's Damage by an additional 3. Bloodlust increases Attack by an additional 3.\nHaste increases Speed by an additional 3.\nStone Skin increases Defense by an additional 3.\nDefender increases Defense by an additional 6 when defending.",
 			"effects" : {
 				"bless" : {
 					"addInfo" : 3
@@ -90,6 +101,9 @@
 				},
 				"stoneSkin" : {
 					"addInfo" : 3
+				},
+				"defender" : {
+					"addInfo" : 6
 				}
 			},
 			"images" : {

@@ -1,0 +1,75 @@
+{
+	"crystalMining" : {
+		"name" : "Crystal Mining",
+		"gainChance" : {
+			"might" : 5,
+			"magic" : 5
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Crystal Mining}\n\nGenerates 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 0
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/crystalMining/icons/small/basic",
+				"medium" : "skills/crystalMining/icons/medium/basic",
+				"large" : "skills/crystalMining/icons/large/basic",
+				"scenarioBonus" : "skills/crystalMining/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Crystal Mining}\n\nGenerates 1 Crystal and 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 1
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/crystalMining/icons/small/advanced",
+				"medium" : "skills/crystalMining/icons/medium/advanced",
+				"large" : "skills/crystalMining/icons/large/advanced",
+				"scenarioBonus" : "skills/crystalMining/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Crystal Mining}\n\nGenerates 2 Crystal and 100 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 2
+				},
+				"gold" : {
+					"val" : 100
+				}
+			},
+			"images" : {
+				"small" : "skills/crystalMining/icons/small/expert",
+				"medium" : "skills/crystalMining/icons/medium/expert",
+				"large" : "skills/crystalMining/icons/large/expert",
+				"scenarioBonus" : "skills/crystalMining/icons/large/expert"
+			}
+		}
+	}
+}

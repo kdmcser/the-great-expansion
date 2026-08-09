@@ -1,0 +1,81 @@
+{
+	"greatAcademyOfWar" : {
+		"name" : "Great Academy of War",
+		"handler" : "configurable",
+		"types" : {
+			"default" : {
+				"blockedVisitable" : false,
+				"name" : "Great Academy of War",
+				"rmg" : {
+					"value" : 3214,
+					"rarity" : 14,
+					"zoneLimit" : 1
+				},
+				"sounds" : {
+					"visit" : [
+						"MYSTERY"
+					]
+				},
+				"rewards" : [
+					{
+						"resources" : {
+							"gold" : -3250
+						},
+						"primary": [
+							{
+								"type" : "attack",
+								"amount" : 1
+							}
+						],
+						"limiter" : {
+							"resources" : {
+								"gold" : 3250
+							}
+						},
+						"message" : "{Great Academy of War}\r\n\r\nA strong man dressed in formal clothing greets you \"Welcome. If you wish to extend your combat abilities, this is the place for you.\""
+					},
+					{
+						"resources" : {
+							"gold" : -3250
+						},
+						"primary": [
+							{
+								"type" : "defence",
+								"amount" : 1
+							}
+						],
+						"limiter" : {
+							"resources" : {
+								"gold" : 3250
+							}
+						},
+						"message" : "{Great Academy of War}\r\n\r\nA strong man dressed in formal clothing greets you \"Welcome. If you wish to extend your combat abilities, this is the place for you.\""
+					}
+				],
+				"onSelectMessage" : "{Great Academy of War}\r\n\r\nA strong man dressed in formal clothing greets you \"Welcome. If you wish to extend your combat abilities, this is the place for you.\"",
+				"onEmptyMessage" : "{Great Academy of War}\r\n\r\nA strong man dressed in formal clothing greets you \"Welcome. If you wish to extend your combat abilities, this is the place for you. However, each class costs 3250 gold!\"",
+				
+				"description" : "(Increases Attack or Defense permanently at the cost of 3250 gold. Can be used repeatedly.)",
+				"visitMode" : "unlimited",
+				"canRefuse" : true,
+				"selectMode" : "selectPlayer",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/greatAcademyOfWar.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVVV",
+							"VBBV",
+							"VBAB"
+						]
+					}
+				},
+			}
+		}
+	}
+}

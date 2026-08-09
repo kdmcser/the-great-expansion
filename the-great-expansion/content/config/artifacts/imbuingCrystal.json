@@ -1,0 +1,46 @@
+{
+	"imbuingCrystal" : {
+		"bonuses" : {
+			"knowledge" : {
+				"subtype" : "primarySkill.knowledge",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "PERCENT_TO_ALL"
+			},
+			"attack" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "PERCENT_TO_ALL"
+			},
+			"defence" : {
+				"subtype" : "primarySkill.defence",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "PERCENT_TO_ALL"
+			},
+			"spellpower" : {
+				"subtype" : "primarySkill.spellpower",
+				"type" : "PRIMARY_SKILL",
+				"val" : 7,
+				"valueType" : "PERCENT_TO_ALL"
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "MISC",
+		"value" : 5500,
+		"graphics" : {
+			"image" : "artifacts/imbuingCrystal/icon",
+			"scenarioBonus" : "artifacts/imbuingCrystal/bonus",
+			"map" : "artifacts/imbuingCrystal/adventure.def"
+		},
+		"text" : {
+			"description" : "{Imbuing Crystal}\r\n\r\nIncreases Attack, Defense, Spellpower and Knowledge by 7%.",
+			"event" : "You rummage through your belonging and, to your surprise, find Imbuing Crystal.",
+			"name" : "Imbuing Crystal"
+		}
+	}
+}

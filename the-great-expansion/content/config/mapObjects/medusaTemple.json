@@ -1,0 +1,190 @@
+{
+	"core:creatureBank" : {
+		"types" : {
+			"medusaTemple" : {
+				"name" : "Medusa Temple",
+				"templates" : {
+					"normal" : {
+						"animation" : "mapObjects/medusaTemple.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVVV",
+							"VVVV",
+							"VVVA"
+						]
+					}
+				},
+				"sounds" : {
+					"visit" : [
+						"mapObjects/visit.wav"
+					]
+				},
+				"rmg" : {
+					"value" : 4789,
+					"rarity" : 50
+				},
+				"blockedVisitable" : false,
+				"onGuardedMessage" : "You are at the entrance to the Medusa Temple. Would you like to search it?",
+				"onVisited" : [
+					{
+						"message" : "It seems like someone already looted this place. There's nothing to be found there."
+					}
+				],
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"guardsLayout" : "creatureBankNarrow",
+				"rewards" : [
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 8,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 8,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 8,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 8,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 8,
+								"type" : "medusaQueen"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "redDragon",
+								"upgradeChance" : 0,
+								"amount" : 2
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 12,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 12,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 12,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 12,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 12,
+								"type" : "medusaQueen"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "redDragon",
+								"upgradeChance" : 0,
+								"amount" : 3
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 16,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 16,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 16,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 16,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 16,
+								"type" : "medusaQueen"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "redDragon",
+								"upgradeChance" : 0,
+								"amount" : 4
+							}
+						]
+					},
+					{
+						"message" : "After defeating the guards you search the place and find something useful!",
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 20,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 20,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 20,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 20,
+								"type" : "medusaQueen"
+							},
+							{
+								"amount" : 20,
+								"type" : "medusaQueen"
+							}
+						],
+						"creatures" : [
+							{
+								"type" : "redDragon",
+								"upgradeChance" : 0,
+								"amount" : 5
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

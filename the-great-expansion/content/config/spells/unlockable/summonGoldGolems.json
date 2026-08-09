@@ -10,9 +10,9 @@
 			"water" : false
 		},
 		"level" : 5,
-		"defaultGainChance" : 11,
+		"defaultGainChance" : 6,
 		"gainChance" : {
-			"tower" : 22
+			"tower" : 11
 		},
 		"power" : 60,
 		"flags" : {

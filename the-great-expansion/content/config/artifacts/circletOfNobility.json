@@ -1,0 +1,42 @@
+{
+	"circletOfNobility" : {
+		"bonuses" : {
+			"gold" : {
+				"subtype" : "resource.gold",
+				"type" : "GENERATE_RESOURCE",
+				"val" : 250,
+				"valueType" : "BASE_NUMBER",
+				"stacking" : "ALWAYS"
+			},
+			"dmgmax" : {
+				"type" : "CREATURE_DAMAGE",
+				"subtype" : "creatureDamageMax",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE",
+				"limiters" : [
+					{
+						"type" : "CREATURE_LEVEL_LIMITER",
+						"minLevel" : 2,
+						"maxlevel" : 3
+					}
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "HEAD",
+		"value" : 4250,
+		"graphics" : {
+			"image" : "artifacts/circletOfNobility/icon",
+			"scenarioBonus" : "artifacts/circletOfNobility/bonus",
+			"map" : "artifacts/circletOfNobility/adventure.def"
+		},
+		"text" : {
+			"description" : "{Circlet of Nobility}\r\n\r\nGrants the wielder 250 Gold per day and increases Max Damage of tier 2 units by 1.",
+			"event" : "You save a noble from the bandit attack and he rewards you with a circlet.",
+			"name" : "Circlet of Nobility"
+		}
+	}
+}

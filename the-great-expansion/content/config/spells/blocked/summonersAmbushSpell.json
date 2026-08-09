@@ -1,0 +1,87 @@
+{
+	"summonersAmbushSpell" : {
+		"type" : "ability",
+		"name" : "Summoner's Ambush",
+		"targetType" : "NO_TARGET",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 0,
+		"defaultGainChance" : 0,
+		"power" : 0,
+		"flags" : {
+			"indifferent" : true
+		},
+		"animation" : {
+			"cast" : [
+				"C12SPF0.def"
+			]
+		},
+		"sounds" : {
+			"cast" : "SUMNELM"
+		},
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"cost" : 0,
+				"power" : 0,
+				"description" : "",
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "enchanter",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"none" : {
+				"power" : 27,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "mummy",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"basic" : {
+				"power" : 27,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "mummy",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"advanced" : {
+				"power" : 40,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "goldGolem",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			},
+			"expert" : {
+				"power" : 56,
+				"battleEffects" : {
+					"summon" : {
+						"exclusive" : false,
+						"id" : "diamondGolem",
+						"summonByHealth" : true,
+						"type" : "core:summon"
+					}
+				}
+			}
+		}
+	}
+}

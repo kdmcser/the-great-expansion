@@ -1,0 +1,73 @@
+{
+	"dwarvenWarren" : {
+		"name" : "Dwarven Warren",
+		"handler" : "configurable",
+		"types" : {
+			"dwarvenWarren" : {
+				"name" : "Dwarven Warren",
+				"description" : "(Provides loads of resources once per week)",
+				"rmg" : {
+					"value" : 5000,
+					"rarity" : 41
+				},
+				"sounds" : {
+					"visit" : [
+						"GENIE"
+					]
+				},
+				
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},
+				"visitMode" : "once",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"message" : "{Dwarven Warren}\n\nA tired dwarf meets you. He nods and shouts at other laborers to bring forth what they have already gathered.",
+						"resources" : [
+							{
+								"anyOf" : [ "wood", "ore" ],
+								"min" : 0,
+								"max" : 14
+							},
+							{
+								"anyOf" : [ "mercury", "sulfur", "crystal", "gems" ],
+								"min" : 0,
+								"max" : 7
+							},
+							{
+								"anyOf" : [ "gold" ],
+								"min" : 0,
+								"max" : 3427
+							},
+							{
+								"anyOf" : [ "wood", "ore", "mercury", "sulfur", "crystal", "gems", "gold" ],
+								"min" : 0,
+								"max" : 10
+							}
+						]
+					}
+				],
+				"onVisitedMessage" : "{Dwarven Warren}\n\nA tired dwarf meets you. He only shakes his head, letting you know that you've got to drop by again next week.",
+				"templates" : {
+					"dwarvenWarren" : {
+						"animation" : "mapObjects/dwarvenWarren.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VVVV",
+							"VVVV",
+							"VBBV",
+							"BBAB"
+						]
+					}
+				}
+			}
+		}
+	}
+}

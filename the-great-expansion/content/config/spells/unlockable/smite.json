@@ -1,0 +1,95 @@
+{
+	"smite" : {
+		"type" : "combat",
+		"name" : "Smite",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
+		},
+		"level" : 4,
+		"defaultGainChance" : 14,
+		"gainChance" : {
+			"castle" : 30,
+			"rampart" : 30,
+			"tower" : 5,
+			"inferno" : 2,
+			"necropolis" : 5,
+			"dungeon" : 5,
+			"conflux" : 17
+		},
+		"power" : 30,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/smite/book",
+			"iconScroll" : "spells/smite/scroll",
+			"iconScenarioBonus" : "spells/smite/scenario",
+			"iconEffect" : "spells/smite/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/smite/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/smite/sfx.wav"
+		},
+
+		"levels" : {
+			"base" : {
+				"range" : "0",
+				"power" : 10,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"silence" : {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"cantCastSpells" : {
+								"type" : "CASTS",
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : [
+									"N_TURNS"
+								],
+								"val" : -100
+							}
+						}
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"cost" : 16
+			},
+			"none" : {
+				"description" : "{Smite}\n\nDeals water damage to the target and prevents it from casting spells.",
+				"power" : 10,
+				"cost" : 16
+			},
+			"basic" : {
+				"description" : "{Basic Smite}\n\nDeals water damage to the target and prevents it from casting spells.",
+				"power" : 10,
+				"cost" : 12
+			},
+			"advanced" : {
+				"description" : "{Advanced Smite}\n\nDeals water damage to the target and prevents it from casting spells.\n\nDamage inflicted is 40 more than Basic Smite.",
+				"power" : 50,
+				"cost" : 12
+			},
+			"expert" : {
+				"description" : "{Expert Smite}\n\nDeals water damage to the target and prevents it from casting spells.\n\nDamage inflicted is 90 more than Basic Smite.",
+				"power" : 100,
+				"cost" : 12
+			}
+		}
+	}
+}

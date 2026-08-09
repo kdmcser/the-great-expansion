@@ -1,0 +1,55 @@
+{
+	"totemOfLife" : {
+		"name" : "Totem of Life",
+		"handler" : "configurable",
+		"types" : {
+			"totemOfLife" : {
+				"templates" : {
+					"base" : {
+						"animation" : "mapObjects/totemOfLife.def",
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"VV",
+							"VA"
+						]
+					}
+				},
+				"aiValue" : 400,
+				"rmg" : {
+					"value" : 400,
+					"rarity" : 13
+				},
+				"removable" : false,
+				"sounds" : {
+					"visit" : [
+						"MORALE"
+					]
+				},
+				"compatibilityIdentifiers" : [
+					"object"
+				],
+				"description" : "Increases Movement Points and Health Regen of units for the next battle.",
+				"visitMode" : "bonus",
+				"selectMode" : "selectFirst",
+				"rewards" : [
+					{
+						"message" : "You channel ancient powers through the nearby totem, bolstering endurance of your troops momentarily.",
+						"movePoints" : 400,
+						"bonuses" : [
+							{
+								"type" : "HP_REGENERATION",
+								"val" : 15,
+								"duration" : "ONE_BATTLE",
+								"description" : "Totem of Life +15"
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

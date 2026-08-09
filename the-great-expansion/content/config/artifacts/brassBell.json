@@ -1,0 +1,53 @@
+{
+	"brassBell" : {
+		"bonuses" : {
+			"magicResistance" : {
+				"type" : "MAGIC_RESISTANCE",
+				"val" : -20,
+				"valueType" : "BASE_NUMBER",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			},
+			"magicArmor" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"val" : -20,
+				"valueType" : "BASE_NUMBER",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			},
+			"magicImmunity" : {
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : -1,
+				"valueType" : "BASE_NUMBER",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MAJOR",
+		"slot" : "MISC",
+		"value" : 6750,
+		"graphics" : {
+			"image" : "artifacts/brassBell/icon",
+			"scenarioBonus" : "artifacts/brassBell/bonus",
+			"map" : "artifacts/brassBell/adventure.def"
+		},
+		"text" : {
+			"description" : "{Brass Bell}\r\n\r\nReduces Incoming Spell Damage Reduction from enemy units by 20%, reduces their Magic Resistance by 20% and reduces their Magic Immunity Level Threshold by 1.\n\nNegative Incoming Spell Damage Reduction causes enemies to receive more damage from spells.",
+			"event" : "You hear the ominous sound of a bell thirteen times. Upon reaching the source of the sound, you find a Brass Bell.",
+			"name" : "Brass Bell"
+		}
+	}
+}

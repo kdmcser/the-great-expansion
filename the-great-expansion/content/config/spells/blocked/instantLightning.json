@@ -1,7 +1,7 @@
 {
 	"instantLightning" : {
 		"type" : "ability",
-		"name" : "Electromancy",
+		"name" : "Basic Electromancy",
 		"targetType" : "CREATURE",
 		"school" : {
 			"air" : false,
@@ -31,7 +31,7 @@
 		"levels" : {
 			"base" : {
 				"range" : "X",
-				"power" : 4,
+				"power" : 3,
 				"cost" : 0,
 				"description" : "",
 				"battleEffects" : {
@@ -50,10 +50,10 @@
 				"power" : 0
 			},
 			"advanced" : {
-				"power" : 35
+				"power" : 0
 			},
 			"expert" : {
-				"power" : 75
+				"power" : 0
 			}
 		}
 	}

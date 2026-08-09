@@ -1,0 +1,53 @@
+{
+	"alchemistBoots" : {
+		"bonuses" : {
+			"immunity" : {
+				"subtype" : "spell.combustion",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"speed" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"valueType" : "ADDITIVE_VALUE",
+				"limiters" : [
+					{
+						"type" : "CREATURE_LEVEL_LIMITER",
+						"minLevel" : 3,
+						"maxlevel" : 4
+					}
+				]
+				
+			},
+			"health" : {
+				"type" : "STACK_HEALTH",
+				"val" : 5,
+				"valueType" : "ADDITIVE_VALUE",
+				"limiters" : [
+					{
+						"type" : "CREATURE_LEVEL_LIMITER",
+						"minLevel" : 3,
+						"maxlevel" : 4
+					}
+				]
+			}
+		},
+		"type" : [
+			"HERO"
+		],
+		"class" : "MINOR",
+		"slot" : "FEET",
+		"value" : 4250,
+		"graphics" : {
+			"image" : "artifacts/alchemistBoots/icon",
+			"scenarioBonus" : "artifacts/alchemistBoots/bonus",
+			"map" : "artifacts/alchemistBoots/adventure.def"
+		},
+		"text" : {
+			"description" : "{Alchemist's Boots}\r\n\r\nGrants immunity to Combustion spell to all units in the hero's army and grants your tier 3 units +1 Speed and +5 Max Health.",
+			"event" : "You find a pair of boots with smoke emanating from them and some ashes scattered around. You pick them up for later use.",
+			"name" : "Alchemist's Boots"
+		}
+	}
+}

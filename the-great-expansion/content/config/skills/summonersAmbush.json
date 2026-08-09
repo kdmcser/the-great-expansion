@@ -1,0 +1,62 @@
+{
+	"summonersAmbush" : {
+		"name" : "Summoner's Ambush",
+		"gainChance" : {
+			"might" : 3,
+			"magic" : 7
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"subtype" : "spell.summonersAmbushSpell",
+					"type" : "OPENING_BATTLE_SPELL",
+					"valueType" : "BASE_NUMBER",
+					"addInfo" : 1
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Summoner's Ambush}\n\nAt the start of combat, summons a stack of Mummies, depending on the hero's Spellpower.",
+			"effects" : {
+				"main" : {
+					"addInfo" : 1
+				}
+			},
+			"images" : {
+				"small" : "skills/summonersAmbush/icons/small/basic",
+				"medium" : "skills/summonersAmbush/icons/medium/basic",
+				"large" : "skills/summonersAmbush/icons/large/basic",
+				"scenarioBonus" : "skills/summonersAmbush/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Summoner's Ambush}\n\nAt the start of combat, summons a stack of Gold Golems, depending on the hero's Spellpower.",
+			"effects" : {
+				"main" : {
+					"addInfo" : 2
+				}
+			},
+			"images" : {
+				"small" : "skills/summonersAmbush/icons/small/advanced",
+				"medium" : "skills/summonersAmbush/icons/medium/advanced",
+				"large" : "skills/summonersAmbush/icons/large/advanced",
+				"scenarioBonus" : "skills/summonersAmbush/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Summoner's Ambush}\n\nAt the start of combat, summons a stack of Gold Golems, depending on the hero's Spellpower.",
+			"effects" : {
+				"main" : {
+					"addInfo" : 3
+				}
+			},
+			"images" : {
+				"small" : "skills/summonersAmbush/icons/small/expert",
+				"medium" : "skills/summonersAmbush/icons/medium/expert",
+				"large" : "skills/summonersAmbush/icons/large/expert",
+				"scenarioBonus" : "skills/summonersAmbush/icons/large/expert"
+			}
+		}
+	}
+}

@@ -1,0 +1,142 @@
+{
+	"core:treasureChest" : {
+		"types" : {
+			"lostWagon" : {
+				"name" : "Lost Wagon",
+				"templates" : {
+					"base" : {
+						"animation" : "mapObjects/lostWagon.def",
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"VA"
+						]
+					}
+				},
+				"aiValue" : 1881,
+				"rmg" : {
+					"value" : 1881,
+					"rarity" : 100
+				},
+				"sounds" : {
+					"visit" : ["GENIE"],
+					"removal" : [
+						"PICKUP01",
+						"PICKUP02",
+						"PICKUP03",
+						"PICKUP04",
+						"PICKUP05",
+						"PICKUP06",
+						"PICKUP07"
+					]
+				},
+				"compatibilityIdentifiers" : [
+					"object"
+				],
+				"blockedVisitable" : false,
+				"onSelectMessage" : 146,
+				"visitMode" : "once",
+				"selectMode" : "selectPlayer",
+				"onVisitedMessage" : "{Lost Wagon}\r\n\r\nYou find an empty wagon. You wonder when its owner will arrive.",
+				"rewards" : [
+					{
+						"appearChance" : { "max" : 8 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there's still an artifact in there, which you decide to take.",
+						"artifacts" : [ { "class" : "TREASURE" } ]
+					},
+					{
+						"appearChance" : { "min" : 8, "max" : 14 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there's still an artifact in there, which you decide to take.",
+						"artifacts" : [ { "class" : "MINOR" } ]
+					},
+					{
+						"appearChance" : { "min" : 14, "max" : 21 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there are some old books in there. You decide to read the only one that hasn't completely deteriorated and learn something.",
+						"primary" : [
+							{
+								"anyOf" : [
+									"attack",
+									"defence",
+									"spellpower",
+									"knowledge"
+								],
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"appearChance" : { "min" : 21, "max" : 28 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there are some old books in there. You decide to read the only one that hasn't completely deteriorated and learn something.",
+						"secondary" : [
+							{
+								"amount" : 1
+							}
+						]
+					},
+					{
+						"appearChance" : { "min" : 28, "max" : 56 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there are some old books in there. You decide to read the only one that hasn't completely deteriorated and learn something.",
+						"spells": [
+							{
+								"level" : 1,
+							}
+						],
+					},
+					{
+						"appearChance" : { "min" : 56, "max" : 68 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there are some old books in there. You decide to read the only one that hasn't completely deteriorated and learn something.",
+						"spells": [
+							{
+								"level" : 2,
+							}
+						],
+					},
+					{
+						"appearChance" : { "min" : 68, "max" : 76 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there's still some gold, which you decide to take.",
+						"resources" : [
+							{
+								"anyOf" : [ "gold" ],
+								"min" : 2000,
+								"max" : 3000
+							}
+						]
+					},
+					{
+						"appearChance" : { "min" : 76, "max" : 84 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there are still some resources, which you decide to take.",
+						"resources" : [
+							{
+								"anyOf" : [ "wood", "ore" ],
+								"min" : 8,
+								"max" : 12
+							}
+						]
+					},
+					{
+						"appearChance" : { "min" : 84, "max" : 92 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there are still some resources, which you decide to take.",
+						"resources" : [
+							{
+								"anyOf" : [ "mercury", "sulfur", "crystal", "gems" ],
+								"min" : 4,
+								"max" : 6
+							}
+						]
+					},
+					{
+						"appearChance" : { "min" : 92, "max" : 100 },
+						"message" : "You find a wagon on your journey. Inspecting it closer, you can see that there are some old books in there. You decide to read the only one that hasn't completely deteriorated and learn something.",
+						"heroExperience" : {
+							"min" : 2000,
+							"max" : 3000
+						},
+					}
+				]
+			}
+		}
+	}
+}

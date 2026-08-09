@@ -1,0 +1,75 @@
+{
+	"gemMining" : {
+		"name" : "Gem Mining",
+		"gainChance" : {
+			"might" : 5,
+			"magic" : 5
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"subtype" : "resource.gems",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Gem Mining}\n\nGenerates 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 0
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/gemMining/icons/small/basic",
+				"medium" : "skills/gemMining/icons/medium/basic",
+				"large" : "skills/gemMining/icons/large/basic",
+				"scenarioBonus" : "skills/gemMining/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Gem Mining}\n\nGenerates 1 Gem and 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 1
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/gemMining/icons/small/advanced",
+				"medium" : "skills/gemMining/icons/medium/advanced",
+				"large" : "skills/gemMining/icons/large/advanced",
+				"scenarioBonus" : "skills/gemMining/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Gem Mining}\n\nGenerates 2 Gem and 100 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 2
+				},
+				"gold" : {
+					"val" : 100
+				}
+			},
+			"images" : {
+				"small" : "skills/gemMining/icons/small/expert",
+				"medium" : "skills/gemMining/icons/medium/expert",
+				"large" : "skills/gemMining/icons/large/expert",
+				"scenarioBonus" : "skills/gemMining/icons/large/expert"
+			}
+		}
+	}
+}

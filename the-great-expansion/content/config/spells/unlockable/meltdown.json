@@ -1,0 +1,80 @@
+{
+	"meltdown" : {
+		"type" : "combat",
+		"name" : "Meltdown",
+		"targetType" : "CREATURE",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
+		},
+		"level" : 5,
+		"defaultGainChance" : 11,
+		"gainChance" : {
+			"rampart" : 10,
+			"tower" : 14,
+			"inferno" : 14,
+			"necropolis" : 13,
+			"dungeon" : 16,
+			"conflux" : 13
+		},
+		"power" : 10,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/meltdown/book",
+			"iconScroll" : "spells/meltdown/scroll",
+			"iconScenarioBonus" : "spells/meltdown/scenario",
+			"iconEffect" : "spells/meltdown/effect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"spells/meltdown/spell.json"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/meltdown/sfx.wav"
+		},
+		
+		"levels" : {
+			"base" : {
+				"range" : "X",
+				"power" : 10,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					}
+				},
+				"targetModifier" : {
+					"smart" : true
+				},
+				"cost" : 35
+			},
+			"none" : {
+				"description" : "{Meltdown}\n\nDeals fire damage to all enemy units.",
+				"power" : 10,
+				"cost" : 35
+			},
+			"basic" : {
+				"description" : "{Basic Meltdown}\n\nDeals fire damage to all enemy units.",
+				"power" : 10,
+				"cost" : 30
+			},
+			"advanced" : {
+				"description" : "{Advanced Meltdown}\n\nDeals fire damage to all enemy units.\n\nDamage inflicted is 30 more than Basic Meltdown.",
+				"power" : 40,
+				"cost" : 30
+			},
+			"expert" : {
+				"description" : "{Expert Meltdown}\n\nDeals fire damage to all enemy units.\n\nDamage inflicted is 60 more than Basic Meltdown.",
+				"power" : 70,
+				"cost" : 30
+			}
+		}
+	}
+}

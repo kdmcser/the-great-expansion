@@ -1,0 +1,75 @@
+{
+	"sulfurMining" : {
+		"name" : "Sulfur Mining",
+		"gainChance" : {
+			"might" : 5,
+			"magic" : 5
+		},
+		"specialty" : [], // generic specialty not applicable
+		"base" : {
+			"effects" : {
+				"main" : {
+					"subtype" : "resource.sulfur",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+		"basic" : {
+			"description" : "{Basic Sulfur Mining}\n\nGenerates 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 0
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/sulfurMining/icons/small/basic",
+				"medium" : "skills/sulfurMining/icons/medium/basic",
+				"large" : "skills/sulfurMining/icons/large/basic",
+				"scenarioBonus" : "skills/sulfurMining/icons/large/basic"
+			}
+		},
+		"advanced" : {
+			"description" : "{Advanced Sulfur Mining}\n\nGenerates 1 Sulfur and 75 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 1
+				},
+				"gold" : {
+					"val" : 75
+				}
+			},
+			"images" : {
+				"small" : "skills/sulfurMining/icons/small/advanced",
+				"medium" : "skills/sulfurMining/icons/medium/advanced",
+				"large" : "skills/sulfurMining/icons/large/advanced",
+				"scenarioBonus" : "skills/sulfurMining/icons/large/advanced"
+			}
+		},
+		"expert" : {
+			"description" : "{Expert Sulfur Mining}\n\nGenerates 2 Sulfur and 100 Gold per day.",
+			"effects" : {
+				"main" : {
+					"val" : 2
+				},
+				"gold" : {
+					"val" : 100
+				}
+			},
+			"images" : {
+				"small" : "skills/sulfurMining/icons/small/expert",
+				"medium" : "skills/sulfurMining/icons/medium/expert",
+				"large" : "skills/sulfurMining/icons/large/expert",
+				"scenarioBonus" : "skills/sulfurMining/icons/large/expert"
+			}
+		}
+	}
+}

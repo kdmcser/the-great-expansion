@@ -1,0 +1,52 @@
+{
+	"heroicShrine" : {
+		"name" : "Heroic Shrine",
+		"handler" : "configurable",
+		"types" : {
+			"heroicShrine" : {
+				"name" : "Heroic Shrine",
+				"description" : "(Increases max health of units permanently)",
+				"rmg" : {
+					"value" : 19048,
+					"rarity" : 100
+				},
+				"sounds" : {
+					"visit" : [
+						"NOMAD"
+					]
+				},
+				"rewards" : [
+					{
+						"message" : "{Heroic Shrine}\r\n\r\nYou are invited by a venerable hero, who helps you train your troops.\n\n(Units in the hero's army permanently have their max health increased by 1)",
+
+						"bonuses" : [
+							{
+								"type" : "STACK_HEALTH",
+								"val" : 1,
+								"valueType" : "ADDITIVE_VALUE",
+								"duration" : "PERMANENT",
+								"description" : "Heroic Shrine Health Bonus"
+							}
+						]
+					}
+				],
+				"onVisitedMessage" : "{Heroic Shrine}\r\n\r\nYou are greeted by a venerable hero, who only shakes his head sadly. It seems he won't have any more time to train your troops.",
+				"visitMode" : "hero",
+				"templates" : {
+					"heroicShrine" : {
+						"animation" : "mapObjects/heroicShrine.def",
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+						"mask" : [
+							"VV",
+							"VA"
+						]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"plagueWind" : {
+		"type" : "combat",
+		"name" : "Plague Wind",
+		"targetType" : "LOCATION",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 3,
+		"defaultGainChance" : 8,
+		"gainChance" : {
+			"castle" : 9,
+			"rampart" : 0,
+			"tower" : 11,
+			"inferno" : 8,
+			"necropolis" : 20,
+			"dungeon" : 6,
+			"stronghold" : 8,
+			"fortress" : 0,
+			"conflux" : 12
+		},
+		"power" : 8,
+		"flags" : {
+			"damage" : true,
+			"negative" : true
+		},
+		"graphics" : {
+			"iconBook" : "spells/plagueWind/book",
+			"iconScroll" : "spells/plagueWind/scroll",
+			"iconScenarioBonus" : "spells/plagueWind/scenario",
+			"iconEffect" : "spells/plagueWind/effect"
+		},
+
+		"animation" : {
+			"hit" : [
+				"spells/plagueWind/spell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "spells/plagueWind/sfx.wav"
+		},
+		
+		"levels" : {
+			"base" : {
+				"range" : "0-2",
+				"power" : 16,
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					}
+				},
+				"cost" : 15
+			},
+			"none" : {
+				"description" : "{Plague Wind}\n\nDeals earth damage to all units in the chosen large area.",
+				"power" : 16,
+				"cost" : 15
+			},
+			"basic" : {
+				"description" : "{Plague Wind}\n\nDeals earth damage to all units in the chosen large area.",
+				"power" : 16,
+				"cost" : 12
+			},
+			"advanced" : {
+				"description" : "{Plague Wind}\n\nDeals earth damage to all units in the chosen large area.\n\nDamage inflicted is 16 more than Basic Plague Wind.",
+				"power" : 32,
+				"cost" : 12
+			},
+			"expert" : {
+				"description" : "{Plague Wind}\n\nDeals earth damage to all units in the chosen large area.\n\nDamage inflicted is 48 more than Basic Plague Wind.",
+				"power" : 64,
+				"cost" : 12
+			}
+		}
+	}
+}
