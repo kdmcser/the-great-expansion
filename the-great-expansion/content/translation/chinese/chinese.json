@@ -38,7 +38,7 @@
 	"artifact.the-great-expansion.beholderShield.description" : "{邪眼盾牌}\r\n\r\n英雄的防御力和力量各+4，并使你的单位获得远程反击能力。",
 	"artifact.the-great-expansion.beholderShield.event" : "一个醉醺醺的矮人在酒馆里不小心推了你一下，导致你的啤酒洒了一地。作为补偿，你得到了一面邪眼盾牌。",
 	"artifact.the-great-expansion.beholderShield.name" : "邪眼盾牌",
-	"artifact.the-great-expansion.berserkerAxe.description" : "{狂战士战斧}\r\n\r\n英雄攻击力+3，但防御力+1。",
+	"artifact.the-great-expansion.berserkerAxe.description" : "{狂战士战斧}\r\n\r\n英雄攻击力+3，但防御力-1。",
 	"artifact.the-great-expansion.berserkerAxe.event" : "你看到一个兽人陷入狂暴，手持多把战斧与多个敌人战斗。你捡起其中一把，继续前进，没有引起不必要的注意。",
 	"artifact.the-great-expansion.berserkerAxe.name" : "狂战士战斧",
 	"artifact.the-great-expansion.blacksmithHammer.description" : "{铁匠之锤}\r\n\r\n英雄的攻击力和力量各+1。",
